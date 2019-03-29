@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марат Гайсин](https://up.htmlacademy.ru/adaptive/16/user/792157).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638)
 
 ---
 
