@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin oswald($property) {
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: $property;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin arial {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
