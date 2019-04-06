@@ -1,5 +1,5 @@
 .page-header {
-  background-color: rgb(212, 235, 205);
+  //background-color: rgb(212, 235, 205);
 
   display: flex;
   flex-wrap: wrap;
@@ -12,60 +12,8 @@
   margin-bottom: 16px;
 }
 
-.main-nav__toggle {
-  position: relative;
-  font-size: 0;
-  border: none;
-  background-color: red;
-
-  padding: 0;
+.page-header__toggle {
   margin-right: 19px;
   margin-top: 22px;
   margin-bottom: 23px;
-
-  width: 25px;
-  height: 19px;
-
-  cursor: pointer;
-
-  span {
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    display: block;
-    background-color: #000000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .5s;
-    transition-delay: .5s;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #000000;
-      display: block;
-      top: -10px;
-      left: 0;
-      transition-property: top;
-      transition-delay: .3s;
-      transition-duration: .3s;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #000000;
-      display: block;
-      top: 10px;
-      left: 0;
-      transition-property: top;
-      transition-delay: .3s;
-      transition-duration: .3s;
-    }
-  }
 }
