@@ -1,8 +1,5 @@
 .site-list {
-  //background-color: rgb(212, 235, 205);
-
-  padding: 0;
-  margin: 0;
+  @include zero-list;
 }
 
 .site-list__item {

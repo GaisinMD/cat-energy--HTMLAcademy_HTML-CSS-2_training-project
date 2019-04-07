@@ -1,0 +1,95 @@
+.section-example {
+  background-color: #f2f2f2;
+  padding-top: 17px;
+}
+
+.section-example__header {
+  @include oswald(300);
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.section-example__text {
+  @include arial;
+  font-size: 14px;
+  line-height: 18px;
+  width: 275px;
+  margin-bottom: 27px;
+  padding-left: 20px;
+}
+
+.section-example__characteristics {
+  @include zero-list;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.section-example__characteristic-block {
+  @include oswald(300);
+  text-transform: uppercase;
+  margin-bottom: 35px;
+
+  &:first-child {
+    margin-right: 32px;
+  }
+
+  &--block {
+    position: relative;
+    color: #111111;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  &--inline {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    color: #111111;
+    text-align: center;
+    margin-right: 20px;
+  }
+}
+
+.section-example__block-text {
+  @include arial;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+
+  left: 17px;
+  bottom: -15px;
+  width: 87px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  color: #444444;
+  text-transform: lowercase;
+
+  background-color: #f2f2f2;
+
+  &--inline {
+    @include oswald(300);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+    position: static;
+    text-transform: uppercase;
+    color: #111111;
+  }
+}
+
+.cat-transformer__cat-before,
+.cat-transformer__cat-after {
+  display: block;
+}

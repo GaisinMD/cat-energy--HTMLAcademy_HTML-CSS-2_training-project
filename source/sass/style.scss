@@ -1,22 +1,30 @@
-@import "fonts";
-@import "service";
-@import "body";
-@import "button";
+@import "base/normalize",
+  "base/base",
+  "base/fonts";
 
-@import "page-header";
-@import "logo";
-@import "menu-toggle";
-@import "main-nav";
-@import "site-list";
+@import "abstracts/mixin";
 
-@import "page-main";
-@import "main-header";
-@import "section-main-promo";
-@import "section-promo";
-@import "section-it-work";
-@import "advantages-list";
-@import "section-example";
-@import "chacteristic-hole-block";
-@import "cat-transformer";
+@import "layots/body";
 
+@import "components/button";
 
+@import "layots/page-header",
+  "blocks/logo",
+  "blocks/menu-toggle",
+  "blocks/main-nav",
+  "blocks/site-list";
+
+@import "layots/page-main",
+  "blocks/main-header",
+  "blocks/section-main-promo",
+  "blocks/section-promo",
+  "blocks/section-it-work",
+  "blocks/advantages-list",
+  "blocks/section-example",
+  "blocks/cat-transformer";
+
+@import "layots/page-footer",
+  "blocks/footer-contacts",
+  "blocks/footer-social",
+  "blocks/social-list",
+  "blocks/footer-academy-promo";

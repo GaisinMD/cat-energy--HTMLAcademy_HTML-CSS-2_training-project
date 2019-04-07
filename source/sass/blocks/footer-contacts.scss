@@ -1,0 +1,33 @@
+.footer-contacts {
+  padding-bottom: 39px;
+}
+
+.page-footer__text-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+
+  padding-top: 30px;
+}
+
+.footer-contacts__text {
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 20px;
+  width: 125px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-contacts__address {
+  @include arial;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  width: 135px;
+}
+

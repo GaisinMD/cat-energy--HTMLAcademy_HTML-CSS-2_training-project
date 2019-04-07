@@ -51,22 +51,22 @@
       transition-duration: .3s;
     }
   }
-}
 
-.menu-toggle--active {
-  span {
-    background-color: transparent;
+  &--active {
+    span {
+      background-color: transparent;
 
-    &:before {
-      top: 0;
-      transform: rotate(45deg);
-      transition-delay: .3s;
-    }
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+        transition-delay: .3s;
+      }
 
-    &:after {
-      top: 0;
-      transform: rotate(-45deg);
-      transition-delay: .3s;
+      &:after {
+        top: 0;
+        transform: rotate(-45deg);
+        transition-delay: .3s;
+      }
     }
   }
 }

@@ -1,0 +1,48 @@
+.social-list {
+  @include zero-list;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-list__item {
+  margin-right: 36px;
+
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  a {
+    display: block;
+    font-size: 0;
+    opacity: 0.5;
+    height: 19px;
+  }
+
+  &--vk a {
+    width: 22px;
+    background-image: url("../img/icon-vk-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--instagramm a {
+    width: 17px;
+    background-image: url("../img/icon-insta-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--facebook a {
+    width: 10px;
+    background-image: url("../img/icon-fb-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
