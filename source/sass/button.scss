@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  position: relative;
+  @include oswald(300);
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  min-height: 40px;
+  padding-top: 12px;
+}

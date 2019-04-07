@@ -1,0 +1,12 @@
+.section-it-work {
+}
+
+.section-it-work__header {
+  @include oswald(300);
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
