@@ -1,0 +1,46 @@
+.fieldset-man {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.fieldset-man__legend {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-transform: none;
+  width: 300px;
+
+  padding-bottom: 30px;
+  padding-right: 110px;
+  // Добавить зеленую полоску
+}
+
+.fieldset-man__item {
+  margin-top: 0px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// НЕ ЗАБУДЬ ДОБАВИТЬ ИКОНКИ
+.fieldset-man__input {
+  color: #444444;
+  border: 1px solid #cdcdcd;
+  line-height: 43px;
+  padding-left: 16px;
+  margin-left: 18px;
+  flex-grow: 1;
+}
+

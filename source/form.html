@@ -37,11 +37,11 @@
   </header>
 
 
-  <main class="page-main">
-    <h1 class="page-main-header">Подбор программы</h1>
+  <main class="page-main page-main--form">
+    <h1 class="main-header main-header--form page-main__main-header-form">Подбор программы</h1>
     <p class="page-main-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="main-form__item fieldset-cat">
+      <fieldset class="main-form__item fieldset-cat main-form__cat-fieldset">
         <p class="fieldset-cat__item">
           <label class="fieldset-cat__label" for="cat-name">Имя:*</label>
           <input class="fieldset-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
@@ -54,6 +54,26 @@
           <label class="fieldset-cat__label" for="cat-age">Возраст:</label>
           <input class="fieldset-cat__input" id="cat-age" type="text" name="cat-age" placeholder="7">
         </p>
+      </fieldset>
+
+      <fieldset class="main-form__item fieldset-radio-button main-form__fieldset-radio">
+        <ul class="fieldset-radio-button__radio-list">
+          <li class="fieldset-radio-button__radio-item">
+            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
+              value="thin" id="thin" checked>
+            <label for="thin">Похудение</label>
+          </li>
+          <li class="fieldset-radio-button__radio-item">
+            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-fat-item"
+              value="fat" id="fat">
+            <label for="fat">Набор массы</label>
+          </li>
+          <li class="fieldset-radio-button__radio-item">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-unknown-item"
+                value="unknown" id="unknown">
+              <label for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+        </ul>
       </fieldset>
 
       <fieldset class="main-form__item fieldset-man">

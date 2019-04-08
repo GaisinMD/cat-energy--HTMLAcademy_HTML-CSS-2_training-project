@@ -1,0 +1,72 @@
+.fieldset-radio-button {
+  border: 1px solid #cdcdcd;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.fieldset-radio-button__radio-list {
+  @include zero-list;
+}
+
+.fieldset-radio-button__radio-item {
+  padding-bottom: 26px;
+
+}
+
+.fieldset-radio-button__radio-item label {
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+
+/*Поведение на потом
+/*.fieldset-radio-button__radio-item input:checked+label::before {
+  border: 1px solid #000000;
+}
+
+.fieldset-radio-button__radio-item:hover label::before {
+  border: 1px solid red;
+}
+
+  /*
+.list-filter-bluetooth-item input:checked+label::before {
+  background-image: url("../img/radioon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.list-filter-bluetooth-item:hover label::before,
+.list-filter-bluetooth-item-item:focus+label::before {
+  opacity: 0.6;
+}
+
+.list-filter-bluetooth-item:active label::before {
+  opacity: 1;
+}
+
+.list-filter-bluetooth-item input:disabled+label::before,
+.list-filter-bluetooth-item input:disabled+label {
+  opacity: 0.25;
+}
+*/
