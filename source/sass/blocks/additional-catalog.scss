@@ -4,5 +4,59 @@
 }
 
 .additional-catalog__header {
+  position: relative;
+  @include oswald(300);
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
   margin: 0;
+  padding-bottom: 27px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+  }
+}
+
+.additional-catalog__special-offer {
+  display: flex;
+  justify-content: center;
+
+  @include arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  width: 280px;
+  height: 289px;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  p {
+    position: relative;
+    text-align: center;
+    width: 160px;
+    margin: 0;
+    padding-top: 190px;
+    padding-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 61px;
+      top: 65px;
+      left: 50px;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  }
 }

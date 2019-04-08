@@ -1,3 +1,28 @@
-.additional-catalog-list {
-  @include zero-list;
+.additional-list-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.additional-list-item__header {
+  margin: 0;
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-list-item__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
 }
