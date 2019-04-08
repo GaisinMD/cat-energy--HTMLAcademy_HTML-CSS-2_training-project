@@ -1,7 +1,27 @@
+.main-form {
+  padding-bottom: 34px;
+}
+
 .main-form__cat-fieldset {
   margin-bottom: 9px;
 }
 
 .main-form__fieldset-radio {
   margin-bottom: 30px;
+}
+
+.main-form__button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+.main-form__note {
+  margin: 0;
+  text-align: center;
+
+  @include arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }

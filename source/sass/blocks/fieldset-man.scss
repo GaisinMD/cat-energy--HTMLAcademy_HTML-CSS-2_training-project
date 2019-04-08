@@ -22,19 +22,52 @@
 
   padding-bottom: 30px;
   padding-right: 110px;
-  // Добавить зеленую полоску
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+  }
 }
 
 .fieldset-man__item {
+  position: relative;
   margin-top: 0px;
   margin-bottom: 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  &--mail::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    right: 15px;
+    top: 15px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &--phone::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    right: 13px;
+    top: 13px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 }
 
-// НЕ ЗАБУДЬ ДОБАВИТЬ ИКОНКИ
 .fieldset-man__input {
   color: #444444;
   border: 1px solid #cdcdcd;
@@ -42,5 +75,6 @@
   padding-left: 16px;
   margin-left: 18px;
   flex-grow: 1;
+  text-transform: uppercase;
 }
 
