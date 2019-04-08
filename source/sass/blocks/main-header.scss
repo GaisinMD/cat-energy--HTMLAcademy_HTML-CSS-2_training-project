@@ -5,6 +5,8 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  padding-top: 29px;
-  padding-bottom: 19px;
+
+  &--catalog {
+    color: #000000;
+  }
 }
