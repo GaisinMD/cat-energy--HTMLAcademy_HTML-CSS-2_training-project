@@ -23,3 +23,23 @@
   padding-top: 22px;
   padding-bottom: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .site-list__item {
+    border: none;
+    margin-right: 37px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {}

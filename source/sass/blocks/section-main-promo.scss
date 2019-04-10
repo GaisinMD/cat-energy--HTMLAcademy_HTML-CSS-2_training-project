@@ -20,3 +20,36 @@
   margin-right: auto;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .section-main-promo {
+    min-height: 650px;
+    margin-left: 30px;
+    padding-left: 90px;
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+
+  }
+
+  .section-main-promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  .section-main-promo__image {
+    display: none;
+  }
+
+  .section-main-promo__button {
+    width: 245px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

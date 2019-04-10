@@ -1,5 +1,4 @@
 .page-main--index {
-  background-color: #68b738;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -28,3 +27,21 @@
   padding-top: 29px;
   padding-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main--index {
+    background-image: none;
+  }
+
+  .page-main__main-header-index {
+    margin-left: 120px;
+    padding-bottom: 30px;
+  }
+
+  .page-main__section-promo {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

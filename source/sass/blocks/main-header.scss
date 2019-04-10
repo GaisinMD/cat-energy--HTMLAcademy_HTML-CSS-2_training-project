@@ -5,7 +5,8 @@
   color: #ffffff;
   text-align: center;
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   &--catalog {
     color: #000000;
@@ -15,3 +16,16 @@
     color: #000000;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 510px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

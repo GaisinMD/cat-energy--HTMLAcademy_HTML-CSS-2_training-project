@@ -88,3 +88,43 @@
     background-position: center top;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section-promo {
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .section-promo__header {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .section-promo__icon {
+    order: 1;
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-promo__image {
+      margin-top: 40%;
+      margin-left: 40%;
+  }
+
+
+
+  .section-promo__link {
+    order: 2;
+  }
+
+  .section-promo__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {}

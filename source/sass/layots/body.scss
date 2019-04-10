@@ -5,6 +5,18 @@ body {
   padding: 0;
   color: #000000;
   background-color: #ffffff;
-  width: 320px;
+  min-width: 320px;
   height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: $desktop-width;
+  }
 }

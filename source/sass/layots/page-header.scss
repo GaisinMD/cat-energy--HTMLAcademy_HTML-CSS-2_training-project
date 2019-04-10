@@ -15,3 +15,13 @@
   margin-top: 22px;
   margin-bottom: 23px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
