@@ -7,6 +7,42 @@
   padding-left: 22px;
   padding-top: 24px;
   padding-bottom: 22px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &--thin::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 22px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &--muscle::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 35px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 }
 
 .section-promo__header {
@@ -17,29 +53,8 @@
   color: #111111;
 
   margin: 0;
+  margin-left: 70px;
   padding-top: 5px;
-}
-
-.section-promo__icon {
-  order: -1;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #68b738;
-}
-
-.section-promo__image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  &--muscle-cat {
-    margin-top: 10px;
-    margin-left: -10px;
-  }
 }
 
 .section-promo__text {
@@ -107,8 +122,8 @@
   }
 
   .section-promo__image {
-      margin-top: 40%;
-      margin-left: 40%;
+    margin-top: 40%;
+    margin-left: 40%;
   }
 
 
