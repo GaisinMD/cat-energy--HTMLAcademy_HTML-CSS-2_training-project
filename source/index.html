@@ -4,17 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="logo page-header__logo">
-      <img class="logo__image page-header__logo-image" src="http://placehold.it/226x30" width="226" height="30"
+      <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="226" height="39"
         alt="Магазин CAT Energy">
     </a>
 
+    <button class="menu-toggle page-header__toggle" type="button">Открыть меню
+      <span></span>
+    </button>
+
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -33,21 +37,21 @@
   </header>
 
 
-  <main class="page-main">
-    <h1 class="main-header">Функциональное питание для котов</h1>
+  <main class="page-main page-main--index">
+    <h1 class="main-header page-main__main-header-index">Функциональное питание для котов</h1>
     <section class="section-main-promo">
-      <h2 class="visually-hiden">Главное промо</h2>
+      <h2 class="visually-hidden">Главное промо</h2>
       <b class="section-main-promo__slogan">Занялся собой? Займись котом!</b>
-      <img class="section-main-promo__image" src="http://placehold.it/280x270" alt="Лучший продукт!" width="280"
-        height="270">
-        <a href="form.html" class="button section-main-promo__button">Подобрать программу</a>
+      <img class="section-main-promo__image" src="img/index-can-mobile@1x.png" alt="Лучший продукт!" width="280"
+        height="271">
+      <a href="form.html" class="button section-main-promo__button">Подобрать программу</a>
     </section>
 
-    <section class="section-promo">
+    <section class="section-promo page-main__section-promo">
       <h2 class="section-promo__header">Похудение</h2>
-      <p class="section-promo__icon section-promo__icon--slime-cat">
+      <p class="section-promo__icon">
         <!-- В будущем поменяю на псевдоэлемент -->
-        <img class="section-promo__image" src="http://placehold.it/50x50" alt="Худой кот!" width="50" height="50">
+        <img class="section-promo__image" src="img/icon-cat-slim.svg" alt="Худой кот!" width="35" height="49">
       </p>
       <p class="section-promo__text">
         Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
@@ -56,11 +60,12 @@
       <a href="#" class="section-promo__link">Каталог Slim</a>
     </section>
 
-    <section class="section-promo">
+    <section class="section-promo page-main__section-promo">
       <h2 class="section-promo__header">Набор массы</h2>
-      <p class="section-promo__icon section-promo__icon--muscle-cat">
+      <p class="section-promo__icon">
         <!-- В будущем поменяю на псевдоэлемент -->
-        <img class="section-promo__image" src="http://placehold.it/50x50" alt="Мускулистый кот!" width="50" height="50">
+        <img class="section-promo__image section-promo__image--muscle-cat" src="img/icon-cat-pro.svg"
+          alt="Мускулистый кот!" width="67" height="28">
       </p>
       <p class="section-promo__text">
         Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
@@ -69,7 +74,7 @@
       <a href="#" class="section-promo__link">Каталог Pro</a>
     </section>
 
-    <section class="section-it-work">
+    <section class="section-it-work page-main__section-it-work">
       <h2 class="section-it-work__header">Как это работает</h2>
       <ul class="section-it-work__list advantages-list">
         <li class="advantages-list__item advantages-list__item--function-food">Функциональное питание содержит только
@@ -96,26 +101,24 @@
       <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
         часов в день. </p>
-      <div class="section-example__characteristics">
-        <p class="section-example__characteristic-block chacteristic-hole-block">
-          <span class="chacteristic-hole-block__title">Снижение веса</span>
-          <span class="chacteristic-hole-block__value">5 кг</span>
-        </p>
-        <p class="section-example__characteristic-block chacteristic-hole-block">
-          <span class="chacteristic-hole-block__title">Затрачено времени</span>
-          <span class="chacteristic-hole-block__value">60 дней</span>
-        </p>
-        <p class="section-example__characteristic-block chacteristic-hole-block chacteristic-hole-block--line-block">
-          <span class="chacteristic-hole-block__title">Затрачено времени</span>
-          <span class="chacteristic-hole-block__value">60 дней</span>
-        </p>
-      </div>
+      <ul class="section-example__characteristics">
+        <li class="section-example__characteristic-block section-example__characteristic-block--block">
+          5 кг
+          <span class="section-example__block-text">Снижение веса</span>
+        </li>
+        <li class="section-example__characteristic-block section-example__characteristic-block--block">
+          60 дней
+          <span class="section-example__block-text">Затрачено времени</span>
+        </li>
+        <li class="section-example__characteristic-block section-example__characteristic-block--inline">
+          Затраты на питание:
+          <span class="section-example__block-text section-example__block-text--inline">15 000 руб.</span>
+        </li>
+      </ul>
       <section class="cat-transformer section-example-transformer">
-        <h2 class="visually-hiden">Пример волшебного преобразования!</h2>
-        <img class="cat-transformer__cat-before" src="http://placehold.it/311x322" alt="Кот до" width="331"
-          height="322">
-        <img class="cat-transformer__cat-after" src="http://placehold.it/311x322" alt="Кот после" width="331"
-          height="322">
+        <h2 class="visually-hidden">Пример волшебного преобразования!</h2>
+        <img class="cat-transformer__cat-before" src="img/before-mobile@1x.png" alt="Кот до" width="320" height="240">
+        <img class="cat-transformer__cat-after" src="img/after-mobile@1x.png" alt="Кот после" width="320" height="240">
         <div class="cat-transformer__controller controller-before-after">
           <!-- Тут будет контролер -->
         </div>
@@ -127,19 +130,21 @@
 
   <footer class="page-footer">
     <section class="footer-contacts">
-      <h2 class="visually-hiden">Контакты</h2>
-      <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="footer-contacts__map" src="http://placehold.it/320x380" alt="Карта" width="320" height="380">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="page-footer__text-wraper">
+        <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img class="footer-contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
     </section>
 
     <a class="logo page-footer__logo">
-      <img class="logo__image page-footer__logo-image" src="http://placehold.it/226x30" width="128" height="24"
+      <img class="logo__image page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
         alt="Магазин CAT Energy">
     </a>
 
-    <section class="footer-social">
-      <h2 class="visually-hiden">Мы в социальных сетях</h2>
+    <section class="footer-social page-footer__social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer-social__list social-list">
         <li class="social-list__item social-list__item--vk">
           <a href="#">ВКонтакте</a>
@@ -154,10 +159,11 @@
     </section>
 
     <section class="footer-academy-promo">
-      <h2 class="visually-hiden">Промо HTML Academy</h2>
+      <h2 class="visually-hidden">Промо HTML Academy</h2>
       <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="footer-academy-promo__logo-image" src="http://placehold.it/27x34" alt="HTML Academy">
+        <img class="footer-academy-promo__logo-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27"
+          height="34">
       </a>
     </section>
 

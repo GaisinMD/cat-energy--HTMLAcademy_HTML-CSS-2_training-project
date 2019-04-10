@@ -1,0 +1,80 @@
+.fieldset-man {
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.fieldset-man__legend {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-transform: none;
+  width: 300px;
+
+  padding-bottom: 30px;
+  padding-right: 110px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+  }
+}
+
+.fieldset-man__item {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &--mail::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    right: 15px;
+    top: 15px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &--phone::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    right: 13px;
+    top: 13px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+.fieldset-man__input {
+  color: #444444;
+  border: 1px solid #cdcdcd;
+  line-height: 43px;
+  padding-left: 16px;
+  margin-left: 18px;
+  flex-grow: 1;
+  text-transform: uppercase;
+}

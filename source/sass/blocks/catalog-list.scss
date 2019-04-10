@@ -1,0 +1,5 @@
+.catalog-list {
+  @include zero-list;
+  display: flex;
+  flex-wrap: wrap;
+}

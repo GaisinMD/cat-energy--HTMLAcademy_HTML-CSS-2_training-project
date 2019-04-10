@@ -1,0 +1,11 @@
+.page-main-text {
+  @include oswald(300);
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  width: 250px;
+}

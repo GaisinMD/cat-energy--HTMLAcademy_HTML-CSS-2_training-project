@@ -4,17 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="logo page-header__logo">
-      <img class="logo__image page-header__logo-image" src="http://placehold.it/226x30" width="226" height="30"
+    <a href="index.html" class="logo page-header__logo">
+      <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="226" height="39"
         alt="Магазин CAT Energy">
     </a>
 
+    <button class="menu-toggle page-header__toggle" type="button">Открыть меню
+      <span></span>
+    </button>
+
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -33,11 +37,11 @@
   </header>
 
 
-  <main class="page-main">
-    <h1 class="page-main-header">Подбор программы</h1>
+  <main class="page-main page-main--form">
+    <h1 class="main-header main-header--form page-main__main-header-form">Подбор программы</h1>
     <p class="page-main-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="main-form__item fieldset-cat">
+      <fieldset class="main-form__item fieldset-cat main-form__cat-fieldset">
         <p class="fieldset-cat__item">
           <label class="fieldset-cat__label" for="cat-name">Имя:*</label>
           <input class="fieldset-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
@@ -52,14 +56,34 @@
         </p>
       </fieldset>
 
+      <fieldset class="main-form__item fieldset-radio-button main-form__fieldset-radio">
+        <ul class="fieldset-radio-button__radio-list">
+          <li class="fieldset-radio-button__radio-item">
+            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
+              value="thin" id="thin" checked>
+            <label for="thin">Похудение</label>
+          </li>
+          <li class="fieldset-radio-button__radio-item">
+            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-fat-item"
+              value="fat" id="fat">
+            <label for="fat">Набор массы</label>
+          </li>
+          <li class="fieldset-radio-button__radio-item">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-unknown-item"
+                value="unknown" id="unknown">
+              <label for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+        </ul>
+      </fieldset>
+
       <fieldset class="main-form__item fieldset-man">
         <legend class="fieldset-man__legend">Контактные данные (владельца кота)</legend>
-        <p class="fieldset-man__item">
+        <p class="fieldset-man__item fieldset-man__item--mail">
           <label class="fieldset-man__label" for="man-mail">E-mail:*</label>
           <input class="fieldset-man__input" id="man-mail" type="email" name="man-mail"
             placeholder="kuklachev@gmail.com">
         </p>
-        <p class="fieldset-man__item">
+        <p class="fieldset-man__item fieldset-man__item--phone">
           <label class="fieldset-man__label" for="man-mail">Телефон:*</label>
           <input class="fieldset-man__input" id="man-phone" type="tel" name="man-phone" placeholder="8 (960) 900-60-90">
         </p>
@@ -94,7 +118,7 @@
         </ul>
       </fieldset>
 
-      <button type="submit" class="button main-form__button">Отправить заявку</button>
+      <button type="submit" class="button button--button main-form__button">Отправить заявку</button>
 
       <p class="main-form__note">* — Обязательные поля</p>
 
@@ -104,20 +128,22 @@
 
 
   <footer class="page-footer">
-    <section class="footer-contacts">
-      <h2 class="visually-hiden">Контакты</h2>
-      <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="footer-contacts__map" src="http://placehold.it/320x380" alt="Карта" width="320" height="380">
+    <section class="footer-contacts footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="page-footer__text-wraper page-footer__text-wraper--color">
+        <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img class="footer-contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
     </section>
 
     <a href="index.html" class="logo page-footer__logo">
-      <img class="logo__image page-footer__logo-image" src="http://placehold.it/226x30" width="128" height="24"
+      <img class="logo__image page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
         alt="Магазин CAT Energy">
     </a>
 
-    <section class="footer-social">
-      <h2 class="visually-hiden">Мы в социальных сетях</h2>
+    <section class="footer-social page-footer__social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer-social__list social-list">
         <li class="social-list__item social-list__item--vk">
           <a href="#">ВКонтакте</a>
@@ -132,10 +158,11 @@
     </section>
 
     <section class="footer-academy-promo">
-      <h2 class="visually-hiden">Промо HTML Academy</h2>
+      <h2 class="visually-hidden">Промо HTML Academy</h2>
       <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="footer-academy-promo__logo-image" src="http://placehold.it/27x34" alt="HTML Academy">
+        <img class="footer-academy-promo__logo-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27"
+          height="34">
       </a>
     </section>
 

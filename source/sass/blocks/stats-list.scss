@@ -1,0 +1,13 @@
+.stats-list {
+  @include arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  width: 140px;
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

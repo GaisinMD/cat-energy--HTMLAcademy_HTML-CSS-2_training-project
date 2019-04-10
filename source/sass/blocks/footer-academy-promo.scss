@@ -1,0 +1,24 @@
+.footer-academy-promo {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+
+.footer-academy-promo__text-link {
+  @include arial;
+  font-size: 16px;
+  line-height: 34px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.footer-academy-promo__logo-link {
+  display: block;
+}
+
+.footer-academy-promo__logo-image {
+  display: block;
+}

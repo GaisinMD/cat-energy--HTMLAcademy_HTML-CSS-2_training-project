@@ -1,0 +1,17 @@
+.main-header {
+  @include oswald(300);
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+
+  margin: 0;
+
+  &--catalog {
+    color: #000000;
+  }
+
+  &--form {
+    color: #000000;
+  }
+}
