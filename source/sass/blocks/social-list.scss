@@ -1,8 +1,6 @@
 .social-list {
   @include zero-list;
-}
 
-.social-list {
   display: flex;
   flex-wrap: wrap;
 }

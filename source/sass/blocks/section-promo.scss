@@ -10,13 +10,13 @@
 }
 
 .section-promo__header {
-  margin: 0;
   @include oswald(300);
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: #111111;
 
+  margin: 0;
   padding-top: 5px;
 }
 
@@ -43,12 +43,14 @@
 }
 
 .section-promo__text {
-  position: relative;
   @include arial;
   font-size: 14px;
   line-height: 18px;
-  width: 225px;
   color: #444444;
+
+  position: relative;
+
+  width: 225px;
   margin-top: 22px;
   margin-bottom: 19px;
   padding-bottom: 23px;
@@ -65,13 +67,14 @@
 }
 
 .section-promo__link {
-  position: relative;
   @include oswald(300);
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+
+  position: relative;
 
   &::after {
     content: "";

@@ -1,12 +1,10 @@
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -18,7 +16,6 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;

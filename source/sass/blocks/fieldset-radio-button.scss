@@ -1,16 +1,17 @@
 .fieldset-radio-button {
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+
   border: 1px solid #cdcdcd;
   margin-left: 0;
   margin-right: 0;
   padding-left: 20px;
   padding-top: 20px;
   padding-right: 20px;
-  padding-bottom: 0px;
-  @include oswald(300);
-  font-size: 16px;
-  line-height: 18px;
-  color: #222222;
-  text-transform: uppercase;
+  padding-bottom: 0;
 }
 
 .fieldset-radio-button__radio-list {
@@ -19,7 +20,6 @@
 
 .fieldset-radio-button__radio-item {
   padding-bottom: 26px;
-
 }
 
 .fieldset-radio-button__radio-item label {
@@ -31,8 +31,8 @@
     content: "";
     width: 30px;
     height: 30px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 
     border: 1px solid #cdcdcd;
     border-radius: 50%;

@@ -12,6 +12,7 @@
 
 .site-list__item a {
   display: block;
+
   @include oswald(300);
   font-size: 20px;
   line-height: 20px;

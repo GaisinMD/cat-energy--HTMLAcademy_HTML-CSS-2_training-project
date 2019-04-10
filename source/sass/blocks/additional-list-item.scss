@@ -9,8 +9,9 @@
 }
 
 .additional-list-item__header {
-  margin: 0;
   @include oswald(300);
+
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
