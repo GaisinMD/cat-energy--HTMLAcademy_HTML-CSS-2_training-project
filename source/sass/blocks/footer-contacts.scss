@@ -34,3 +34,35 @@
   margin-right: 20px;
   width: 135px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__text-wraper {
+    justify-content: space-between;
+  }
+
+  .footer-contacts__text {
+    font-size: 20px;
+    line-height: 25px;
+    width: 155px;
+    margin-top: 0;
+    margin-left: 71px;
+    margin-bottom: 55px;
+  }
+
+  .footer-contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    margin: 0;
+    margin-right: 72px;
+    margin-bottom: 55px;
+  }
+
+  .footer-contacts__address span{
+    display: block;
+    padding-top: 20px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {}

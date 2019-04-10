@@ -15,3 +15,11 @@
 .page-footer__social {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {}
