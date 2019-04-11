@@ -3,3 +3,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {}
+
