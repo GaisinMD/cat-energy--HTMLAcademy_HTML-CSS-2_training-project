@@ -35,7 +35,7 @@
   color: #ffffff;
 
   width: 280px;
-  height: 289px;
+  min-height: 289px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -62,3 +62,66 @@
     }
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .additional-catalog {
+    padding-left: 30px;
+    padding-bottom: 76px;
+  }
+
+  .additional-catalog__header {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding-left: 37px;
+    padding-bottom: 27px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      left: -30px;
+      top: 20px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 335px;
+      height: 3px;
+      right: 0;
+      top: 20px;
+      background-color: #68b738;
+    }
+  }
+
+  .additional-catalog__special-offer {
+    justify-content: flex-end;
+
+    width: 708px;
+    min-height: 200px;
+
+    // ВРЕМЕННО
+    background-repeat: repeat;
+
+    p {
+      position: relative;
+      text-align: left;
+      width: 160px;
+      margin: 0;
+      padding-top: 70px;
+      padding-bottom: 20px;
+      margin-right: 125px;
+
+      &::before {
+        top: 75px;
+        left: -320px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {}

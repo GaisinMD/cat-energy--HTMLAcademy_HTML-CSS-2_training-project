@@ -3,3 +3,13 @@
   padding-right: 20px;
   padding-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-catalog-list {
+    @include zero-list;
+    margin-right: 30px;
+    padding-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {}
