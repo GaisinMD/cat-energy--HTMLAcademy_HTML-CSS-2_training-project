@@ -3,13 +3,11 @@
 
   border: none;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 16px;
   line-height: 18px;
-  color: #111111;
+  color: #222222;
   text-transform: uppercase;
 }
 
@@ -30,3 +28,17 @@
   margin-left: 18px;
   flex-grow: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-cat {
+    padding-right: 67px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .fieldset-cat__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

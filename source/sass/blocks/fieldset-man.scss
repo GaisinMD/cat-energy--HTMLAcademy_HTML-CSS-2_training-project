@@ -7,8 +7,6 @@
 
   border: none;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
   padding-left: 20px;
   padding-bottom: 15px;
 }
@@ -78,3 +76,68 @@
   flex-grow: 1;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-man {
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .fieldset-man__legend {
+    font-size: 36px;
+    line-height: 36px;
+    width: 768px;
+
+    padding-bottom: 73px;
+    padding-left: 71px;
+    padding-right: 177px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 31px;
+      height: 3px;
+      left: 0;
+      top: 17px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      width: 140px;
+      top: 17px;
+    }
+  }
+
+  .fieldset-man__item {
+    margin-left: 71px;
+    margin-right: 65px;
+
+    &--mail::after {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 14px;
+      right: 15px;
+      top: 15px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &--phone::after {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 21px;
+      right: 13px;
+      top: 13px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {}

@@ -9,3 +9,15 @@
   padding-bottom: 35px;
   width: 250px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main-text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 70px;
+    padding-bottom: 65px;
+    width: 420px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

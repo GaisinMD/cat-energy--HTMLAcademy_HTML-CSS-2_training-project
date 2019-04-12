@@ -3,11 +3,30 @@
 }
 
 .main-form__cat-fieldset {
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 9px;
 }
 
 .main-form__fieldset-radio {
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 30px;
+}
+
+.main-form__man-fieldset {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-form__comment-fieldset {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-form__filter-fieldset {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .main-form__button {
@@ -25,3 +44,46 @@
   line-height: 16px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .main-form__cat-fieldset {
+    margin-left: 52px;
+    margin-bottom: 51px;
+  }
+
+  .main-form__fieldset-radio {
+    margin-left: 71px;
+    margin-right: 67px;
+    margin-bottom: 79px;
+  }
+
+  .main-form__man-fieldset {
+    margin-bottom: 51px;
+  }
+
+  .main-form__comment-fieldset {
+    margin-bottom: 51px;
+  }
+
+  .main-form__bottom-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__button {
+    margin-left: 71px;
+    margin-right: 60px;
+    margin-bottom: 37px;
+    width: 283px;
+    height: 52px;
+  }
+
+  .main-form__note {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

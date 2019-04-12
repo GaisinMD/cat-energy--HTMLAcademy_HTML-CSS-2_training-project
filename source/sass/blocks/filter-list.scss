@@ -1,6 +1,5 @@
 .filter-list {
   @include zero-list;
-  text-transform: uppercase;
 }
 
 .filter-list__item {
@@ -22,3 +21,28 @@
     border: 1px solid #cdcdcd;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-list__item {
+    width: 345px;
+    padding-bottom: 24px;
+    margin-bottom: 34px;
+  }
+
+  .filter-list__label {
+    padding-top: 5px;
+    padding-left: 59px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {}

@@ -1,13 +1,12 @@
 .fieldset-filter {
   @include oswald(300);
-  font-size: 16px;
-  line-height: 18px;
-  color: #111111;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
 
   border: none;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
   padding-left: 20px;
   padding-bottom: 15px;
 }
@@ -33,3 +32,39 @@
     background-color: #68b738;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-filter {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+
+  .fieldset-filter__legend {
+    font-size: 36px;
+    line-height: 36px;
+    width: 768px;
+
+    padding-bottom: 64px;
+    padding-left: 71px;
+    padding-right: 177px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 31px;
+      height: 3px;
+      left: 0;
+      top: 18px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      width: 450px;
+      top: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {}
