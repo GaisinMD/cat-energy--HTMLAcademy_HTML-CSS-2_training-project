@@ -15,8 +15,8 @@
     content: "";
 
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
     width: 25px;
     height: 2px;
@@ -26,14 +26,13 @@
   }
 
   &--active {
-
     &::before,
     &::after {
       content: "";
 
       position: absolute;
       top: 10px;
-      left: 0px;
+      left: 0;
 
       width: 26px;
       height: 2px;
