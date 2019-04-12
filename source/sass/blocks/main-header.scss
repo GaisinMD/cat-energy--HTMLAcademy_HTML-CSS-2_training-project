@@ -5,8 +5,7 @@
   color: #ffffff;
   text-align: center;
 
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 250px;
 
   &--catalog {
     color: #000000;
@@ -25,6 +24,10 @@
     line-height: 60px;
     text-align: left;
     width: 510px;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }
 

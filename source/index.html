@@ -16,8 +16,8 @@
         alt="Магазин CAT Energy">
     </a>
 
-    <button class="menu-toggle page-header__toggle" type="button">Открыть меню
-      <span></span>
+    <button class="menu-toggle page-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
     </button>
 
     <nav class="main-nav">
@@ -40,7 +40,9 @@
 
 
   <main class="page-main page-main--index">
-    <h1 class="main-header page-main__main-header-index">Функциональное питание для котов</h1>
+    <div class="global-wrapper">
+      <h1 class="main-header page-main__main-header-index">Функциональное питание для котов</h1>
+    </div>
     <section class="section-main-promo">
       <h2 class="visually-hidden">Главное промо</h2>
       <b class="section-main-promo__slogan">Занялся собой? Займись котом!</b>
@@ -74,7 +76,8 @@
           полезные питательные
           вещества.
         </li>
-        <li class="advantages-list__item advantages-list__item--poowder-form">Выпускается в виде порошка, который нужно
+        <li class="advantages-list__item advantages-list__item--poowder-form">Выпускается в виде порошка, который
+          нужно
           лишь залить кипятком и
           готово.
         </li>
@@ -82,54 +85,63 @@
           наше функциональное
           питание.
         </li>
-        <li class="advantages-list__item advantages-list__item--early-results">Уже через месяц наслаждайтесь изменениями
+        <li class="advantages-list__item advantages-list__item--early-results">Уже через месяц наслаждайтесь
+          изменениями
           к лучшему вашего
           питомца!
         </li>
       </ul>
     </section>
 
-    <section class="section-example">
-      <h2 class="section-example__header">Живой пример</h2>
-      <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день. </p>
-      <ul class="section-example__characteristics">
-        <li class="section-example__characteristic-block section-example__characteristic-block--block">
-          5 кг
-          <span class="section-example__block-text">Снижение веса</span>
-        </li>
-        <li class="section-example__characteristic-block section-example__characteristic-block--block">
-          60 дней
-          <span class="section-example__block-text">Затрачено времени</span>
-        </li>
-        <li class="section-example__characteristic-block section-example__characteristic-block--inline">
-          Затраты на питание:
-          <span class="section-example__block-text section-example__block-text--inline">15 000 руб.</span>
-        </li>
-      </ul>
-      <section class="cat-transformer section-example-transformer">
-        <h2 class="visually-hidden">Пример волшебного преобразования!</h2>
-        <img class="cat-transformer__cat-before" src="img/before-mobile@1x.png" alt="Кот до" width="320" height="240">
-        <img class="cat-transformer__cat-after" src="img/after-mobile@1x.png" alt="Кот после" width="320" height="240">
-        <div class="cat-transformer__controller controller-before-after">
-          <!-- Тут будет контролер -->
-        </div>
+
+    <div class="global-wraper global-wraper--color">
+      <section class="section-example page-main__section-example">
+        <h2 class="section-example__header">Живой пример</h2>
+        <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день. </p>
+        <ul class="section-example__characteristics">
+          <li class="section-example__characteristic-block section-example__characteristic-block--block">
+            5 кг
+            <span class="section-example__block-text">Снижение веса</span>
+          </li>
+          <li class="section-example__characteristic-block section-example__characteristic-block--block">
+            60 дней
+            <span class="section-example__block-text">Затрачено времени</span>
+          </li>
+          <li class="section-example__characteristic-block section-example__characteristic-block--inline">
+            Затраты на питание:
+            <span class="section-example__block-text section-example__block-text--inline">15 000 руб.</span>
+          </li>
+        </ul>
+        <section class="cat-transformer section-example-transformer">
+          <h2 class="visually-hidden">Пример волшебного преобразования!</h2>
+          <img class="cat-transformer__cat-before" src="img/before-mobile@1x.png" alt="Кот до" width="320" height="240">
+          <img class="cat-transformer__cat-after" src="img/after-mobile@1x.png" alt="Кот после" width="320"
+            height="240">
+          <div class="cat-transformer__controller controller-before-after">
+            <!-- Тут будет контролер -->
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
 
   </main>
 
 
   <footer class="page-footer">
-    <section class="footer-contacts">
+    <section class="footer-contacts page-footer__footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="page-footer__text-wraper">
         <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
         <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-      <img class="footer-contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
     </section>
+
+    <div class="global-wraper global-wraper--color">
+      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
+    </div>
 
     <div class="page-footer__bottom-wraper">
       <a class="logo page-footer__logo">
@@ -152,7 +164,7 @@
         </ul>
       </section>
 
-      <section class="footer-academy-promo">
+      <section class="footer-academy-promo page-footer__footer-academy-promo">
         <h2 class="visually-hidden">Промо HTML Academy</h2>
         <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">

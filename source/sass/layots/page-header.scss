@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 }
 
 .page-header__logo {
@@ -11,20 +15,31 @@
 }
 
 .page-header__toggle {
-  margin-right: 19px;
-  margin-top: 22px;
+  right: 19px;
+  top: 22px;
   margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
+
   .page-header__toggle {
     display: none;
   }
+
   .page-header__logo {
     margin-left: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
 
+  .page-header__logo {
+    margin-left: 110px;
+  }
 }

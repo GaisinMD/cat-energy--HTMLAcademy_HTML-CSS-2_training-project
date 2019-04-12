@@ -1,5 +1,6 @@
-.page-footer {
-  background-color: #f2f2f2;
+.page-footer__footer-contacts {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-footer__logo {
@@ -12,8 +13,24 @@
   margin-right: auto;
 }
 
+.page-footer__map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__bottom-wraper {
+  padding-top: 39px;
+  background-color: #f2f2f2;
+}
+
 .page-footer__social {
   margin-bottom: 20px;
+}
+
+.page-footer__footer-academy-promo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {

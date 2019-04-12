@@ -39,6 +39,13 @@
       margin-right: 0;
     }
   }
+
+  .site-list__item a {
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {}

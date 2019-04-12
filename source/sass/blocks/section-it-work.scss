@@ -1,5 +1,5 @@
 .section-it-work {
-  padding-left: 20px;
+  width: 280px;
 }
 
 .section-it-work__header {
@@ -13,6 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .section-it-work {
+    width: 768px;
     padding-left: 30px;
     padding-top: 20px;
   }
