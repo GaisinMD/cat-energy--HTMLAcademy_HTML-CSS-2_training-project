@@ -51,3 +51,9 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .menu-toggle {
+    display: none;
+  }
+}
