@@ -29,10 +29,11 @@
   .filter-list {
     display: flex;
     flex-wrap: wrap;
+    width: 630px;
   }
 
   .filter-list__item {
-    width: 345px;
+    width: 315px;
     padding-bottom: 24px;
     margin-bottom: 34px;
   }

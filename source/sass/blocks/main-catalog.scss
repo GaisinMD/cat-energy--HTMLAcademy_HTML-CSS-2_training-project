@@ -1,3 +1,10 @@
 .main-catalog {
   background-color: transparent;
 }
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    @include margin-auto;
+    width: 768px;
+  }
+}

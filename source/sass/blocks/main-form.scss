@@ -40,8 +40,6 @@
 
 @media (min-width: $tablet-width) {
   .main-form__fieldset-radio {
-    margin-left: 71px;
-    margin-right: 67px;
     margin-bottom: 79px;
   }
 
@@ -55,7 +53,7 @@
 
   .main-form__bottom-item-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    width: 630px;
   }
 
   .main-form__button {

@@ -7,7 +7,6 @@
 
   border: none;
   padding: 0;
-  padding-left: 20px;
   padding-bottom: 15px;
 
   position: relative;
@@ -42,6 +41,7 @@
 
   padding-bottom: 30px;
   padding-right: 110px;
+  padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -102,9 +102,19 @@
 
 @media (min-width: $tablet-width) {
   .fieldset-man {
-    padding-left: 0;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      right: 0;
+      top: 20px;
+      background-color: #68b738;
+      z-index: -1;
+    }
   }
 
   .fieldset-man__legend {
@@ -119,17 +129,21 @@
     &::before {
       position: absolute;
       content: "";
-      width: 31px;
+      width: 41px;
       height: 3px;
       left: 0;
-      top: 17px;
+      top: 20px;
       background-color: #68b738;
     }
 
     &::after {
       width: 140px;
-      top: 17px;
+      top: 20px;
     }
+  }
+
+  .fieldset-man__list {
+    width: 768px;
   }
 
   .fieldset-man__item {

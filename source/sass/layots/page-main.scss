@@ -5,46 +5,39 @@
 }
 
 .page-main__main-header-index {
+  @include margin-auto;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-main__section-main-promo {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 }
 
 .page-main__section-promo {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
   margin-bottom: 22px;
 }
 
 .page-main__section-it-work {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
   margin-bottom: 47px;
 }
 
 .page-main__section-example {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 }
 
 .page-main__main-header-catalog {
+  @include margin-auto;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-main__main-header-form {
+  @include margin-auto;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,18 +53,10 @@
     margin-bottom: 50px;
   }
 
-  .page-main__main-header-catalog {
-    padding-left: 30px;
-  }
-
-  .page-main__main-header-form {
-    padding-left: 30px;
-    padding-bottom: 53px;
-  }
-
   .page-main__main-catalog {
     margin-bottom: 50px;
   }
 }
+
 
 @media (min-width: $desktop-width) {}

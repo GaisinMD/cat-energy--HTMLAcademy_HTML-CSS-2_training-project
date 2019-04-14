@@ -44,14 +44,22 @@
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    padding-left: 40px;
-    padding-top: 25px;
-    padding-right: 40px;
-    padding-bottom: 27px;
+
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
 
     &:last-child {
       border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
+  }
+
+  .additional-list-item__wrapper {
+    width: 708px;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 27px;
   }
 
   .additional-list-item__header {
