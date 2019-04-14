@@ -5,17 +5,29 @@
   color: #ffffff;
   text-align: center;
 
-  width: 250px;
+  width: 320px;
 
-  padding-top: 29px;
-  padding-bottom: 19px;
+  &--index {
+    padding-top: 29px;
+    padding-bottom: 19px;
+  }
 
   &--catalog {
     color: #000000;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    padding-left: 22px;
+    width: 320px;
+    text-align: left;
   }
 
   &--form {
     color: #000000;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    padding-left: 22px;
+    width: 320px;
+    text-align: left;
   }
 }
 
@@ -27,9 +39,14 @@
     line-height: 60px;
     text-align: left;
     width: 768px;
-    padding-left: 120px;
-    padding-right: 230px;
-    padding-bottom: 30px;
+
+    &--index {
+      padding-left: 120px;
+      padding-right: 230px;
+      padding-bottom: 30px;
+    }
+
+    &--catalog {}
   }
 }
 

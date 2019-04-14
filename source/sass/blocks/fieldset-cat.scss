@@ -5,6 +5,7 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  width: 320px;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -31,6 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .fieldset-cat {
+    width: $tablet-width;
     padding-right: 67px;
     font-size: 20px;
     line-height: 20px;

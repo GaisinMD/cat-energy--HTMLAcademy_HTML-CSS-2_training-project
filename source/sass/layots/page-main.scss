@@ -34,13 +34,17 @@
 }
 
 .page-main__main-header-catalog {
-  padding-top: 29px;
-  padding-bottom: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-main__main-header-form {
-  padding-top: 29px;
-  padding-bottom: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,8 @@
 .filter-list {
   @include zero-list;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filter-list__item {

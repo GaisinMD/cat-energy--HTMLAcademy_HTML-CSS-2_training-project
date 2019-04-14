@@ -1,6 +1,5 @@
 .fieldset-comment {
   @include oswald(300);
-
   font-size: 16px;
   line-height: 18px;
   color: #111111;
@@ -9,18 +8,41 @@
   padding: 0;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 250px);
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+.fieldset-man__list {
+  @include zero-list;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fieldset-comment__legend {
   position: relative;
   font-size: 24px;
   line-height: 24px;
+  background-color: #ffffff;
   color: #111111;
   text-transform: none;
-  width: 300px;
+  width: 320px;
 
   padding-bottom: 30px;
   padding-right: 110px;
+  margin-left: auto;
+  margin-right: auto;
 
   &::after {
     position: absolute;
@@ -33,13 +55,21 @@
   }
 }
 
+.fieldset-comment__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  min-height: 151px;
+}
+
 .fieldset-comment__text {
+  display: block;
   width: 280px;
   height: 150px;
+  resize: none;
   padding-left: 16px;
   padding-top: 13px;
   margin-bottom: 16px;
-  resize: none;
 
   &::placeholder {
     text-transform: uppercase;

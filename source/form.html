@@ -10,31 +10,33 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="index.html" class="logo page-header__logo">
-      <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="226" height="39"
-        alt="Магазин CAT Energy">
-    </a>
+  <header class="page-header page-header--mod">
+    <div class="page-header__wrapper">
+      <a href="index.html" class="logo page-header__logo">
+        <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="226" height="39"
+          alt="Магазин CAT Energy">
+      </a>
 
-    <button class="menu-toggle page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <button class="menu-toggle page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
   </header>
 
@@ -80,21 +82,26 @@
 
       <fieldset class="fieldset-man main-form__item main-form__man-fieldset">
         <legend class="fieldset-man__legend">Контактные данные (владельца кота)</legend>
-        <p class="fieldset-man__item fieldset-man__item--mail">
-          <label class="fieldset-man__label" for="man-mail">E-mail:*</label>
-          <input class="fieldset-man__input" id="man-mail" type="email" name="man-mail"
-            placeholder="kuklachev@gmail.com">
-        </p>
-        <p class="fieldset-man__item fieldset-man__item--phone">
-          <label class="fieldset-man__label" for="man-mail">Телефон:*</label>
-          <input class="fieldset-man__input" id="man-phone" type="tel" name="man-phone" placeholder="8 (960) 900-60-90">
-        </p>
+        <ul class="fieldset-man__list">
+          <li class="fieldset-man__item fieldset-man__item--mail">
+            <label class="fieldset-man__label" for="man-mail">E-mail:*</label>
+            <input class="fieldset-man__input" id="man-mail" type="email" name="man-mail"
+              placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="fieldset-man__item fieldset-man__item--phone">
+            <label class="fieldset-man__label" for="man-mail">Телефон:*</label>
+            <input class="fieldset-man__input" id="man-phone" type="tel" name="man-phone"
+              placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="fieldset-comment main-form__item main-form__comment-fieldset">
         <legend class="fieldset-comment__legend">Комментарий</legend>
+        <div class="fieldset-comment__wrapper">
         <textarea class="fieldset-comment__text" id="comment-text" name="comment-text"
           placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
 
       <fieldset class="fieldset-filter main-form__item main-form__filter-fieldset">
@@ -131,47 +138,53 @@
 
 
   <footer class="page-footer">
-    <section class="footer-contacts footer-contacts">
+    <section class="footer-contacts page-footer__footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__text-wraper page-footer__text-wraper--color">
+      <div class="page-footer__text-wraper">
         <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-      <img class="footer-contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
     </section>
 
-    <div class="page-footer__bottom-wraper">
-      <a href="index.html" class="logo page-footer__logo">
-        <img class="logo__image page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
-          alt="Магазин CAT Energy">
-      </a>
+    <div class="global-wraper global-wraper--color-all">
+      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
+    </div>
 
-      <section class="footer-social page-footer__social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social__list social-list">
-          <li class="social-list__item social-list__item--vk">
-            <a href="#">ВКонтакте</a>
-          </li>
-          <li class="social-list__item social-list__item--instagramm">
-            <a href="#">Instagramm</a>
-          </li>
-          <li class="social-list__item social-list__item--facebook">
-            <a href="#">Facebook</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-academy-promo">
-        <h2 class="visually-hidden">Промо HTML Academy</h2>
-        <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer-academy-promo__logo-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27"
-            height="34">
+    <div class="global-wraper global-wraper--color-all">
+      <div class="page-footer__bottom-wraper">
+        <a href="index.html" class="logo page-footer__logo">
+          <img class="logo__image page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
+            alt="Магазин CAT Energy">
         </a>
-      </section>
+
+        <section class="footer-social page-footer__social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="footer-social__list social-list">
+            <li class="social-list__item social-list__item--vk">
+              <a href="#">ВКонтакте</a>
+            </li>
+            <li class="social-list__item social-list__item--instagramm">
+              <a href="#">Instagramm</a>
+            </li>
+            <li class="social-list__item social-list__item--facebook">
+              <a href="#">Facebook</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-academy-promo page-footer__footer-academy-promo">
+          <h2 class="visually-hidden">Промо HTML Academy</h2>
+          <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="footer-academy-promo__logo-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27"
+              height="34">
+          </a>
+        </section>
+      </div>
     </div>
 
   </footer>
+
 
 </body>
 

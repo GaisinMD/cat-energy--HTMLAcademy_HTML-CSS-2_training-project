@@ -9,6 +9,26 @@
   padding: 0;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 250px);
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+.fieldset-man__list {
+  @include zero-list;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fieldset-man__legend {
@@ -16,11 +36,14 @@
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  background-color: #ffffff;
   text-transform: none;
-  width: 300px;
+  width: 320px;
 
   padding-bottom: 30px;
   padding-right: 110px;
+  margin-left: auto;
+  margin-right: auto;
 
   &::after {
     position: absolute;

@@ -1,27 +1,46 @@
 .additional-catalog {
   padding-top: 30px;
-  padding-left: 20px;
   padding-bottom: 35px;
 }
 
 .additional-catalog__header {
-  @include oswald(300);
-
   position: relative;
-  font-size: 24px;
-  line-height: 24px;
-  color: #111111;
-  margin: 0;
   padding-bottom: 27px;
+
+  h2 {
+    @include oswald(300);
+    font-size: 24px;
+    line-height: 24px;
+    color: #111111;
+    background-color: #ffffff;
+
+    position: relative;
+    margin: 0;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 3px;
+      right: 0;
+      top: 13px;
+      background-color: #68b738;
+    }
+  }
 
   &::after {
     position: absolute;
     content: "";
-    width: 53px;
+    width: calc(100% - 250px);
     height: 3px;
     right: 0;
     top: 13px;
     background-color: #68b738;
+    z-index: -1;
   }
 }
 
@@ -35,6 +54,8 @@
   color: #ffffff;
 
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 289px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");

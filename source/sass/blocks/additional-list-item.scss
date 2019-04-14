@@ -1,11 +1,19 @@
 .additional-list-item {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  padding-top: 12px;
-  padding-bottom: 17px;
 
   &:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
+}
+
+.additional-list-item__wrapper {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .additional-list-item__header {

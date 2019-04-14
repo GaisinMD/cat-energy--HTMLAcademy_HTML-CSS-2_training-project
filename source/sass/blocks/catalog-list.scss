@@ -1,12 +1,18 @@
 .catalog-list {
   @include zero-list;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+.catalog-list__item {
+  flex-grow: 2;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list {
     padding-left: 30px;
+    flex-direction: row;
   }
 }
 

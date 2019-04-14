@@ -5,9 +5,12 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-bottom: 35px;
-  width: 250px;
+  padding-right: 70px;;
+  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
