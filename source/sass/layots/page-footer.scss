@@ -1,6 +1,17 @@
+.page-footer__text-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+
+  padding-top: 30px;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
 .page-footer__footer-contacts {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 }
 
 .page-footer__logo {
@@ -9,14 +20,12 @@
 }
 
 .page-footer__logo-image {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 }
 
 .page-footer__map {
+  @include margin-auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-footer__bottom-wraper {
@@ -29,24 +38,26 @@
 }
 
 .page-footer__footer-academy-promo {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 }
 
+//
 @media (min-width: $tablet-width) {
   .page-footer {
     background-color: #ffffff;
+  }
+
+  .page-footer__text-wraper {
+    justify-content: space-between;
   }
 
   .page-footer__bottom-wraper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 768px;
+
+    @include margin-auto;
+    width: 738px;
   }
 
   .page-footer__footer-academy-promo {
@@ -55,4 +66,44 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .page-foter__map-wraper {
+    @include margin-auto;
+    width: 1440px;
+    min-height: 400px;
+    padding-top: 95px;
+
+    background-color: #ffffff;
+    background-image: url("/img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .page-footer__footer-contacts {
+    margin-left: 0;
+  }
+
+  .page-footer__text-wraper {
+    margin-left: 110px;
+    width: 570px;
+    min-height: 201px;
+    padding-top: 65px;
+    padding-bottom: 5px;
+  }
+
+  .page-footer__map {
+    display: none;
+  }
+
+  .page-footer__bottom-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include margin-auto;
+    width: 1220px;
+    padding-top: 64px;
+    padding-bottom: 30px;
+  }
+}

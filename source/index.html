@@ -22,19 +22,17 @@
       </button>
 
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
 
@@ -42,32 +40,36 @@
 
 
   <main class="page-main page-main--index">
-    <h1 class="main-header main-header--index page-main__main-header-index">Функциональное питание для котов</h1>
-    <section class="section-main-promo page-main__section-main-promo">
-      <h2 class="visually-hidden">Главное промо</h2>
-      <b class="section-main-promo__slogan">Занялся собой? Займись котом!</b>
-      <img class="section-main-promo__image" src="img/index-can-mobile@1x.png" alt="Лучший продукт!" width="280"
-        height="271">
-      <a href="form.html" class="button section-main-promo__button">Подобрать программу</a>
-    </section>
+    <div class="page-main__top-wrapper">
+      <h1 class="main-header main-header--index page-main__main-header-index">Функциональное питание для котов</h1>
+      <section class="section-main-promo page-main__section-main-promo">
+        <h2 class="visually-hidden">Главное промо</h2>
+        <b class="section-main-promo__slogan">Занялся собой? Займись котом!</b>
+        <img class="section-main-promo__image" src="img/index-can-mobile@1x.png" alt="Лучший продукт!" width="280"
+          height="271">
+        <a href="form.html" class="button section-main-promo__button">Подобрать программу</a>
+      </section>
+    </div>
 
-    <section class="section-promo section-promo--thin page-main__section-promo">
-      <h2 class="section-promo__header">Похудение</h2>
-      <p class="section-promo__text">
-        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-        поможет вашему питомцу сбросить лишний вес.
-      </p>
-      <a href="#" class="section-promo__link">Каталог Slim</a>
-    </section>
+    <div class="page-main__promos-wrapper">
+      <section class="section-promo section-promo--thin page-main__section-promo">
+        <h2 class="section-promo__header">Похудение</h2>
+        <p class="section-promo__text">
+          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+          поможет вашему питомцу сбросить лишний вес.
+        </p>
+        <a href="#" class="section-promo__link">Каталог Slim</a>
+      </section>
 
-    <section class="section-promo section-promo--muscle page-main__section-promo">
-      <h2 class="section-promo__header">Набор массы</h2>
-      <p class="section-promo__text">
-        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-        необходимые мышцы!
-      </p>
-      <a href="#" class="section-promo__link">Каталог Pro</a>
-    </section>
+      <section class="section-promo section-promo--muscle page-main__section-promo">
+        <h2 class="section-promo__header">Набор массы</h2>
+        <p class="section-promo__text">
+          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+          необходимые мышцы!
+        </p>
+        <a href="#" class="section-promo__link">Каталог Pro</a>
+      </section>
+    </div>
 
     <section class="section-it-work page-main__section-it-work">
       <h2 class="section-it-work__header">Как это работает</h2>
@@ -92,29 +94,34 @@
         </li>
       </ul>
     </section>
+    </div>
 
 
     <div class="global-wraper global-wraper--color">
-      <section class="section-example page-main__section-example">
-        <h2 class="section-example__header">Живой пример</h2>
-        <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16
-          часов в день. </p>
-        <ul class="section-example__characteristics">
-          <li class="section-example__characteristic-block section-example__characteristic-block--block">
-            5 кг
-            <span class="section-example__block-text">Снижение веса</span>
-          </li>
-          <li class="section-example__characteristic-block section-example__characteristic-block--block">
-            60 дней
-            <span class="section-example__block-text">Затрачено времени</span>
-          </li>
-          <li class="section-example__characteristic-block section-example__characteristic-block--inline">
-            Затраты на питание:
-            <span class="section-example__block-text section-example__block-text--inline">15 000 руб.</span>
-          </li>
-        </ul>
+      <div class="page-main__wraper-section-example">
+        <section class="section-example page-main__section-example">
+          <h2 class="section-example__header">Живой пример</h2>
+          <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16
+            часов в день. </p>
+          <ul class="section-example__characteristics">
+            <li class="section-example__characteristic-block section-example__characteristic-block--block">
+              5 кг
+              <span class="section-example__block-text section-example__block-text--weight">Снижение веса</span>
+            </li>
+            <li class="section-example__characteristic-block section-example__characteristic-block--block">
+              60 дней
+              <span class="section-example__block-text section-example__block-text--time">Затрачено времени</span>
+            </li>
+            <li class="section-example__characteristic-block section-example__characteristic-block--inline">
+              Затраты на питание:
+              <span class="section-example__block-text section-example__block-text--inline">15 000 руб.</span>
+            </li>
+          </ul>
+        </section>
         <section class="cat-transformer section-example-transformer">
           <h2 class="visually-hidden">Пример волшебного преобразования!</h2>
           <img class="cat-transformer__cat-before" src="img/before-mobile@1x.png" alt="Кот до" width="320" height="240">
@@ -124,23 +131,25 @@
             <!-- Тут будет контролер -->
           </div>
         </section>
-      </section>
+      </div>
     </div>
 
   </main>
 
 
   <footer class="page-footer">
-    <section class="footer-contacts page-footer__footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__text-wraper">
-        <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
-      </div>
-    </section>
+    <div class="page-foter__map-wraper">
+      <section class="footer-contacts page-footer__footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="page-footer__text-wraper">
+          <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      </section>
 
-    <div class="global-wraper global-wraper--color-all">
-      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
+      <div class="global-wraper global-wraper--color-all">
+        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="400">
+      </div>
     </div>
 
     <div class="global-wraper global-wraper--color-all">

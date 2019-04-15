@@ -59,4 +59,43 @@
 }
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .page-main__main-header-index {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .page-main__section-main-promo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page-main__promos-wrapper {
+    @include margin-auto;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-main__section-promo {
+    margin-bottom: 55px;
+  }
+
+  .page-main__wraper-section-example {
+    @include margin-auto;
+    width: $desktop-width;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 110px;
+    padding-right: 111px;
+  }
+
+  .page-main__section-example {
+    margin-left: 0;
+    margin-right: 135px;
+  }
+}

@@ -95,6 +95,7 @@
   display: block;
 }
 
+//
 @media (min-width: $tablet-width) {
   .section-example {
     width: 768px;
@@ -103,7 +104,6 @@
   .section-example__header {
     font-size: 60px;
     line-height: 60px;
-    color: #111111;
     padding-left: 30px;
     margin: 0;
     margin-bottom: 55px;
@@ -115,12 +115,12 @@
     width: 706px;
     margin-bottom: 55px;
     padding-left: 30px;
-    color: #444444;
   }
 
   .section-example__characteristic {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
   }
 
   .section-example__characteristic-block {
@@ -129,16 +129,11 @@
     }
 
     &--block {
-      position: relative;
-      color: #111111;
       width: 160px;
       height: 70px;
-      border: 1px solid #cdcdcd;
 
       font-size: 30px;
       line-height: 37px;
-      text-align: center;
-      padding-top: 15px;
     }
 
     &--inline {
@@ -156,16 +151,10 @@
   .section-example__block-text {
     font-size: 14px;
     line-height: 14px;
-    position: absolute;
 
     left: 35px;
     bottom: -15px;
     width: 87px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    color: #444444;
-    text-transform: lowercase;
 
     background-color: #ffffff;
 
@@ -179,11 +168,86 @@
       font-size: 20px;
       line-height: 20px;
       padding: 0;
-      position: static;
-      text-transform: uppercase;
-      color: #111111;
     }
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .section-example {
+    width: 434px;
+    padding-bottom: 70px;
+  }
+
+  .section-example__header {
+    padding-left: 0;
+    margin-bottom: 140px;
+  }
+
+  .section-example__text {
+    width: 434px;
+    margin-bottom: 70px;
+    padding-left: 0;
+    width: 434px;
+  }
+
+  .section-example__characteristic {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .section-example__characteristic-block {
+    &:first-child {
+      margin-right: 42px;
+    }
+
+    &--block {
+      width: 160px;
+      height: 70px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--inline {
+      font-size: 20px;
+      line-height: 20px;
+      width: 400px;
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+
+  .section-example__block-text {
+    font-size: 14px;
+    line-height: 14px;
+
+    bottom: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: #eaeaea;
+
+    &--weight {
+      width: 115px;
+      left: 21px;
+    }
+
+    &--time {
+      width: 142px;
+      left: 8px;
+    }
+
+    &--inline {
+      //ЕСТЬ ВОПРОСЫ
+      display: inline-block;
+      width: 100px;
+      margin-left: 60px;
+      margin-top: 0;
+      //ЕСТЬ ВОПРОСЫ
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+    }
+  }
+}

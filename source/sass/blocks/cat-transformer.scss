@@ -1,3 +1,10 @@
 .cat-transformer {
   background-color: transparent;
 }
+
+@media (min-width: $desktop-width) {
+  .cat-transformer {
+    width: 636px;
+  }
+
+}

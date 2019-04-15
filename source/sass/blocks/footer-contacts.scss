@@ -2,18 +2,6 @@
   width: 320px;
 }
 
-.page-footer__text-wraper {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #ffffff;
-
-  padding-top: 30px;
-
-  &--color {
-    background-color: #f2f2f2;
-  }
-}
-
 .footer-contacts__text {
   @include oswald(300);
   font-size: 16px;
@@ -35,13 +23,10 @@
   width: 135px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .footer-contacts {
     width: 768px;
-  }
-
-  .page-footer__text-wraper {
-    justify-content: space-between;
   }
 
   .footer-contacts__text {
@@ -67,5 +52,3 @@
     padding-top: 20px;
   }
 }
-
-@media (min-width: $desktop-width) {}

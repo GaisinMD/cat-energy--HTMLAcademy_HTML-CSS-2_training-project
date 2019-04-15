@@ -48,4 +48,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

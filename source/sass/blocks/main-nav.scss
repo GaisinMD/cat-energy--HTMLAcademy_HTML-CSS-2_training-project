@@ -12,5 +12,8 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .main-nav {
+    width: 590px;
+    padding-right: 110px;
+  }
 }

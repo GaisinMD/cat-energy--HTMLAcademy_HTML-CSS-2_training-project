@@ -25,4 +25,13 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .section-it-work {
+    width: 1440px;
+    padding-left: 110px;
+  }
+
+  .section-it-work__header {
+    margin-bottom: 63px;
+  }
+}
