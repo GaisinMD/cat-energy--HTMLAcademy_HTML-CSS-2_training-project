@@ -90,7 +90,6 @@
   }
 
   .additional-catalog__header {
-
     h2 {
       font-size: 36px;
       line-height: 36px;
@@ -165,12 +164,12 @@
   .additional-catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
+
     @include margin-auto;
     width: 1220px;
   }
 
   .additional-catalog__header {
-
     h2 {
       width: 1440px;
       padding-left: 110px;

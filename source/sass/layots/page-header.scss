@@ -1,5 +1,5 @@
 .page-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .page-header__wrapper {
@@ -26,7 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-      border-bottom: none;
+    border-bottom: none;
   }
 
   .page-header__wrapper {
@@ -50,5 +50,4 @@
   .page-header {
     margin-top: 53px;
   }
-
 }
