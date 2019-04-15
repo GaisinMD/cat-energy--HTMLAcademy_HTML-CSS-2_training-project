@@ -49,6 +49,7 @@
   }
 }
 
+//
 @media (min-width: $tablet-width) {
   .fieldset-filter {
     font-size: 20px;
@@ -93,4 +94,20 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .fieldset-filter__legend {
+    width: $desktop-width;
+
+    padding-left: 110px;
+    padding-bottom: 85px;
+
+    &::before {
+      width: 71px;
+    }
+
+    &::after {
+      width: 1085px;
+    }
+  }
+}

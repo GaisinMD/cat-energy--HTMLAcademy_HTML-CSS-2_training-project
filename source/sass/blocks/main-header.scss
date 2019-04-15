@@ -80,14 +80,15 @@
     }
 
     &--catalog {
-      @include margin-auto;
       width: 1220px;
       padding-top: 80px;
       padding-bottom: 70px;
     }
 
     &--form {
-      padding-left: 30px;
+      width: 1220px;
+      padding-left: 0;
+      padding-top: 80px;
       padding-bottom: 53px;
     }
   }

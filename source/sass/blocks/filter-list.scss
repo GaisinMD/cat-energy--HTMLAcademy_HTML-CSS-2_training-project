@@ -1,8 +1,7 @@
 .filter-list {
   @include zero-list;
+  @include margin-auto;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .filter-list__item {
@@ -25,6 +24,7 @@
   }
 }
 
+//
 @media (min-width: $tablet-width) {
   .filter-list {
     display: flex;
@@ -49,4 +49,22 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
+
+  .filter-list__item {
+    width: 220px;
+    margin-right: 105px;
+    padding-bottom: 24px;
+    margin-bottom: 34px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

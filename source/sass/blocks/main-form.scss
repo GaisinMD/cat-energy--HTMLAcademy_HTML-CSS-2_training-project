@@ -3,8 +3,7 @@
 }
 
 .main-form__cat-fieldset {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
   margin-bottom: 9px;
 }
 
@@ -13,13 +12,12 @@
 }
 
 .main-form__filter-fieldset {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .main-form__bottom-item-wrapper {
+  @include margin-auto;
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main-form__button {
@@ -38,6 +36,7 @@
   color: #444444;
 }
 
+//
 @media (min-width: $tablet-width) {
   .main-form__fieldset-radio {
     margin-bottom: 79px;
@@ -53,6 +52,8 @@
 
   .main-form__bottom-item-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     width: 630px;
   }
 
@@ -68,8 +69,41 @@
     display: block;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 17px;
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .main-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include margin-auto;
+    margin-bottom: 50px;
+    width: 1220px;
+  }
+
+  .main-form__cat-fieldset {
+    margin-left: 0;
+    margin-right: 80px;
+  }
+
+  .main-form__man-fieldset {
+    margin-bottom: 40px;
+  }
+
+  .main-form__bottom-item-wrapper {
+    width: 1220px;
+  }
+
+  .main-form__button {
+    margin-left: 0;
+    margin-right: 82px;
+    margin-bottom: 37px;
+    width: 568px;
+    height: 52px;
+  }
+
+  .main-form__note {
+  }
+}

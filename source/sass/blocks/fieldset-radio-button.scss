@@ -74,6 +74,7 @@
 }
 */
 
+//
 @media (min-width: $tablet-width) {
   .fieldset-radio-button {
     font-size: 20px;
@@ -116,4 +117,13 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .fieldset-radio-button {
+    padding-top: 0;
+  }
+
+  .fieldset-radio-button__radio-list {
+    width: 570px;
+  }
+}

@@ -49,13 +49,9 @@
   }
 }
 
-.fieldset-comment__wrapper {
-  @include margin-auto;
-  width: 280px;
-  height: 151px;
-}
-
 .fieldset-comment__text {
+  @include margin-auto;
+
   display: block;
   width: 280px;
   height: 150px;
@@ -112,11 +108,6 @@
     }
   }
 
-  .fieldset-comment__wrapper {
-    width: 630px;
-    min-height: 176px;
-  }
-
   .fieldset-comment__text {
     width: 630px;
     height: 175px;
@@ -128,23 +119,24 @@
 
 //
 @media (min-width: $desktop-width) {
-  .footer-contacts {
-    width: 570px;
+  .fieldset-comment__legend {
+    width: $desktop-width;
+
+    padding-left: 110px;
+    padding-bottom: 85px;
+
+    &::before {
+      width: 71px;
+    }
+
+    &::after {
+      width: 1110px;
+    }
   }
 
-  .footer-contacts__text {
-    width: 155px;
-    margin-left: 75px;
-    margin-bottom: 55px;
+  .fieldset-comment__text {
+    width: 1120px;
+    height: 174px;
+    margin-bottom: 16px;
   }
-
-  .footer-contacts__address {
-    font-size: 16px;
-    line-height: 20px;
-    width: 155px;
-    margin: 0;
-    margin-right: 72px;
-    margin-bottom: 55px;
-  }
-
 }

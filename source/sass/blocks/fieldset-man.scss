@@ -25,6 +25,7 @@
 
 .fieldset-man__list {
   @include zero-list;
+  @include margin-auto;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -42,8 +43,8 @@
   padding-bottom: 30px;
   padding-right: 110px;
   padding-left: 20px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
 
   &::after {
     position: absolute;
@@ -100,6 +101,7 @@
   text-transform: uppercase;
 }
 
+//
 @media (min-width: $tablet-width) {
   .fieldset-man {
     font-size: 20px;
@@ -120,7 +122,7 @@
   .fieldset-man__legend {
     font-size: 36px;
     line-height: 36px;
-    width: 768px;
+    width: $tablet-width;
 
     padding-bottom: 73px;
     padding-left: 71px;
@@ -143,38 +145,47 @@
   }
 
   .fieldset-man__list {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .fieldset-man__item {
     margin-left: 71px;
     margin-right: 65px;
-
-    &--mail::after {
-      position: absolute;
-      content: "";
-      width: 18px;
-      height: 14px;
-      right: 15px;
-      top: 15px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: center top;
-    }
-
-    &--phone::after {
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 21px;
-      right: 13px;
-      top: 13px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: center top;
-    }
   }
 }
 
+//
+@media (min-width: $desktop-width) {
 
-@media (min-width: $desktop-width) {}
+  .fieldset-man__legend {
+    width: $desktop-width;
+
+    padding-left: 110px;
+    padding-bottom: 85px;
+
+    &::before {
+      width: 71px;
+    }
+
+    &::after {
+      width: 780px;
+    }
+  }
+
+  .fieldset-man__list {
+    @include margin-auto;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fieldset-man__item {
+    margin-left: 0;
+    margin-right: 78px;
+    width: 570px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}

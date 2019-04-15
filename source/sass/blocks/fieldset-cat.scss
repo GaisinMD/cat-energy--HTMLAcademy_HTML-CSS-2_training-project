@@ -44,4 +44,16 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .fieldset-cat {
+    width: 566px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .fieldset-cat__item {
+    margin-bottom: 20px;
+  }
+}

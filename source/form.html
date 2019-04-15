@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header--mod">
+  <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="logo page-header__logo">
         <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="226" height="39"
@@ -45,40 +45,42 @@
     <h1 class="main-header main-header--form page-main__main-header-form">Подбор программы</h1>
     <p class="page-main-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="fieldset-cat main-form__item main-form__cat-fieldset">
-        <p class="fieldset-cat__item">
-          <label class="fieldset-cat__label" for="cat-name">Имя:*</label>
-          <input class="fieldset-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
-        </p>
-        <p class="fieldset-cat__item">
-          <label class="fieldset-cat__label" for="cat-weight">Вес:*</label>
-          <input class="fieldset-cat__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
-        </p>
-        <p class="fieldset-cat__item">
-          <label class="fieldset-cat__label" for="cat-age">Возраст:</label>
-          <input class="fieldset-cat__input" id="cat-age" type="text" name="cat-age" placeholder="7">
-        </p>
-      </fieldset>
+      <div class="main-form__wrapper">
+        <fieldset class="fieldset-cat main-form__item main-form__cat-fieldset">
+          <p class="fieldset-cat__item">
+            <label class="fieldset-cat__label" for="cat-name">Имя:*</label>
+            <input class="fieldset-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+          </p>
+          <p class="fieldset-cat__item">
+            <label class="fieldset-cat__label" for="cat-weight">Вес (кг):*</label>
+            <input class="fieldset-cat__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+          </p>
+          <p class="fieldset-cat__item">
+            <label class="fieldset-cat__label" for="cat-age">Возраст (лет):</label>
+            <input class="fieldset-cat__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+          </p>
+        </fieldset>
 
-      <fieldset class="fieldset-radio-button main-form__item main-form__fieldset-radio">
-        <ul class="fieldset-radio-button__radio-list">
-          <li class="fieldset-radio-button__radio-item">
-            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
-              value="thin" id="thin" checked>
-            <label for="thin">Похудение</label>
-          </li>
-          <li class="fieldset-radio-button__radio-item">
-            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-fat-item"
-              value="fat" id="fat">
-            <label for="fat">Набор массы</label>
-          </li>
-          <li class="fieldset-radio-button__radio-item">
-            <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-unknown-item"
-              value="unknown" id="unknown">
-            <label for="unknown">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+        <fieldset class="fieldset-radio-button main-form__item main-form__fieldset-radio">
+          <ul class="fieldset-radio-button__radio-list">
+            <li class="fieldset-radio-button__radio-item">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
+                value="thin" id="thin" checked>
+              <label for="thin">Похудение</label>
+            </li>
+            <li class="fieldset-radio-button__radio-item">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-fat-item"
+                value="fat" id="fat">
+              <label for="fat">Набор массы</label>
+            </li>
+            <li class="fieldset-radio-button__radio-item">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-unknown-item"
+                value="unknown" id="unknown">
+              <label for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="fieldset-man main-form__item main-form__man-fieldset">
         <legend class="fieldset-man__legend">Контактные данные (владельца кота)</legend>
@@ -98,10 +100,8 @@
 
       <fieldset class="fieldset-comment main-form__item main-form__comment-fieldset">
         <legend class="fieldset-comment__legend">Комментарий</legend>
-        <div class="fieldset-comment__wrapper">
           <textarea class="fieldset-comment__text" id="comment-text" name="comment-text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
       </fieldset>
 
       <fieldset class="fieldset-filter main-form__item main-form__filter-fieldset">
