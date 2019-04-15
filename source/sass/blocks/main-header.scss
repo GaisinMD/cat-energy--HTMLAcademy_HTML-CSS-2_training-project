@@ -31,14 +31,14 @@
   }
 }
 
-
+//
 @media (min-width: $tablet-width) {
   .main-header {
     color: #000000;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    width: 768px;
+    width: 708px;
 
     &--index {
       padding-left: 120px;
@@ -47,7 +47,7 @@
     }
 
     &--catalog {
-      padding-left: 30px;
+      padding-left: 0;
     }
 
     &--form {
@@ -57,6 +57,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .page-main__top-wrapper {
     @include margin-auto;
@@ -79,7 +80,10 @@
     }
 
     &--catalog {
-      padding-left: 30px;
+      @include margin-auto;
+      width: 1220px;
+      padding-top: 80px;
+      padding-bottom: 70px;
     }
 
     &--form {

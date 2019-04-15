@@ -5,11 +5,16 @@
 
 @media (min-width: $tablet-width) {
   .additional-catalog-list {
-    @include zero-list;
     padding-left: 30px;
     margin-right: 30px;
     padding-bottom: 69px;
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .additional-catalog-list {
+    padding-left: 0;
+    margin-right: 80px;
+    padding-bottom: 65px;
+  }
+}

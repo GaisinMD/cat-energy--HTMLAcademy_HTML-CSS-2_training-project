@@ -27,4 +27,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .stats-list {
+    width: 169px;
+  }
+}

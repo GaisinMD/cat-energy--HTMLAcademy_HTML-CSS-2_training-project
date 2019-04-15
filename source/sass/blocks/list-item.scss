@@ -9,12 +9,11 @@
 }
 
 .list-item__wrapper {
+  @include margin-auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .list-item__text-wrapper {
@@ -28,7 +27,7 @@
   width: 90px;
 
   &--expand {
-    min-width: 320px;
+    width: 320px;
     text-align: center;
   }
 }
@@ -65,10 +64,13 @@
   padding-bottom: 20px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .list-item {
     border-top: none;
     margin-right: 60px;
+    padding-bottom: 0;
+    width: 324px;
 
     &:nth-child(even) {
       margin-right: 0;
@@ -83,8 +85,11 @@
   .list-item__wrapper {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
 
     width: 324px;
+    padding-bottom: 25px;
 
     background-image: linear-gradient(to bottom, #ffffff 140px, #f2f2ff 140px);
 
@@ -99,15 +104,14 @@
   }
 
   .list-item__header-link {
+    @include margin-auto;
     display: block;
     text-decoration: none;
     color: #111111;
     width: 125px;
-    margin-left: auto;
-    margin-right: auto;
 
     &--expand {
-      min-width: 135px;
+      width: 135px;
     }
   }
 
@@ -138,4 +142,52 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+//
+@media (min-width: $desktop-width) {
+  .list-item {
+    border-top: none;
+    margin-right: 80px;
+    padding-bottom: 0;
+    width: 245px;
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &--expand {
+      margin-top: auto;
+      border: 1px solid #dcdcdc;
+      width: 245px;
+    }
+  }
+
+  .list-item__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    width: 245px;
+    padding-bottom: 40px;
+
+    background-image: linear-gradient(to bottom, #ffffff 140px, #f2f2ff 140px);
+
+    &--expand {
+      background-image: none;
+    }
+  }
+
+  .list-item__text-wrapper {
+    width: 169px;
+    padding-bottom: 33px;
+  }
+
+  .list-item__button {
+    width: 169px;
+  }
+
+}
