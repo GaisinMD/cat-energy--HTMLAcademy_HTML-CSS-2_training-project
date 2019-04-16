@@ -1,28 +1,42 @@
 .fieldset-comment {
   @include oswald(300);
-
   font-size: 16px;
   line-height: 18px;
   color: #111111;
 
   border: none;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 20px;
   padding-bottom: 15px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 250px);
+    height: 3px;
+    right: 0;
+    top: 13px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 .fieldset-comment__legend {
   position: relative;
   font-size: 24px;
   line-height: 24px;
+  background-color: #ffffff;
   color: #111111;
   text-transform: none;
-  width: 300px;
+  width: 320px;
 
   padding-bottom: 30px;
   padding-right: 110px;
+  padding-left: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   &::after {
     position: absolute;
@@ -36,12 +50,94 @@
 }
 
 .fieldset-comment__text {
+  @include margin-auto;
+
+  display: block;
   width: 280px;
   height: 150px;
+  resize: none;
   padding-left: 16px;
   padding-top: 13px;
   margin-bottom: 16px;
-  resize: none;
-  text-transform: uppercase;
-  color: #444444;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+//
+@media (min-width: $tablet-width) {
+  .fieldset-comment {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      right: 0;
+      top: 20px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+  }
+
+  .fieldset-comment__legend {
+    font-size: 36px;
+    line-height: 36px;
+    width: 768px;
+
+    padding-bottom: 70px;
+    padding-left: 71px;
+    padding-right: 177px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 41px;
+      height: 3px;
+      left: 0;
+      top: 20px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      width: 490px;
+      top: 20px;
+    }
+  }
+
+  .fieldset-comment__text {
+    width: 630px;
+    height: 175px;
+    padding-left: 17px;
+    padding-top: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .fieldset-comment__legend {
+    width: $desktop-width;
+
+    padding-left: 40px;
+    padding-bottom: 85px;
+
+    &::before {
+      width: 11px;
+    }
+
+    &::after {
+      width: 1050px;
+    }
+  }
+
+  .fieldset-comment__text {
+    width: 1220px;
+    height: 174px;
+    margin-bottom: 16px;
+  }
 }

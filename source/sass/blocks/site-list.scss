@@ -17,9 +17,45 @@
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
 
   text-align: center;
   padding-top: 22px;
   padding-bottom: 18px;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    border: none;
+    margin-right: 37px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-right: 0;
+    }
+  }
+
+  .site-list__item a {
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }

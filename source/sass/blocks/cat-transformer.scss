@@ -1,3 +1,18 @@
 .cat-transformer {
   background-color: transparent;
+
+  @include margin-auto;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-transformer {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-transformer {
+    width: 636px;
+  }
 }

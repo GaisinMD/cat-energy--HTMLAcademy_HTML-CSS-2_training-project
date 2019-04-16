@@ -1,5 +1,17 @@
-.page-footer {
-  background-color: #f2f2f2;
+.page-footer__text-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+
+  padding-top: 30px;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
+.page-footer__footer-contacts {
+  @include margin-auto;
 }
 
 .page-footer__logo {
@@ -8,10 +20,80 @@
 }
 
 .page-footer__logo-image {
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
+}
+
+.page-footer__map {
+  @include margin-auto;
+  display: block;
+}
+
+.page-footer__bottom-wraper {
+  padding-top: 39px;
+  background-color: #f2f2f2;
 }
 
 .page-footer__social {
   margin-bottom: 20px;
+}
+
+.page-footer__footer-academy-promo {
+  @include margin-auto;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .page-footer {
+    background-color: #ffffff;
+  }
+
+  .page-footer__text-wraper {
+    justify-content: space-between;
+  }
+
+  .page-footer__bottom-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include margin-auto;
+    width: 738px;
+  }
+
+  .page-footer__footer-academy-promo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .page-foter__map-wraper {
+    min-height: 400px;
+    background-color: #f2f2f2;
+  }
+
+  .page-footer__footer-contacts {
+    @include margin-auto;
+  }
+
+  .page-footer__text-wraper {
+    position: absolute;
+    left: 40px;
+    top: 95px;
+    width: 570px;
+    min-height: 201px;
+    padding-top: 60px;
+  }
+
+  .page-footer__bottom-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include margin-auto;
+    width: 1220px;
+    padding-top: 64px;
+    padding-bottom: 30px;
+  }
 }

@@ -1,5 +1,5 @@
 .section-example {
-  background-color: #f2f2f2;
+  width: 320px;
   padding-top: 17px;
 }
 
@@ -20,6 +20,7 @@
   width: 275px;
   margin-bottom: 27px;
   padding-left: 20px;
+  color: #444444;
 }
 
 .section-example__characteristics {
@@ -92,4 +93,161 @@
 .cat-transformer__cat-before,
 .cat-transformer__cat-after {
   display: block;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .section-example {
+    width: 768px;
+  }
+
+  .section-example__header {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .section-example__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 706px;
+    margin-bottom: 55px;
+    padding-left: 30px;
+  }
+
+  .section-example__characteristic {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .section-example__characteristic-block {
+    &:first-child {
+      margin-right: 42px;
+    }
+
+    &--block {
+      width: 160px;
+      height: 70px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--inline {
+      font-size: 20px;
+      line-height: 20px;
+      width: 175px;
+      text-align: right;
+      margin-left: auto;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+
+  .section-example__block-text {
+    font-size: 14px;
+    line-height: 14px;
+
+    left: 35px;
+    bottom: -15px;
+    width: 87px;
+
+    background-color: #ffffff;
+
+    &--inline {
+      //ЕСТЬ ВОПРОСЫ
+      display: block;
+      width: 100px;
+      margin-left: auto;
+      margin-top: 8px;
+      //ЕСТЬ ВОПРОСЫ
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+    }
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .section-example {
+    width: 434px;
+    padding-bottom: 70px;
+  }
+
+  .section-example__header {
+    padding-left: 0;
+    margin-bottom: 140px;
+  }
+
+  .section-example__text {
+    width: 434px;
+    margin-bottom: 70px;
+    padding-left: 0;
+  }
+
+  .section-example__characteristic {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .section-example__characteristic-block {
+    &:first-child {
+      margin-right: 42px;
+    }
+
+    &--block {
+      width: 160px;
+      height: 70px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--inline {
+      font-size: 20px;
+      line-height: 20px;
+      width: 400px;
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+
+  .section-example__block-text {
+    font-size: 14px;
+    line-height: 14px;
+
+    bottom: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: #eaeaea;
+
+    &--weight {
+      width: 115px;
+      left: 21px;
+    }
+
+    &--time {
+      width: 142px;
+      left: 8px;
+    }
+
+    &--inline {
+      //ЕСТЬ ВОПРОСЫ
+      display: inline-block;
+      width: 100px;
+      margin-left: 60px;
+      margin-top: 0;
+      //ЕСТЬ ВОПРОСЫ
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+    }
+  }
 }

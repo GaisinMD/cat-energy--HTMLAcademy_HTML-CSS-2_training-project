@@ -1,11 +1,19 @@
 .additional-list-item {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  padding-top: 12px;
-  padding-bottom: 17px;
 
   &:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
+}
+
+.additional-list-item__wrapper {
+  @include margin-auto;
+
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  width: 320px;
 }
 
 .additional-list-item__header {
@@ -26,4 +34,106 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .additional-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+    @include margin-auto;
+    width: 708px;
+
+    &:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .additional-list-item__wrapper {
+    width: 708px;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 27px;
+  }
+
+  .additional-list-item__header {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 26px;
+  }
+
+  .additional-list-item__text-wrapper {
+    align-items: flex-start;
+  }
+
+  .additional-list-item__quantity {
+    margin-right: 52px;
+    margin-top: 5px;
+  }
+
+  .additional-list-item__price {
+    margin-top: 5px;
+  }
+
+  .additional-list-item__button {
+    width: 633px;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .additional-list-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: none;
+    border-right: none;
+
+    width: 895px;
+    margin-left: 0;
+    margin-right: 0;
+
+    &:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .additional-list-item__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 895px;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 16px;
+  }
+
+  .additional-list-item__header {
+    width: 160px;
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+
+  .additional-list-item__text-wrapper {
+    align-items: flex-start;
+    width: 285px;
+    margin-right: 39px;
+  }
+
+  .additional-list-item__quantity {
+    margin-top: 0;
+  }
+
+  .additional-list-item__price {
+    margin-top: 0;
+  }
+
+  .additional-list-item__button {
+    width: 245px;
+  }
 }

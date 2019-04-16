@@ -1,0 +1,30 @@
+.global-wraper {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
+
+  &--color-all {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .global-wraper {
+    min-width: $tablet-width;
+
+    &--color {
+      background-image: linear-gradient(180deg, #ffffff 570px, #eaeaea 570px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .global-wraper--color {
+    min-width: $desktop-width;
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  }
+}

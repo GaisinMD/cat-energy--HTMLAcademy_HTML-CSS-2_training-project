@@ -1,7 +1,15 @@
 .page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-header__wrapper {
+  @include margin-auto;
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  position: relative;
 }
 
 .page-header__logo {
@@ -11,7 +19,37 @@
 }
 
 .page-header__toggle {
-  margin-right: 19px;
-  margin-top: 22px;
+  right: 19px;
+  top: 22px;
   margin-bottom: 23px;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: none;
+  }
+
+  .page-header__wrapper {
+    width: $tablet-width;
+  }
+
+  .page-header__logo {
+    margin-left: 30px;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: $desktop-width;
+  }
+
+  .page-header__logo {
+    margin-left: 40px;
+  }
+
+  .page-header {
+    margin-top: 53px;
+  }
 }

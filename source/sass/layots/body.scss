@@ -5,6 +5,24 @@ body {
   padding: 0;
   color: #000000;
   background-color: #ffffff;
-  width: 320px;
+  min-width: 320px;
   height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
+
+  .body-index {
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }

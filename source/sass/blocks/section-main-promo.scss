@@ -1,3 +1,7 @@
+.section-main-promo {
+  text-align: center;
+}
+
 .section-main-promo__slogan {
   display: block;
   margin-bottom: 25px;
@@ -11,12 +15,62 @@
 }
 
 .section-main-promo__image {
+  @include margin-auto;
+  display: block;
   margin-bottom: 2px;
 }
 
 .section-main-promo__button {
+  @include margin-auto;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 22px;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .section-main-promo {
+    min-height: 635px;
+    width: 709px;
+    padding-left: 90px;
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+  }
+
+  .section-main-promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  .section-main-promo__image {
+    display: none;
+  }
+
+  .section-main-promo__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+    height: 52px;
+    padding-top: 16px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .section-main-promo {
+    min-height: 500px;
+    width: 420px;
+    padding-left: 0;
+    background-image: none;
+  }
+
+  .section-main-promo__slogan {
+    margin-bottom: 50px;
+  }
 }

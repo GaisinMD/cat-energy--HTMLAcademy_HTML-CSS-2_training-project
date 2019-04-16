@@ -1,4 +1,19 @@
 .main-nav {
-  //display: none;
+  display: none;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    width: 480px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 590px;
+    padding-right: 40px;
+  }
 }

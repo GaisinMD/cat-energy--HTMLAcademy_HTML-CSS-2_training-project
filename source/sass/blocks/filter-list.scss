@@ -1,6 +1,7 @@
 .filter-list {
   @include zero-list;
-  text-transform: uppercase;
+  @include margin-auto;
+  width: 280px;
 }
 
 .filter-list__item {
@@ -20,5 +21,50 @@
     top: 0;
 
     border: 1px solid #cdcdcd;
+  }
+}
+
+//
+@media (min-width: $tablet-width) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+  }
+
+  .filter-list__item {
+    width: 315px;
+    padding-bottom: 24px;
+    margin-bottom: 34px;
+  }
+
+  .filter-list__label {
+    padding-top: 5px;
+    padding-left: 59px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
+
+  .filter-list__item {
+    width: 220px;
+    margin-right: 105px;
+    padding-bottom: 24px;
+    margin-bottom: 34px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
