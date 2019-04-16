@@ -35,8 +35,7 @@
   padding-right: 110px;
   padding-left: 20px;
 
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-auto;
 
   &::after {
     position: absolute;
