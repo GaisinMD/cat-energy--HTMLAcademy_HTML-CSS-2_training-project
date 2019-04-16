@@ -63,11 +63,11 @@
     @include margin-auto;
     display: flex;
     flex-direction: column;
-    padding-left: 195px;
+    padding-left: 125px;
     padding-right: 332px;
-    width: 1440px;
+    width: $desktop-width;
     background-image: url("/img/index-can-desktop@1x.png");
-    background-position: 560px top;
+    background-position: 50% top;
     background-repeat: no-repeat;
   }
 

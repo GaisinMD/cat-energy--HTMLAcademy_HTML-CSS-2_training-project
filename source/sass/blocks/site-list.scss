@@ -17,6 +17,7 @@
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
 
   text-align: center;
@@ -24,6 +25,7 @@
   padding-bottom: 18px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -48,6 +50,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .site-list__item a {
     font-size: 20px;

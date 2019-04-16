@@ -40,6 +40,7 @@
   margin-bottom: 0;
 }
 
+//
 @media (min-width: $tablet-width) {
   .page-main--index {
     background-image: none;
@@ -58,7 +59,7 @@
   }
 }
 
-
+//
 @media (min-width: $desktop-width) {
   .page-main__main-header-index {
     margin-left: 0;
@@ -89,8 +90,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    padding-left: 110px;
-    padding-right: 111px;
+    padding-left: 40px;
+    padding-right: 41px;
   }
 
   .page-main__section-example {

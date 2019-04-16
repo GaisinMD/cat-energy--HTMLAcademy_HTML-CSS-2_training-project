@@ -30,6 +30,7 @@
   flex-grow: 1;
 }
 
+//
 @media (min-width: $tablet-width) {
   .fieldset-cat {
     width: 630px;
@@ -44,6 +45,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .fieldset-cat {
     width: 566px;

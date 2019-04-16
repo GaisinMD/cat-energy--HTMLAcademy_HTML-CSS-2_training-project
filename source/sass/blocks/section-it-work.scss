@@ -27,8 +27,8 @@
 
 @media (min-width: $desktop-width) {
   .section-it-work {
-    width: 1440px;
-    padding-left: 110px;
+    width: $desktop-width;
+    padding-left: 40px;
   }
 
   .section-it-work__header {

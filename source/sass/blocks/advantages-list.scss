@@ -43,12 +43,13 @@
   }
 }
 
+//
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-right: 110px;
+    padding-right: 40px;
 
     &::after {
       content: "";
@@ -117,6 +118,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .advantages-list {
     &::after {

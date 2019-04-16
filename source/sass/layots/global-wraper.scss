@@ -24,6 +24,7 @@
 
 @media (min-width: $desktop-width) {
   .global-wraper--color {
+    min-width: $desktop-width;
     background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
   }
 }

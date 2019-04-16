@@ -24,6 +24,7 @@
   margin-bottom: 23px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: none;
@@ -38,13 +39,14 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: $desktop-width;
   }
 
   .page-header__logo {
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .page-header {
