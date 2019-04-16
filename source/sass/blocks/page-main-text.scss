@@ -5,14 +5,15 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
   padding-left: 20px;
   padding-bottom: 35px;
   padding-right: 70px;
   width: 320px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .page-main-text {
     font-size: 20px;
@@ -24,6 +25,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .page-main-text {
     @include margin-auto;

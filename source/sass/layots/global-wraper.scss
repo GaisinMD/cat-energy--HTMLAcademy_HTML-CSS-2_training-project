@@ -1,7 +1,7 @@
 .global-wraper {
   min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
 
   &--color {
     background-color: #f2f2f2;
@@ -12,6 +12,7 @@
   }
 }
 
+//
 @media (min-width: $tablet-width) {
   .global-wraper {
     min-width: $tablet-width;
@@ -22,6 +23,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .global-wraper--color {
     min-width: $desktop-width;

@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-auto;
   padding: 0;
   color: #000000;
   background-color: #ffffff;
@@ -9,12 +9,14 @@ body {
   height: 100%;
 }
 
+//
 @media (min-width: $tablet-width) {
   body {
     min-width: $tablet-width;
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   body {
     min-width: $desktop-width;
