@@ -1,7 +1,4 @@
 .section-promo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   background-color: #f2f2f2;
   width: 280px;
   padding-left: 22px;
@@ -107,8 +104,7 @@
 //
 @media (min-width: $tablet-width) {
   .section-promo {
-    flex-direction: row;
-    width: 570px;
+    width: 708px;
     padding-top: 81px;
     padding-left: 55px;
     padding-bottom: 60px;
