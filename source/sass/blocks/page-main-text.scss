@@ -13,6 +13,7 @@
   width: 320px;
 }
 
+//
 @media (min-width: $tablet-width) {
   .page-main-text {
     font-size: 20px;
@@ -24,6 +25,7 @@
   }
 }
 
+//
 @media (min-width: $desktop-width) {
   .page-main-text {
     @include margin-auto;
