@@ -56,7 +56,8 @@
 //
 @media (min-width: $desktop-width) {
   .footer-contacts {
-    width: 570px;
+    width: $desktop-width;
+    position: relative;
   }
 
   .footer-contacts__text {

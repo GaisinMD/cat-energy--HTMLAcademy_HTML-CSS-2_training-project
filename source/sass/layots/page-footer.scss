@@ -69,31 +69,21 @@
 //
 @media (min-width: $desktop-width) {
   .page-foter__map-wraper {
-    @include margin-auto;
     min-height: 400px;
-    padding-top: 95px;
-
-    background-color: #ffffff;
-    background-image: url("/img/bg-map-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-color: #f2f2f2;
   }
 
   .page-footer__footer-contacts {
-    margin-left: 0;
+    @include margin-auto;
   }
 
   .page-footer__text-wraper {
-    // ТУТ БУДЕТ АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ НА КАРТЕ
-    margin-left: 40px;
+    position: absolute;
+    left: 40px;
+    top: 95px;
     width: 570px;
     min-height: 201px;
-    padding-top: 65px;
-    padding-bottom: 5px;
-  }
-
-  .page-footer__map {
-    display: none;
+    padding-top: 60px;
   }
 
   .page-footer__bottom-wraper {
