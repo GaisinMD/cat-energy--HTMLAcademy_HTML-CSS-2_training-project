@@ -7,3 +7,19 @@
   margin: 0;
   padding: 0;
 }
+
+//
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 203px;
+    height: 60px;
+  }
+}

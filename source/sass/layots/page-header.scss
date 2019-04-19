@@ -4,7 +4,7 @@
 
 .page-header__wrapper {
   @include margin-auto;
-  width: 320px;
+  width: 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,9 +13,8 @@
 }
 
 .page-header__logo {
-  margin-left: 5px;
   margin-top: 11px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .page-header__toggle {
@@ -36,6 +35,8 @@
 
   .page-header__logo {
     margin-left: 30px;
+    margin-top: 24px;
+    margin-bottom: 15px;
   }
 }
 
@@ -46,10 +47,7 @@
   }
 
   .page-header__logo {
-    margin-left: 40px;
-  }
-
-  .page-header {
     margin-top: 53px;
+    margin-left: 40px;
   }
 }

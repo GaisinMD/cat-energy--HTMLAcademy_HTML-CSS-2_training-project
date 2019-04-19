@@ -35,6 +35,11 @@
     background-image: url("/img/index-can-tablet@1x.jpg");
     background-position: center 40px;
     background-repeat: no-repeat;
+    background-size: 709px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-can-tablet@2x.jpg");
+    }
   }
 
   .section-main-promo__slogan {
