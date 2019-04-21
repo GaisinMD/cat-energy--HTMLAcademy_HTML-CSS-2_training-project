@@ -6,14 +6,8 @@
 }
 
 .social-list__item {
-  margin-right: 36px;
-
   &:first-child {
-    margin-left: auto;
-  }
-
-  &:last-child {
-    margin-right: auto;
+    margin-left: 93px;
   }
 
   a {
@@ -25,6 +19,8 @@
 
   &--vk a {
     width: 22px;
+    margin-right: 36px;
+
     background-image: url("../img/icon-vk-mobile.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -32,13 +28,14 @@
 
   &--instagramm a {
     width: 17px;
+    margin-right: 40px;
     background-image: url("../img/icon-insta-mobile.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--facebook a {
-    width: 10px;
+    width: 12px;
     background-image: url("../img/icon-fb-mobile.svg");
     background-repeat: no-repeat;
     background-position: center top;

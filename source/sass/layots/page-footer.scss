@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   background-color: #ffffff;
 
-  padding-top: 30px;
+  padding-top: 28px;
 
   &--color {
     background-color: #f2f2f2;
@@ -26,15 +26,18 @@
 .page-footer__map {
   @include margin-auto;
   display: block;
+
+  //ЕСТЬ ВОПРОСЫ ПО ВЫСОТЕ И МАСШТАБИРОВАНИЮ КАРТЫ
+  height: 363px;
 }
 
 .page-footer__bottom-wraper {
-  padding-top: 39px;
+  padding-top: 40px;
   background-color: #f2f2f2;
 }
 
 .page-footer__social {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .page-footer__footer-academy-promo {

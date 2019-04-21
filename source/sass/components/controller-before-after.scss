@@ -1,0 +1,74 @@
+.controller-before-after {
+  display: flex;
+  padding-bottom: 35px;
+  width: 320px;
+}
+
+.controller-before-after__input-wraper {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 84px;
+  height: 14px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.controller-before-after__input {
+  overflow: hidden;
+  width: 76px;
+  height: 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+  appearance: none;
+  background-color: #ffffff;
+}
+
+.controller-before-after__input::-webkit-slider-runnable-track {
+  height: 14px;
+  appearance: none;
+}
+
+.controller-before-after__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  margin-right: 10px;
+  background-color: #68b738;
+  border-radius: 3px;
+  box-shadow: -82px 0 0 80px #68b738;
+}
+
+/*.controller-before-after__input::-moz-range-progress {
+  background-color: #43e5f7;
+}
+.controller-before-after__input::-moz-range-track {
+  background-color: #9a905d;
+}
+
+/*.controller-before-after__input::-ms-fill-lower {
+  background-color: #43e5f7;
+}
+.controller-before-after__input::-ms-fill-upper {
+  background-color: #9a905d;
+}*/
+
+.controller-before-after__text {
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin: 0;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-left: 64px;
+    margin-right: 19px;
+  }
+
+  &:last-child {
+    margin-left: 17px;
+  }
+}

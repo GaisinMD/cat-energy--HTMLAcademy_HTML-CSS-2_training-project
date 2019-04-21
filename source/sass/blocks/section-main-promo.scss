@@ -1,10 +1,11 @@
 .section-main-promo {
   text-align: center;
+  padding-top: 5px;
 }
 
 .section-main-promo__slogan {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @include oswald(300);
   font-size: 14px;

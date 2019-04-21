@@ -1,9 +1,9 @@
 .section-promo {
   background-color: #f2f2f2;
   width: 280px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 
   position: relative;
 
@@ -11,6 +11,7 @@
     content: "";
     position: absolute;
     top: 24px;
+    left: 22px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     left: 30px;
-    top: 22px;
+    top: 23px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -50,8 +51,8 @@
   color: #111111;
 
   margin: 0;
-  margin-left: 70px;
-  padding-top: 5px;
+  margin-left: 71px;
+  padding-top: 6px;
 }
 
 .section-promo__text {
@@ -63,8 +64,8 @@
   position: relative;
 
   width: 225px;
-  margin-top: 22px;
-  margin-bottom: 19px;
+  margin-top: 29px;
+  margin-bottom: 18px;
   padding-bottom: 23px;
 
   &::after {
@@ -93,8 +94,8 @@
     position: absolute;
     width: 25px;
     height: 12px;
-    right: -37px;
-    bottom: 1px;
+    right: -36px;
+    bottom: 5px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center top;

@@ -1,8 +1,37 @@
 .cat-transformer {
+  display: flex;
+  justify-content: center;
   background-color: transparent;
+  position: relative;
 
   @include margin-auto;
-  width: 280px;
+  padding-top: 1px;
+  width: 320px;
+  min-height: 330px;
+}
+
+.cat-transformer__cat-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #f2f2f2;
+
+  img {
+    max-width: 320px;
+  }
+}
+
+.cat-transformer__cat-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cat-transformer__controller {
+  margin-top: auto;
 }
 
 //
