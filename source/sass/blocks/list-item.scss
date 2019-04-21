@@ -48,6 +48,10 @@
   order: -1;
 }
 
+.list-item__image-link--expand {
+  opacity: 0.2;
+}
+
 .list-item__image {
   display: block;
 }
@@ -126,6 +130,24 @@
       margin-top: 25px;
       margin-bottom: 25px;
     }
+  }
+
+  .list-item__image-link picture {
+    display: flex;
+    height: 208px;
+  }
+
+  .list-item__image {
+    width: 324px;
+    margin-top: auto;
+  }
+
+  .list-item__image-link--expand picture {
+    height: 61px;
+  }
+
+  .list-item__image--expand {
+    width: 61px;
   }
 
   .list-item__button {

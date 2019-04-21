@@ -67,14 +67,17 @@
 
     &--vk a {
       width: 30px;
+      background-image: url("../img/icon-vk.svg");
     }
 
     &--instagramm a {
       width: 23px;
+      background-image: url("../img/icon-insta.svg");
     }
 
     &--facebook a {
       width: 14px;
+      background-image: url("../img/icon-fb.svg");
     }
   }
 }
