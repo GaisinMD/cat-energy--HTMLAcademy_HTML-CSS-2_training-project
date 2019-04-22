@@ -106,13 +106,13 @@
 @media (min-width: $tablet-width) {
   .section-promo {
     width: 708px;
-    padding-top: 81px;
-    padding-left: 55px;
+    padding-top: 70px;
+    padding-left: 53px;
     padding-bottom: 60px;
 
     &::before {
       top: 92px;
-      right: 62px;
+      left: 445px;
       width: 200px;
       height: 200px;
     }
@@ -136,15 +136,16 @@
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .section-promo__text {
     font-size: 16px;
     line-height: 24px;
-    width: 570px;
+    width: 580px;
     padding-right: 200px;
-    margin-bottom: 37px;
+    margin-top: 0;
+    margin-bottom: 34px;
 
     &::after {
       display: none;
@@ -157,7 +158,8 @@
     line-height: 20px;
 
     &::after {
-      bottom: 3px;
+      bottom: 9px;
+      right: -47px;
     }
   }
 }

@@ -99,6 +99,8 @@
 @media (min-width: $tablet-width) {
   .section-example {
     width: 768px;
+    padding-top: 13px;
+    padding-bottom: 55px;
   }
 
   .section-example__header {
@@ -106,21 +108,21 @@
     line-height: 60px;
     padding-left: 30px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
   }
 
   .section-example__text {
     font-size: 16px;
     line-height: 24px;
     width: 706px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     padding-left: 30px;
   }
 
-  .section-example__characteristic {
+  .section-example__characteristics {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding-left: 30px;
   }
 
   .section-example__characteristic-block {
@@ -153,10 +155,21 @@
     line-height: 14px;
 
     left: 35px;
-    bottom: -15px;
-    width: 87px;
+    bottom: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     background-color: #ffffff;
+
+    &--weight {
+      width: 115px;
+      left: 21px;
+    }
+
+    &--time {
+      width: 142px;
+      left: 8px;
+    }
 
     &--inline {
       display: block;
@@ -189,27 +202,12 @@
   }
 
   .section-example__characteristic {
-    display: flex;
-    flex-wrap: wrap;
     padding-left: 0;
   }
 
   .section-example__characteristic-block {
-    &:first-child {
-      margin-right: 42px;
-    }
-
-    &--block {
-      width: 160px;
-      height: 70px;
-
-      font-size: 30px;
-      line-height: 37px;
-    }
 
     &--inline {
-      font-size: 20px;
-      line-height: 20px;
       width: 400px;
       text-align: left;
       padding-top: 20px;
@@ -217,24 +215,7 @@
   }
 
   .section-example__block-text {
-    font-size: 14px;
-    line-height: 14px;
-
-    bottom: -5px;
-    padding-left: 5px;
-    padding-right: 5px;
-
     background-color: #eaeaea;
-
-    &--weight {
-      width: 115px;
-      left: 21px;
-    }
-
-    &--time {
-      width: 142px;
-      left: 8px;
-    }
 
     &--inline {
       display: inline-block;
