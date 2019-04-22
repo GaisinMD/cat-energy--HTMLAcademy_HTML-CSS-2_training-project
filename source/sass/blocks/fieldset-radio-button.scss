@@ -1,7 +1,7 @@
 .fieldset-radio-button {
   @include oswald(300);
   font-size: 16px;
-  line-height: 18px;
+  line-height: 30px;
   color: #222222;
   text-transform: uppercase;
 
@@ -11,7 +11,7 @@
 
   padding: 0;
   padding-top: 20px;
-  padding-bottom: 0;
+  padding-bottom: 8px;
 }
 
 .fieldset-radio-button__radio-list {
@@ -21,13 +21,14 @@
 }
 
 .fieldset-radio-button__radio-item {
-  padding-bottom: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .fieldset-radio-button__radio-item label {
   position: relative;
+  display: block;
   padding-left: 45px;
+  min-height: 30px;
 
   &::before {
     position: absolute;

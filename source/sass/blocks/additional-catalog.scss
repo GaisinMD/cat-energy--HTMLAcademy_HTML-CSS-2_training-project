@@ -5,7 +5,7 @@
 
 .additional-catalog__header {
   position: relative;
-  padding-bottom: 27px;
+  padding-bottom: 33px;
 
   h2 {
     @include oswald(300);
@@ -35,7 +35,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: calc(100% - 250px);
+    width: calc(100% - 240px);
     height: 3px;
     right: 0;
     top: 13px;
@@ -64,9 +64,9 @@
   p {
     position: relative;
     text-align: center;
-    width: 160px;
+    width: 170px;
     margin: 0;
-    padding-top: 190px;
+    padding-top: 186px;
     padding-bottom: 20px;
 
     &::before {
@@ -75,7 +75,7 @@
       width: 56px;
       height: 61px;
       top: 65px;
-      left: 50px;
+      left: 58px;
       background-image: url("../img/icon-gift.svg");
       background-repeat: no-repeat;
       background-position: center top;

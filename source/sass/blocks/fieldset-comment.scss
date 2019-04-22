@@ -2,11 +2,11 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 18px;
-  color: #111111;
+  color: #222222;
 
   border: none;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   position: relative;
 
@@ -16,7 +16,7 @@
     width: calc(100% - 250px);
     height: 3px;
     right: 0;
-    top: 13px;
+    top: 14px;
     background-color: #68b738;
     z-index: -1;
   }
@@ -31,9 +31,9 @@
   text-transform: none;
   width: 320px;
 
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   padding-right: 110px;
-  padding-left: 20px;
+  padding-left: 17px;
 
   @include margin-auto;
 
@@ -43,7 +43,7 @@
     width: 160px;
     height: 3px;
     right: 0;
-    top: 13px;
+    top: 14px;
     background-color: #68b738;
   }
 }
@@ -55,7 +55,7 @@
   width: 280px;
   height: 150px;
   resize: none;
-  padding-left: 16px;
+  padding-left: 13px;
   padding-top: 13px;
   margin-bottom: 16px;
 
