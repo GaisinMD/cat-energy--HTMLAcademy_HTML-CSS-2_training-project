@@ -38,6 +38,27 @@
 @media (min-width: $tablet-width) {
   .cat-transformer {
     width: $tablet-width;
+    min-height: 631px;
+  }
+
+  .cat-transformer__cat-before {
+    left: 46px;
+    width: 345px;
+    background-image: linear-gradient(to bottom, #ffffff 170px, #f2f2f2 170px);
+
+    img {
+      width: 690px;
+      max-width: 690px;
+    }
+  }
+
+  .cat-transformer__cat-after {
+    left: 46px;
+
+    img {
+      width: 690px;
+      left: 46px;
+    }
   }
 }
 
