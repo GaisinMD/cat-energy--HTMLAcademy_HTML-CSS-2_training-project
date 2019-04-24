@@ -65,6 +65,10 @@
     padding-top: 25px;
     padding-right: 40px;
     padding-bottom: 27px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .additional-list-item__header {
@@ -75,15 +79,17 @@
 
   .additional-list-item__text-wrapper {
     align-items: flex-start;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-list-item__quantity {
     margin-right: 52px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .additional-list-item__price {
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .additional-list-item__button {
