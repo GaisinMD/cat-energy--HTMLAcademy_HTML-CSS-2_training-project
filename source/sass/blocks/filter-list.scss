@@ -38,14 +38,21 @@
   }
 
   .filter-list__item {
-    width: 315px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 270px;
     padding-bottom: 24px;
-    margin-bottom: 34px;
+    margin-right: 74px;
+    margin-bottom: 18px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   .filter-list__label {
-    padding-top: 5px;
-    padding-left: 59px;
+    padding-top: 9px;
+    padding-left: 57px;
 
     &::before {
       width: 40px;
