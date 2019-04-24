@@ -43,7 +43,6 @@
   }
 }
 
-
 /*Поведение на потом
 /*.fieldset-radio-button__radio-item input:checked+label::before {
   border: 1px solid #000000;
@@ -83,26 +82,27 @@
 
     border-top: none;
     border-bottom: none;
+    padding-top: 33px;
   }
 
   .fieldset-radio-button__radio-list {
     width: 630px;
-    padding-left: 25px;
-    padding-top: 28px;
+    padding-left: 30px;
+    padding-top: 24px;
     padding-right: 67px;
+    padding-bottom: 12px;
 
     border: 1px solid #cdcdcd;
   }
 
   .fieldset-radio-button__radio-item {
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .fieldset-radio-button__radio-item label {
     position: relative;
-    padding-left: 60px;
-    padding-top: 3px;
+    padding-left: 59px;
+    padding-top: 9px;
 
     &::before {
       position: absolute;

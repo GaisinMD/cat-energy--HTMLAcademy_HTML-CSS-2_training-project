@@ -35,14 +35,26 @@
 @media (min-width: $tablet-width) {
   .fieldset-cat {
     width: 630px;
-    padding-left: 0;
+    padding-left: 2px;
     padding-right: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
   .fieldset-cat__item {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    align-items: flex-start;
+  }
+
+  .fieldset-cat__label {
+    padding-top: 17px;
+  }
+
+  .fieldset-cat__input {
+    line-height: 50px;
+    padding-left: 18px;
+    margin-left: 17px;
+    flex-grow: 1;
   }
 }
 

@@ -111,7 +111,7 @@
       width: 100%;
       height: 3px;
       right: 0;
-      top: 20px;
+      top: 22px;
       background-color: #68b738;
       z-index: -1;
     }
@@ -123,32 +123,59 @@
     width: $tablet-width;
 
     padding-bottom: 73px;
-    padding-left: 71px;
+    padding-left: 67px;
     padding-right: 177px;
 
     &::before {
       position: absolute;
       content: "";
-      width: 41px;
+      width: 28px;
       height: 3px;
       left: 0;
-      top: 20px;
+      top: 22px;
       background-color: #68b738;
     }
 
     &::after {
-      width: 140px;
-      top: 20px;
+      width: 147px;
+      top: 22px;
     }
   }
 
   .fieldset-man__list {
     width: $tablet-width;
+    padding-top: 4px;
   }
 
   .fieldset-man__item {
-    margin-left: 71px;
+    margin-left: 70px;
     margin-right: 65px;
+    margin-bottom: 19px;
+    align-items: flex-start;
+
+    &--mail::after {
+      width: 18px;
+      height: 14px;
+      right: 22px;
+      top: 19px;
+    }
+
+    &--phone::after {
+      width: 21px;
+      height: 21px;
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  .fieldset-man__label {
+    padding-top: 15px;
+  }
+
+  .fieldset-man__input {
+    line-height: 48px;
+    padding-left: 18px;
+    margin-left: 19px;
   }
 }
 

@@ -38,8 +38,12 @@
 
 //
 @media (min-width: $tablet-width) {
+  .main-form__cat-fieldset {
+    margin-bottom: 20px;
+  }
+
   .main-form__fieldset-radio {
-    margin-bottom: 79px;
+    margin-bottom: 66px;
   }
 
   .main-form__man-fieldset {
