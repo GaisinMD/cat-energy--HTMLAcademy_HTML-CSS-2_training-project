@@ -121,6 +121,9 @@
         </section>
         <section class="cat-transformer section-example__transformer">
           <h2 class="visually-hidden">Пример волшебного преобразования!</h2>
+
+          <div class="cat-transformer-decoration" role="presentation"></div>
+
           <picture class="cat-transformer__cat-before">
             <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
@@ -135,11 +138,11 @@
           </picture>
 
           <div class="cat-transformer__controller controller-before-after">
-            <p class="controller-before-after__text">Было</p>
+            <button class="controller-before-after__text">Было</button>
             <div class="controller-before-after__input-wraper">
               <input class="controller-before-after__input" type="range" min="0" max="100" step="1" value="50">
             </div>
-            <p class="controller-before-after__text">Стало</p>
+            <button class="controller-before-after__text">Стало</button>
           </div>
         </section>
       </div>
@@ -171,7 +174,7 @@
     <div class="global-wraper global-wraper--color-all">
       <div class="page-footer__bottom-wraper">
         <a class="logo page-footer__logo">
-          <img class="logo__image page-footer__logo-image" src="img/logo-footer.svg" width="130" height="24"
+          <img class="logo__image logo__image--footer page-footer__logo-image" src="img/logo-footer.svg" width="130" height="24"
             alt="Магазин CAT Energy">
         </a>
 

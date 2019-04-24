@@ -27,9 +27,25 @@
 //
 @media (min-width: $tablet-width) {
   .footer-academy-promo {
-    width: 165px;
+    width: 169px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer-academy-promo__text-link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .footer-academy-promo__logo-link {
+    margin-left: auto;
+  }
+
+  .footer-academy-promo__logo-image {
+    width: 37px;
+    height: 40px;
   }
 }

@@ -44,20 +44,15 @@
 
 //
 @media (min-width: $tablet-width) {
-  .page-footer {
-    background-color: #ffffff;
-  }
-
-  .page-footer__bottom-wraper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #f2f2f2;
+  .social-list {
+    margin-left: 35px;
   }
 
   .social-list__item {
+    &:first-child {
+      margin-left: 0;
+    }
+
     a {
       height: 28px;
     }
@@ -65,11 +60,13 @@
     &--vk a {
       width: 30px;
       background-image: url("../img/icon-vk.svg");
+      margin-right: 28px;
     }
 
     &--instagramm a {
       width: 23px;
       background-image: url("../img/icon-insta.svg");
+      margin-right: 29px;
     }
 
     &--facebook a {

@@ -50,12 +50,14 @@
     background-color: #ffffff;
   }
 
-  .page-footer__map {
-    width: 767px;
+  .page-footer__text-wraper {
+    padding-top: 65px;
+    justify-content: space-between;
   }
 
-  .page-footer__text-wraper {
-    justify-content: space-between;
+  .page-footer__map {
+    width: 767px;
+    height: 400px;
   }
 
   .page-footer__bottom-wraper {
@@ -65,6 +67,20 @@
 
     @include margin-auto;
     width: 738px;
+    padding-top: 53px;
+    padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  .page-footer__logo {
+    margin-top: 9px;
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 
   .page-footer__footer-academy-promo {
