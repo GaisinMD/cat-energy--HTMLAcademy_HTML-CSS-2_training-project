@@ -30,7 +30,7 @@
 //
 @media (min-width: $desktop-width) {
   .section-it-work {
-    width: $desktop-width;
+    width: $desktop-width + 1;
     padding-left: 40px;
   }
 

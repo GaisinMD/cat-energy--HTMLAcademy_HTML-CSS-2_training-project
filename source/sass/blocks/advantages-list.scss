@@ -148,7 +148,7 @@
 
   .advantages-list__item {
     padding-left: 0;
-    padding-top: 115px;
+    padding-top: 121px;
     padding-bottom: 35px;
     margin-right: 89px;
     margin-bottom: 0;
@@ -157,12 +157,25 @@
     font-size: 16px;
     line-height: 24px;
 
+    &--early-results {
+      width: 245px;
+    }
+
     &:nth-child(even) {
       margin-right: 90px;
     }
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &::before {
+      top: 9px;
+      left: 0;
+    }
+
+    &::after {
+      top: 10px;
     }
   }
 }

@@ -1,6 +1,7 @@
 .section-promo {
   background-color: #f2f2f2;
   width: 280px;
+  min-height: 372px;
   padding-left: 20px;
   padding-top: 24px;
   padding-bottom: 20px;
@@ -180,21 +181,21 @@
     padding-left: 0;
     padding-top: 75px;
     padding-right: 80px;
-    padding-bottom: 75px;
+    padding-bottom: 55px;
 
     &:nth-child(even) {
       padding-right: 0;
     }
 
     &::before {
-      top: 52px;
-      right: 418px;
+      top: 47px;
+      left: 52px;
       width: 100px;
       height: 100px;
     }
 
     &--thin::after {
-      left: 67px;
+      left: 65px;
       top: 41px;
       width: 71px;
       height: 97px;
@@ -211,15 +212,20 @@
   .section-promo__header {
     font-size: 36px;
     line-height: 37px;
-    margin-left: 216px;
-    margin-bottom: 70px;
+    padding-top: 1px;
+    margin-left: 214px;
+    margin-bottom: 75px;
   }
 
   .section-promo__text {
     width: 465px;
     padding-right: 0;
-    margin-bottom: 33px;
     margin-left: 52px;
+    margin-bottom: 7px;
+
+    br {
+      display: none;
+    }
   }
 
   .section-promo__link {
