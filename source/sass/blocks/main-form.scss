@@ -83,12 +83,16 @@
 
 //
 @media (min-width: $desktop-width) {
+  .main-form {
+    padding-bottom: 44px;
+  }
+
   .main-form__wrapper {
     display: flex;
     flex-wrap: wrap;
 
     @include margin-auto;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 1220px;
   }
 
@@ -97,8 +101,16 @@
     margin-right: 80px;
   }
 
-  .main-form__man-fieldset {
-    margin-bottom: 40px;
+  .main-form__fieldset-radio {
+    margin-bottom: 30px;
+  }
+
+  .main-form__comment-fieldset {
+    margin-bottom: 41px;
+  }
+
+  .main-form__filter-fieldset {
+    margin-bottom: 0;
   }
 
   .main-form__bottom-item-wrapper {

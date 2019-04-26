@@ -96,18 +96,22 @@
 
 //
 @media (min-width: $desktop-width) {
+  .fieldset-filter {
+    padding-bottom: 12px;
+  }
+
   .fieldset-filter__legend {
     width: $desktop-width;
 
     padding-left: 40px;
-    padding-bottom: 85px;
+    padding-bottom: 57px;
 
     &::before {
-      width: 11px;
+      width: 5px;
     }
 
     &::after {
-      width: 1015px;
+      width: 1005px;
     }
   }
 }

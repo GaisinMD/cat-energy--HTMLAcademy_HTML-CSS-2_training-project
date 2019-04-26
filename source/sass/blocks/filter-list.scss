@@ -75,6 +75,10 @@
     padding-bottom: 24px;
     margin-bottom: 34px;
 
+    &:nth-child(even) {
+      margin-right: 105px;
+    }
+
     &:nth-child(4n) {
       margin-right: 0;
     }

@@ -185,14 +185,14 @@
     width: $desktop-width;
 
     padding-left: 40px;
-    padding-bottom: 85px;
+    padding-bottom: 75px;
 
     &::before {
-      width: 11px;
+      width: 3px;
     }
 
     &::after {
-      width: 720px;
+      width: 705px;
     }
   }
 
@@ -210,6 +210,16 @@
 
     &:nth-child(even) {
       margin-right: 0;
+    }
+
+    &--mail::after {
+      right: 20px;
+      top: 18px;
+    }
+
+    &--phone::after {
+      right: 16px;
+      top: 15px;
     }
   }
 }
