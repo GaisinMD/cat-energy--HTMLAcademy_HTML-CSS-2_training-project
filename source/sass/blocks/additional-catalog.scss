@@ -161,7 +161,8 @@
 //
 @media (min-width: $desktop-width) {
   .additional-catalog {
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 22px;
   }
 
   .additional-catalog__header {
@@ -171,12 +172,18 @@
       padding-right: 900px;
 
       &::before {
-        width: 10px;
+        top: 23px;
+        width: 1px;
       }
 
       &::after {
-        width: 900px;
+        top: 23px;
+        width: 882px;
       }
+    }
+
+    &::after {
+      top: 23px;
     }
   }
 
@@ -185,7 +192,7 @@
     flex-wrap: wrap;
 
     @include margin-auto;
-    width: 1220px;
+    width: 1230px;
   }
 
   .additional-catalog__special-offer {
@@ -203,14 +210,14 @@
     p {
       @include margin-auto;
       position: relative;
-      width: 160px;
+      width: 170px;
       padding-top: 190px;
       padding-bottom: 20px;
       text-align: center;
 
       &::before {
-        top: 65px;
-        left: 50px;
+        top: 66px;
+        left: 59px;
       }
     }
   }
