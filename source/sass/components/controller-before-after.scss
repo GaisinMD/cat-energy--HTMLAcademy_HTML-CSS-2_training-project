@@ -4,6 +4,27 @@
   width: 320px;
 }
 
+.controller-before-after__text {
+  @include oswald(300);
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-left: 64px;
+    margin-right: 19px;
+  }
+
+  &:last-child {
+    margin-left: 17px;
+  }
+}
+
 @media (max-width: $tablet-width - 1) {
   .controller-before-after__input-wraper {
     display: flex;
@@ -41,30 +62,13 @@
     border-radius: 3px;
     box-shadow: -82px 0 0 80px #68b738;
   }
-
-  .controller-before-after__text {
-    @include oswald(300);
-    font-size: 16px;
-    line-height: 20px;
-    color: #111111;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    text-transform: uppercase;
-
-    &:first-child {
-      margin-left: 64px;
-      margin-right: 19px;
-    }
-
-    &:last-child {
-      margin-left: 17px;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
+  .controller-before-after {
+    width: 768px;
+  }
+
   .controller-before-after__input {
     appearance: none;
     overflow: hidden;

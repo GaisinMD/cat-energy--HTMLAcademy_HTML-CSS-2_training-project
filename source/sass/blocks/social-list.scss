@@ -75,3 +75,10 @@
     }
   }
 }
+
+//
+@media (min-width: $desktop-width) {
+  .social-list {
+    padding-left: 25px;
+  }
+}

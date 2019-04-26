@@ -23,8 +23,17 @@
 
 //
 @media (min-width: $desktop-width) {
+  .logo {
+    padding-left: 13px;
+  }
+
   .logo__image {
     width: 203px;
     height: 60px;
+
+    &--footer {
+      width: 128px;
+      height: 24px;
+    }
   }
 }

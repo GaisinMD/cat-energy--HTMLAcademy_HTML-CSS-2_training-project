@@ -110,7 +110,7 @@
     top: 95px;
     width: 570px;
     min-height: 201px;
-    padding-top: 60px;
+    padding-top: 65px;
   }
 
   .page-footer__bottom-wraper {
@@ -119,8 +119,13 @@
     justify-content: space-between;
 
     @include margin-auto;
-    width: 1220px;
-    padding-top: 64px;
-    padding-bottom: 30px;
+    width: 1250px;
+    padding-top: 55px;
+    padding-bottom: 56px;
+    padding-left: 0;
+  }
+
+  .page-footer__logo {
+    margin-top: 10px;
   }
 }
