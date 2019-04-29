@@ -40,13 +40,17 @@
       border-bottom: none;
       margin-right: 0;
     }
-  }
 
-  .site-list__item a {
-    font-size: 18px;
-    line-height: 25px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    a {
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 18px;
+      padding-bottom: 7px;
+    }
+
+    &--active a {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }
 
@@ -57,12 +61,15 @@
       font-size: 20px;
       line-height: 25px;
       padding-top: 25px;
-      padding-bottom: 25px;
-      color: #ffffff;
+      padding-bottom: 8px;
     }
 
     &--colored a {
-      color: #000000;
+      color: #ffffff;
     }
+  }
+
+  .site-list__item--colored.site-list__item--active {
+    border-bottom: 2px solid #ffffff;
   }
 }
