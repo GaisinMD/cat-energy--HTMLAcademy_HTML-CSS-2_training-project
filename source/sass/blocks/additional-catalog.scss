@@ -83,6 +83,14 @@
   }
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .additional-catalog__special-offer {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
 //
 @media (min-width: $tablet-width) {
   .additional-catalog {
@@ -156,6 +164,14 @@
       }
     }
   }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .additional-catalog__special-offer {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+  }
 }
 
 //
@@ -219,6 +235,14 @@
         top: 66px;
         left: 59px;
       }
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .additional-catalog__special-offer {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
     }
   }
 }
