@@ -2,6 +2,11 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 320px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .page-main__main-header-index {
@@ -16,12 +21,12 @@
 
 .page-main__section-promo {
   @include margin-auto;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .page-main__section-it-work {
   @include margin-auto;
-  margin-bottom: 47px;
+  margin-bottom: 42px;
 }
 
 .page-main__section-example {
@@ -46,21 +51,39 @@
     background-image: none;
   }
 
+  .page-main__section-main-promo {
+    margin-top: 11px;
+    margin-bottom: 14px;
+  }
+
   .page-main__section-promo {
     margin-bottom: 30px;
   }
 
   .page-main__section-it-work {
-    margin-bottom: 50px;
-  }
-
-  .page-main__main-catalog {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
 //
 @media (min-width: $desktop-width) {
+  .page-main__top-wrapper {
+    @include margin-auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 332px;
+    width: $desktop-width;
+    background-image: url("/img/index-can-desktop@1x.png");
+    background-position: 65% 15px;
+    background-repeat: no-repeat;
+    background-size: 552px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+    }
+  }
+
   .page-main__main-header-index {
     margin-left: 0;
     margin-right: 0;
@@ -78,10 +101,15 @@
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-top: 80px;
   }
 
   .page-main__section-promo {
-    margin-bottom: 55px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 61px;
   }
 
   .page-main__wraper-section-example {
@@ -96,6 +124,7 @@
 
   .page-main__section-example {
     margin-left: 0;
-    margin-right: 135px;
+    margin-right: 85px;
+    z-index: 10;
   }
 }

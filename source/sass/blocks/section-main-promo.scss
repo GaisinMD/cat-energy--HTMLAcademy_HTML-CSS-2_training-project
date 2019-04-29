@@ -1,10 +1,11 @@
 .section-main-promo {
   text-align: center;
+  padding-top: 11px;
 }
 
 .section-main-promo__slogan {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @include oswald(300);
   font-size: 14px;
@@ -32,9 +33,15 @@
     min-height: 635px;
     width: 709px;
     padding-left: 90px;
+    padding-top: 0;
     background-image: url("/img/index-can-tablet@1x.jpg");
     background-position: center 40px;
     background-repeat: no-repeat;
+    background-size: 709px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-can-tablet@2x.jpg");
+    }
   }
 
   .section-main-promo__slogan {
@@ -42,7 +49,7 @@
     line-height: 20px;
     color: #000000;
     text-align: left;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   .section-main-promo__image {
@@ -64,13 +71,13 @@
 //
 @media (min-width: $desktop-width) {
   .section-main-promo {
-    min-height: 500px;
+    min-height: 300px;
     width: 420px;
     padding-left: 0;
     background-image: none;
   }
 
   .section-main-promo__slogan {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 }

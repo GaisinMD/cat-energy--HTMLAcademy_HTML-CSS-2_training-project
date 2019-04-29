@@ -6,26 +6,25 @@
   text-align: center;
 
   width: 320px;
+  padding-top: 27px;
+
 
   &--index {
-    padding-top: 29px;
-    padding-bottom: 19px;
+    padding-bottom: 13px;
   }
 
   &--catalog {
     color: #000000;
-    padding-top: 29px;
-    padding-bottom: 33px;
-    padding-left: 22px;
+    padding-bottom: 40px;
+    padding-left: 20px;
     width: 320px;
     text-align: left;
   }
 
   &--form {
     color: #000000;
-    padding-top: 29px;
-    padding-bottom: 33px;
-    padding-left: 22px;
+    padding-bottom: 39px;
+    padding-left: 20px;
     width: 320px;
     text-align: left;
   }
@@ -41,53 +40,46 @@
     width: 708px;
 
     &--index {
-      padding-left: 120px;
+      padding-left: 87px;
+      padding-top: 42px;
       padding-right: 180px;
       padding-bottom: 30px;
     }
 
     &--catalog {
       padding-left: 0;
+      padding-top: 42px;
+      padding-bottom: 84px;
     }
 
     &--form {
-      padding-left: 30px;
-      padding-bottom: 53px;
+      padding-left: 0;
+      padding-top: 42px;
+      padding-bottom: 55px;
     }
   }
 }
 
 //
 @media (min-width: $desktop-width) {
-  .page-main__top-wrapper {
-    @include margin-auto;
-    display: flex;
-    flex-direction: column;
-    padding-left: 125px;
-    padding-right: 332px;
-    width: $desktop-width;
-    background-image: url("/img/index-can-desktop@1x.png");
-    background-position: 50% top;
-    background-repeat: no-repeat;
-  }
-
   .main-header {
     &--index {
       padding-left: 0;
+      padding-top: 93px;
       padding-right: 230px;
       padding-bottom: 30px;
     }
 
     &--catalog {
       width: 1220px;
-      padding-top: 80px;
-      padding-bottom: 70px;
+      padding-top: 60px;
+      padding-bottom: 85px;
     }
 
     &--form {
       width: 1220px;
       padding-left: 0;
-      padding-top: 80px;
+      padding-top: 60px;
       padding-bottom: 53px;
     }
   }

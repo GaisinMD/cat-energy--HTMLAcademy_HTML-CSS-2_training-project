@@ -18,15 +18,51 @@
     min-width: $tablet-width;
 
     &--color {
-      background-image: linear-gradient(180deg, #ffffff 570px, #eaeaea 570px);
+      position: relative;
+      background-image: linear-gradient(180deg, #ffffff 588px, #eaeaea 588px);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: calc(100% - 588px);
+        left: 0;
+        bottom: 0;
+        background-color: #f2f2f2;
+      }
+    }
+
+    &--it-work {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba($color: #000000, $alpha: 0.05);
+      }
     }
   }
 }
 
 //
 @media (min-width: $desktop-width) {
-  .global-wraper--color {
-    min-width: $desktop-width;
-    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  .global-wraper {
+    &--it-work {
+      padding-bottom: 35px;
+    }
+
+    &--color {
+      min-width: $desktop-width;
+      background-image: linear-gradient(180deg, #ffffff 191px, #eaeaea 191px);
+
+      &::after {
+        height: calc(100% - 191px);
+        background-color: #f2f2f2;
+      }
+    }
   }
 }

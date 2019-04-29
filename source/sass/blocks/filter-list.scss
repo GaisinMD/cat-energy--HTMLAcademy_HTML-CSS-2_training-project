@@ -5,12 +5,17 @@
 }
 
 .filter-list__item {
-  padding-bottom: 21px;
+  font-size: 16px;
+  line-height: 30px;
+  min-height: 30px;
+  margin-bottom: 13px;
 }
 
 .filter-list__label {
+  display: block;
   position: relative;
-  padding-left: 46px;
+  padding-left: 44px;
+  height: 30px;
 
   &::before {
     position: absolute;
@@ -33,14 +38,21 @@
   }
 
   .filter-list__item {
-    width: 315px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 270px;
     padding-bottom: 24px;
-    margin-bottom: 34px;
+    margin-right: 74px;
+    margin-bottom: 18px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   .filter-list__label {
-    padding-top: 5px;
-    padding-left: 59px;
+    padding-top: 9px;
+    padding-left: 57px;
 
     &::before {
       width: 40px;
@@ -62,6 +74,10 @@
     margin-right: 105px;
     padding-bottom: 24px;
     margin-bottom: 34px;
+
+    &:nth-child(even) {
+      margin-right: 105px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;

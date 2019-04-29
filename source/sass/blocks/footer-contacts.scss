@@ -8,9 +8,10 @@
   line-height: 20px;
   width: 125px;
   margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 19px;
+  margin-right: 17px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .footer-contacts__address {
@@ -40,11 +41,10 @@
 
   .footer-contacts__address {
     font-size: 16px;
-    line-height: 20px;
     width: 155px;
-    margin: 0;
     margin-right: 72px;
     margin-bottom: 55px;
+    text-align: right;
   }
 
   .footer-contacts__address span {
@@ -67,11 +67,12 @@
   }
 
   .footer-contacts__address {
+    text-align: left;
     font-size: 16px;
     line-height: 20px;
     width: 155px;
     margin: 0;
-    margin-right: 72px;
+    margin-right: 92px;
     margin-bottom: 55px;
   }
 }

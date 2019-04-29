@@ -34,7 +34,7 @@
 
   .site-list__item {
     border: none;
-    margin-right: 37px;
+    margin-right: 35px;
 
     &:last-child {
       border-bottom: none;
@@ -52,10 +52,17 @@
 
 //
 @media (min-width: $desktop-width) {
-  .site-list__item a {
-    font-size: 20px;
-    line-height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .site-list__item {
+    a {
+      font-size: 20px;
+      line-height: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: #ffffff;
+    }
+
+    &--colored a {
+      color: #000000;
+    }
   }
 }

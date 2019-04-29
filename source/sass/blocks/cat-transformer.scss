@@ -1,20 +1,102 @@
 .cat-transformer {
+  display: flex;
   background-color: transparent;
+  position: relative;
 
   @include margin-auto;
-  width: 280px;
+  padding-top: 1px;
+  width: 320px;
+  min-height: 330px;
+}
+
+.cat-transformer__cat-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #f2f2f2;
+
+  img {
+    max-width: 320px;
+  }
+}
+
+.cat-transformer__cat-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cat-transformer__controller {
+  margin-top: auto;
 }
 
 //
 @media (min-width: $tablet-width) {
   .cat-transformer {
     width: $tablet-width;
+    min-height: 631px;
+  }
+
+  .cat-transformer-decoration {
+    width: 390px;
+    background-image: linear-gradient(180deg, #ffffff 170px, #f2f2f2 170px);
+  }
+
+  .cat-transformer__cat-before {
+    left: 46px;
+    width: 345px;
+    background-image: linear-gradient(180deg, #ffffff 170px, #f2f2f2 170px);
+
+    img {
+      width: 690px;
+      max-width: 690px;
+    }
+  }
+
+  .cat-transformer__cat-after {
+    left: 46px;
+
+    img {
+      width: 690px;
+    }
+  }
+
+  .cat-transformer__controller {
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
   }
 }
 
 //
 @media (min-width: $desktop-width) {
   .cat-transformer {
-    width: 636px;
+    width: 690px;
+  }
+
+  .cat-transformer-decoration {
+    width: 390px;
+    background-image: linear-gradient(180deg, #ffffff 190px, #f2f2f2 190px);
+  }
+
+  .cat-transformer__cat-before {
+    background-image: linear-gradient(180deg, #ffffff 190px, #f2f2f2 190px);
+    min-height: 517px;
+  }
+
+  .cat-transformer__cat-after {
+    min-height: 517px;
+
+    img {
+      max-width: 690px;
+    }
+  }
+
+  .cat-transformer__controller {
+    left: 17px;
+    bottom: 26px;
   }
 }

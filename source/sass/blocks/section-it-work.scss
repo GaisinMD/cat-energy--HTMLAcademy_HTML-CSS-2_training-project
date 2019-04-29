@@ -9,6 +9,7 @@
   color: #111111;
   margin: 0;
   margin-bottom: 32px;
+  padding-top: 2px;
 }
 
 //
@@ -16,20 +17,20 @@
   .section-it-work {
     width: 768px;
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .section-it-work__header {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 }
 
 //
 @media (min-width: $desktop-width) {
   .section-it-work {
-    width: $desktop-width;
+    width: $desktop-width + 1;
     padding-left: 40px;
   }
 

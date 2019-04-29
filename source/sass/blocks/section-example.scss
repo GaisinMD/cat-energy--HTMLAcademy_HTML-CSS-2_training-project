@@ -17,8 +17,8 @@
   @include arial;
   font-size: 14px;
   line-height: 18px;
-  width: 275px;
-  margin-bottom: 27px;
+  width: 290px;
+  margin-bottom: 25px;
   padding-left: 20px;
   color: #444444;
 }
@@ -33,7 +33,7 @@
 .section-example__characteristic-block {
   @include oswald(300);
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   &:first-child {
     margin-right: 32px;
@@ -49,7 +49,7 @@
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   &--inline {
@@ -69,7 +69,7 @@
   position: absolute;
 
   left: 17px;
-  bottom: -15px;
+  bottom: -16px;
   width: 87px;
   padding-left: 16px;
   padding-right: 16px;
@@ -99,6 +99,8 @@
 @media (min-width: $tablet-width) {
   .section-example {
     width: 768px;
+    padding-top: 13px;
+    padding-bottom: 55px;
   }
 
   .section-example__header {
@@ -106,21 +108,21 @@
     line-height: 60px;
     padding-left: 30px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
   }
 
   .section-example__text {
     font-size: 16px;
     line-height: 24px;
     width: 706px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     padding-left: 30px;
   }
 
-  .section-example__characteristic {
+  .section-example__characteristics {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding-left: 30px;
   }
 
   .section-example__characteristic-block {
@@ -153,80 +155,11 @@
     line-height: 14px;
 
     left: 35px;
-    bottom: -15px;
-    width: 87px;
-
-    background-color: #ffffff;
-
-    &--inline {
-      //ЕСТЬ ВОПРОСЫ
-      display: block;
-      width: 100px;
-      margin-left: auto;
-      margin-top: 8px;
-      //ЕСТЬ ВОПРОСЫ
-      font-size: 20px;
-      line-height: 20px;
-      padding: 0;
-    }
-  }
-}
-
-//
-@media (min-width: $desktop-width) {
-  .section-example {
-    width: 434px;
-    padding-bottom: 70px;
-  }
-
-  .section-example__header {
-    padding-left: 0;
-    margin-bottom: 140px;
-  }
-
-  .section-example__text {
-    width: 434px;
-    margin-bottom: 70px;
-    padding-left: 0;
-  }
-
-  .section-example__characteristic {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-
-  .section-example__characteristic-block {
-    &:first-child {
-      margin-right: 42px;
-    }
-
-    &--block {
-      width: 160px;
-      height: 70px;
-
-      font-size: 30px;
-      line-height: 37px;
-    }
-
-    &--inline {
-      font-size: 20px;
-      line-height: 20px;
-      width: 400px;
-      text-align: left;
-      padding-top: 20px;
-    }
-  }
-
-  .section-example__block-text {
-    font-size: 14px;
-    line-height: 14px;
-
     bottom: -5px;
     padding-left: 5px;
     padding-right: 5px;
 
-    background-color: #eaeaea;
+    background-color: #ffffff;
 
     &--weight {
       width: 115px;
@@ -239,15 +172,64 @@
     }
 
     &--inline {
-      //ЕСТЬ ВОПРОСЫ
-      display: inline-block;
+      display: block;
       width: 100px;
-      margin-left: 60px;
-      margin-top: 0;
-      //ЕСТЬ ВОПРОСЫ
+      margin-left: auto;
+      margin-top: 8px;
       font-size: 20px;
       line-height: 20px;
       padding: 0;
+    }
+  }
+}
+
+//
+@media (min-width: $desktop-width) {
+  .section-example {
+    width: 434px;
+    padding-bottom: 53px;
+    background-color: transparent;
+  }
+
+  .section-example__header {
+    padding-left: 0;
+    margin-top: 43px;
+    margin-bottom: 115px;
+  }
+
+  .section-example__text {
+    width: 434px;
+    margin-bottom: 70px;
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .section-example__characteristics {
+    padding-left: 0;
+  }
+
+  .section-example__characteristic-block {
+    &--block {
+      margin-bottom: 41px;
+    }
+
+    &--inline {
+      width: 400px;
+      text-align: left;
+      padding-top: 20px;
+      margin-left: 1px;
+    }
+  }
+
+  .section-example__block-text {
+    background-color: #eaeaea;
+
+    &--inline {
+      display: inline-block;
+      margin-left: 58px;
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }

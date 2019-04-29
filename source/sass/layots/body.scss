@@ -23,8 +23,14 @@ body {
   }
 
   .body-index {
-    background-image: url("/img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
+    background: url("/img/index-background-desktop@1x.jpg") right top no-repeat, linear-gradient(180deg, transparent 696px, #ffffff 696px), linear-gradient(90deg, transparent 50%, #64a83b 50%);
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .body-index {
+      background-image: url("/img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
