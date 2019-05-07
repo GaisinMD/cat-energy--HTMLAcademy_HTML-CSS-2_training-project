@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.main-nav--show {
+  display: block;
+}
+
 //
 @media (min-width: $tablet-width) {
   .main-nav {
