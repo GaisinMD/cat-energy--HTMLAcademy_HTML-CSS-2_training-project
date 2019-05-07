@@ -63,31 +63,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  &--mail::after {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 14px;
-    right: 17px;
-    top: 17px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-
-  &--phone::after {
-    position: absolute;
-    content: "";
-    width: 21px;
-    height: 21px;
-    right: 13px;
-    top: 13px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
 }
+
+.fieldset-man__icon-mail {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+
+.fieldset-man__icon-phone {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
 
 .fieldset-man__input {
   color: #444444;
@@ -152,21 +141,18 @@
     margin-right: 65px;
     margin-bottom: 19px;
     align-items: flex-start;
-
-    &--mail::after {
-      width: 18px;
-      height: 14px;
-      right: 22px;
-      top: 19px;
-    }
-
-    &--phone::after {
-      width: 21px;
-      height: 21px;
-      right: 20px;
-      top: 20px;
-    }
   }
+
+  .fieldset-man__icon-mail {
+    right: 22px;
+    top: 19px;
+  }
+
+  .fieldset-man__icon-phone {
+    right: 20px;
+    top: 17px;
+  }
+
 
   .fieldset-man__label {
     padding-top: 15px;
@@ -211,15 +197,15 @@
     &:nth-child(even) {
       margin-right: 0;
     }
+  }
 
-    &--mail::after {
-      right: 20px;
-      top: 18px;
-    }
+  .fieldset-man__icon-mail {
+    right: 20px;
+    top: 18px;
+  }
 
-    &--phone::after {
-      right: 16px;
-      top: 15px;
-    }
+  .fieldset-man__icon-phone {
+    right: 16px;
+    top: 15px;
   }
 }

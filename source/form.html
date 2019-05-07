@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="logo page-header__logo">
@@ -69,7 +74,7 @@
           <ul class="fieldset-radio-button__radio-list">
             <li class="fieldset-radio-button__radio-item">
               <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
-                value="thin" id="thin" checked>
+                value="thin" id="thin" checked="">
               <label for="thin">Похудение</label>
             </li>
             <li class="fieldset-radio-button__radio-item">
@@ -93,11 +98,17 @@
             <label class="fieldset-man__label" for="man-mail">E-mail:*</label>
             <input class="fieldset-man__input" id="man-mail" type="email" name="man-mail"
               placeholder="kuklachev@gmail.com">
+            <svg class="fieldset-man__icon-mail" height="14" width="18">
+              <use xlink:href="#social-icon-mail"></use>
+            </svg>
           </li>
           <li class="fieldset-man__item fieldset-man__item--phone">
             <label class="fieldset-man__label" for="man-mail">Телефон:*</label>
             <input class="fieldset-man__input" id="man-phone" type="tel" name="man-phone"
               placeholder="8 (960) 900-60-90">
+            <svg class="fieldset-man__icon-phone" height="21" width="21">
+              <use xlink:href="#social-icon-phone"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
@@ -113,7 +124,7 @@
         <ul class="fieldset-filter__item filter-list">
           <li class="filter-list__item">
             <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-sugarfree"
-              checked>
+              checked="">
             <label class="filter-list__label" for="id-sugarfree">Сахарозаменитель</label>
           </li>
           <li class="filter-list__item">
@@ -153,6 +164,11 @@
 
       <div class="global-wraper global-wraper--color-all">
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта"
@@ -172,13 +188,34 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="footer-social__list social-list">
             <li class="social-list__item social-list__item--vk">
-              <a href="#">ВКонтакте</a>
+              <a href="#">ВКонтакте
+                <svg class="social-list__img social-list__img--mobile" height="19" width="22">
+                  <use xlink:href="#social-icon-vk-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="30">
+                  <use xlink:href="#social-icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-list__item social-list__item--instagramm">
-              <a href="#">Instagramm</a>
+              <a href="#">Instagramm
+                <svg class="social-list__img social-list__img--mobile" height="19" width="17">
+                  <use xlink:href="#social-icon-insta-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="23">
+                  <use xlink:href="#social-icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-list__item social-list__item--facebook">
-              <a href="#">Facebook</a>
+              <a href="#">Facebook
+                <svg class="social-list__img social-list__img--mobile" height="19" width="10">
+                  <use xlink:href="#social-icon-fb-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="14">
+                  <use xlink:href="#social-icon-fb"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
@@ -187,8 +224,9 @@
           <h2 class="visually-hidden">Промо HTML Academy</h2>
           <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="footer-academy-promo__logo-image" src="img/htmlacademy.svg" alt="HTML Academy" width="38"
-              height="35">
+            <svg height="45" width="40">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
           </a>
         </section>
       </div>

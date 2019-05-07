@@ -68,7 +68,7 @@
     @include margin-auto;
     width: 738px;
     padding-top: 53px;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
     padding-left: 15px;
     padding-right: 10px;
   }
@@ -121,11 +121,15 @@
     @include margin-auto;
     width: 1250px;
     padding-top: 55px;
-    padding-bottom: 56px;
+    padding-bottom: 45px;
     padding-left: 0;
   }
 
+  .page-footer__social {
+    margin-top: 9px;
+  }
+
   .page-footer__logo {
-    margin-top: 10px;
+    margin-top: 12px;
   }
 }
