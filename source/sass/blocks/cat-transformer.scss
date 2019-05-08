@@ -16,7 +16,7 @@
   width: 160px;
   z-index: 1;
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: $first-background;
 
   img {
     max-width: 320px;
@@ -42,13 +42,13 @@
 
   .cat-transformer-decoration {
     width: 390px;
-    background-image: linear-gradient(180deg, #ffffff 170px, #f2f2f2 170px);
+    background-image: linear-gradient(180deg, $base-background 170px, $first-background 170px);
   }
 
   .cat-transformer__cat-before {
     left: 46px;
     width: 345px;
-    background-image: linear-gradient(180deg, #ffffff 170px, #f2f2f2 170px);
+    background-image: linear-gradient(180deg, $base-background 170px, $first-background 170px);
 
     img {
       width: 690px;
@@ -79,11 +79,11 @@
 
   .cat-transformer-decoration {
     width: 390px;
-    background-image: linear-gradient(180deg, #ffffff 190px, #f2f2f2 190px);
+    background-image: linear-gradient(180deg, $base-background 190px, $first-background 190px);
   }
 
   .cat-transformer__cat-before {
-    background-image: linear-gradient(180deg, #ffffff 190px, #f2f2f2 190px);
+    background-image: linear-gradient(180deg, $base-background 190px, $first-background 190px);
     min-height: 517px;
   }
 

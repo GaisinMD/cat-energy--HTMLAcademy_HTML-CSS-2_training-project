@@ -2,7 +2,7 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
+  color: $base-text;
   text-transform: uppercase;
 
   border: none;
@@ -18,7 +18,7 @@
     height: 3px;
     right: 0;
     top: 14px;
-    background-color: #68b738;
+    background-color: $color-first-background;
     z-index: -1;
   }
 }
@@ -33,8 +33,8 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
-  background-color: #ffffff;
+  color: $first-text;
+  background-color: $base-background;
   text-transform: none;
   width: 320px;
 
@@ -51,7 +51,7 @@
     height: 3px;
     right: 0;
     top: 14px;
-    background-color: #68b738;
+    background-color: $color-first-background;
   }
 }
 
@@ -79,7 +79,7 @@
 
 
 .fieldset-man__input {
-  color: #444444;
+  color: $second-text;
   border: 1px solid #cdcdcd;
   line-height: 43px;
   padding-left: 15px;
@@ -101,7 +101,7 @@
       height: 3px;
       right: 0;
       top: 22px;
-      background-color: #68b738;
+      background-color: $color-first-background;
       z-index: -1;
     }
   }
@@ -122,7 +122,7 @@
       height: 3px;
       left: 0;
       top: 22px;
-      background-color: #68b738;
+      background-color: $color-first-background;
     }
 
     &::after {

@@ -87,11 +87,6 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
-
 gulp.task("uglify", function() {
   return gulp.src("source/js/**/*.js")
   //.pipe(uglify())
@@ -102,6 +97,10 @@ gulp.task("uglify", function() {
   .pipe(gulp.dest('build/js'))
 });
 
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
 
 gulp.task("server", function () {
   server.init({

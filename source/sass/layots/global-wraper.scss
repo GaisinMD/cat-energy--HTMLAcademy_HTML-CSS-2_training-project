@@ -4,11 +4,11 @@
   @include margin-auto;
 
   &--color {
-    background-color: #f2f2f2;
+    background-color: $first-background;
   }
 
   &--color-all {
-    background-color: #f2f2f2;
+    background-color: $first-background;
   }
 }
 
@@ -19,7 +19,7 @@
 
     &--color {
       position: relative;
-      background-image: linear-gradient(180deg, #ffffff 588px, #eaeaea 588px);
+      background-image: linear-gradient(180deg, $base-background 588px, $second-background 588px);
 
       &::after {
         content: "";
@@ -28,7 +28,7 @@
         height: calc(100% - 588px);
         left: 0;
         bottom: 0;
-        background-color: #f2f2f2;
+        background-color: $first-background;
       }
     }
 
@@ -42,7 +42,7 @@
         height: 1px;
         left: 0;
         bottom: 30px;
-        background-color: rgba($color: #000000, $alpha: 0.05);
+        background-color: rgba($color: $base, $alpha: 0.05);
       }
     }
   }
@@ -53,15 +53,19 @@
   .global-wraper {
     &--it-work {
       padding-bottom: 35px;
+
+      &::after {
+        display: none;
+      }
     }
 
     &--color {
       min-width: $desktop-width;
-      background-image: linear-gradient(180deg, #ffffff 191px, #eaeaea 191px);
+      background-image: linear-gradient(180deg, $base-background 191px, $second-background 191px);
 
       &::after {
         height: calc(100% - 191px);
-        background-color: #f2f2f2;
+        background-color: $first-background;
       }
     }
   }

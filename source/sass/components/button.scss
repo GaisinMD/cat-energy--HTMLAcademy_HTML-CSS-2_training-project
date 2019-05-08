@@ -5,17 +5,17 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: $third-text;
 
   display: block;
   position: relative;
-  background-color: #68b738;
+  background-color: $color-first-background;
   min-height: 40px;
   padding-top: 10px;
 
   &--expand {
-    color: #444444;
-    background-color: #f2f2f2;
+    color: $second-text;
+    background-color: $first-background;
   }
 
   &--button {

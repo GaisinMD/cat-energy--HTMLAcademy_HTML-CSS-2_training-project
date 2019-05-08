@@ -3,7 +3,7 @@ body {
 
   @include margin-auto;
   padding: 0;
-  color: #000000;
+  color: $base-text;
   background-color: $base-background;
   min-width: 320px;
   height: 100%;
@@ -23,7 +23,7 @@ body {
   }
 
   .body-index {
-    background: url("/img/index-background-desktop@1x.jpg") right top no-repeat, linear-gradient(180deg, transparent 696px, #ffffff 696px), linear-gradient(90deg, transparent 50%, #64a83b 50%);
+    background: url("/img/index-background-desktop@1x.jpg") right top no-repeat, linear-gradient(180deg, transparent 696px, $base-background 696px), linear-gradient(90deg, transparent 50%, #64a83b 50%);
   }
 
   @media (min-resolution: 144dpi),

@@ -8,7 +8,7 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $first-text;
   margin: 0;
   padding: 0;
   border: none;
@@ -34,7 +34,7 @@
     height: 14px;
     border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    background-color: $base-background;
   }
 
   .controller-before-after__input {
@@ -44,7 +44,7 @@
     height: 6px;
     border-radius: 3px;
     margin-left: 4px;
-    background-color: #ffffff;
+    background-color: $base-background;
   }
 
   .controller-before-after__input::-webkit-slider-runnable-track {
@@ -58,9 +58,9 @@
     height: 6px;
     margin-top: 4px;
     margin-right: 10px;
-    background-color: #68b738;
+    background-color: $color-first-background;
     border-radius: 3px;
-    box-shadow: -82px 0 0 80px #68b738;
+    box-shadow: -82px 0 0 80px $color-first-background;
   }
 }
 
@@ -90,8 +90,8 @@
     height: 34px;
     border-radius: 50%;
     margin-top: -14px;
-    background-color: #68b738;
-    box-shadow: inset 0 0 0 1px #dcdcdc, inset 0 0 0 13px #ffffff;
+    background-color: $color-first-background;
+    box-shadow: inset 0 0 0 1px #dcdcdc, inset 0 0 0 13px $base-background;
   }
 
   .controller-before-after__text {

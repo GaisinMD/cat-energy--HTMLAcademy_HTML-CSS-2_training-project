@@ -1,8 +1,10 @@
 .social-list {
   @include zero-list;
-
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-list__item {
@@ -39,7 +41,7 @@
 //
 @media (min-width: $tablet-width) {
   .social-list {
-    padding-left: 20px;
+    padding-left: 108px;
   }
 
   .social-list__item {
@@ -72,12 +74,5 @@
 
   .social-list__img--desktop {
     display: block;
-  }
-}
-
-//
-@media (min-width: $desktop-width) {
-  .social-list {
-    padding-left: 25px;
   }
 }

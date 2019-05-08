@@ -1,5 +1,5 @@
 .section-promo {
-  background-color: #f2f2f2;
+  background-color: $first-background;
   width: 280px;
   padding-left: 20px;
   padding-top: 24px;
@@ -15,7 +15,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #68b738;
+    background-color: $color-first-background;
   }
 
   &--thin::after {
@@ -48,7 +48,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #111111;
+  color: $first-text;
 
   margin: 0;
   margin-left: 71px;
@@ -59,7 +59,7 @@
   @include arial;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $second-text;
 
   position: relative;
 
@@ -89,7 +89,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $first-text;
 
   position: relative;
 
