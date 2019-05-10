@@ -16,7 +16,16 @@
     display: block;
     font-size: 0;
     height: 19px;
-    color: #666666;
+    color: $base-social;
+
+    &:hover,
+    &:focus {
+      color: $color-first-background;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   &--vk a {

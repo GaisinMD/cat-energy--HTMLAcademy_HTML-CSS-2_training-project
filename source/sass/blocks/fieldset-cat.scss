@@ -39,15 +39,13 @@
   }
 
   &--error {
-      border: 2px solid $error-decorate;
+    border: 2px solid $error-decorate;
   }
 
   &::placeholder {
     text-transform: uppercase;
   }
 }
-
-
 
 //
 @media (min-width: $tablet-width) {

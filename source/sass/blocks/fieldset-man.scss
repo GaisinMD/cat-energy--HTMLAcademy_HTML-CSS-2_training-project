@@ -65,18 +65,17 @@
   align-items: center;
 }
 
-.fieldset-man__icon-mail {
+.fieldset-man__icon-mail-wrapper {
   position: absolute;
   right: 17px;
   top: 17px;
 }
 
-.fieldset-man__icon-phone {
+.fieldset-man__icon-phone-wrapper {
   position: absolute;
   right: 13px;
   top: 13px;
 }
-
 
 .fieldset-man__input {
   color: $second-text;
@@ -93,10 +92,18 @@
 
   &:focus {
     border: 2px solid $input-decorate;
+
+    & + svg .fieldset-man__icon {
+      color: $color-first-background;
+    }
   }
 
   &--error {
-      border: 2px solid $error-decorate;
+    border: 2px solid $error-decorate;
+
+    & + svg .fieldset-man__icon {
+      color: $error-decorate;
+    }
   }
 
   &::placeholder {
@@ -159,16 +166,15 @@
     align-items: flex-start;
   }
 
-  .fieldset-man__icon-mail {
+  .fieldset-man__icon-mail-wrapper {
     right: 22px;
     top: 19px;
   }
 
-  .fieldset-man__icon-phone {
+  .fieldset-man__icon-phone-wrapper {
     right: 20px;
     top: 17px;
   }
-
 
   .fieldset-man__label {
     padding-top: 15px;
@@ -215,12 +221,12 @@
     }
   }
 
-  .fieldset-man__icon-mail {
+  .fieldset-man__icon-mail-wrapper {
     right: 20px;
     top: 18px;
   }
 
-  .fieldset-man__icon-phone {
+  .fieldset-man__icon-phone-wrapper {
     right: 16px;
     top: 15px;
   }
