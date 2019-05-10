@@ -27,8 +27,7 @@
 
 @media (max-width: $tablet-width - 1) {
   .controller-before-after__input-wraper {
-    display: flex;
-    align-items: center;
+    position: relative;
     margin-top: 3px;
     width: 84px;
     height: 14px;
@@ -38,29 +37,26 @@
   }
 
   .controller-before-after__input {
-    appearance: none;
-    overflow: hidden;
-    width: 76px;
-    height: 6px;
-    border-radius: 3px;
-    margin-left: 4px;
-    background-color: $base-background;
-  }
-
-  .controller-before-after__input::-webkit-slider-runnable-track {
-    appearance: none;
-    height: 14px;
-  }
-
-  .controller-before-after__input::-webkit-slider-thumb {
-    appearance: none;
+    position: absolute;
     width: 6px;
     height: 6px;
-    margin-top: 4px;
-    margin-right: 10px;
-    background-color: $color-first-background;
     border-radius: 3px;
-    box-shadow: -82px 0 0 80px $color-first-background;
+    background-color: $color-first-background;
+    left: 50%;
+    top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .controller-before-after__input-shadow {
+    position: absolute;
+    width: 55%;
+    height: 6px;
+    top: 3px;
+    border-radius: 3px;
+    background-color: $color-first-background;
+    margin-left: 3px;
+    margin-right: 3px;
   }
 }
 
@@ -69,29 +65,34 @@
     width: 768px;
   }
 
-  .controller-before-after__input {
-    appearance: none;
-    overflow: hidden;
+  .controller-before-after__input-wraper {
+    position: relative;
+    margin-top: 7px;
     width: 430px;
-    height: 34px;
-    background-color: transparent;
-  }
-
-  .controller-before-after__input::-webkit-slider-runnable-track {
-    appearance: none;
     height: 6px;
     border-radius: 3px;
     background-color: #dcdcdc;
   }
 
-  .controller-before-after__input::-webkit-slider-thumb {
-    appearance: none;
-    width: 34px;
-    height: 34px;
+  .controller-before-after__input {
+    position: absolute;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    margin-top: -14px;
     background-color: $color-first-background;
-    box-shadow: inset 0 0 0 1px #dcdcdc, inset 0 0 0 13px $base-background;
+    border: 1px solid #dcdcdc;
+    box-shadow: inset 0 0 0 11px $base-background, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    top: -14px;
+    left: 50%;
+
+    &:hover {
+      box-shadow: inset 0 0 0 11px $base-background, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid $color-first-background;
+      box-shadow: inset 0 0 0 11px $base-background, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 
   .controller-before-after__text {
@@ -107,12 +108,12 @@
     }
 
     &:first-child {
-      margin-left: 104px;
+      margin-left: 99px;
       margin-right: 24px;
     }
 
     &:last-child {
-      margin-left: 25px;
+      margin-left: 18px;
     }
   }
 }
