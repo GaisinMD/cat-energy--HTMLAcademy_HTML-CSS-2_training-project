@@ -2,7 +2,6 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 18px;
-  color: $base-text;
 
   border: none;
   padding: 0;
@@ -58,10 +57,24 @@
   padding-left: 13px;
   padding-top: 13px;
   margin-bottom: 16px;
+  color: $second-text;
+  outline: none;
+  border: 1px solid $base-decorate;
+
+  &:hover {
+    border: 1px solid $hover-decorate;
+  }
+
+  &:focus {
+    border: 2px solid $input-decorate;
+  }
+
+  &--error {
+      border: 2px solid $error-decorate;
+  }
 
   &::placeholder {
     text-transform: uppercase;
-    color: $second-text;
   }
 }
 

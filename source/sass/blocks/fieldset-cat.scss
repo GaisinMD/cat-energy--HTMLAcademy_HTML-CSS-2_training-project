@@ -23,13 +23,31 @@
 
 .fieldset-cat__input {
   color: $second-text;
-  text-transform: uppercase;
-  border: 1px solid #cdcdcd;
   line-height: 41px;
   padding-left: 16px;
   margin-left: 13px;
   flex-grow: 1;
+  outline: none;
+  border: 1px solid $base-decorate;
+
+  &:hover {
+    border: 1px solid $hover-decorate;
+  }
+
+  &:focus {
+    border: 2px solid $input-decorate;
+  }
+
+  &--error {
+      border: 2px solid $error-decorate;
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
 }
+
+
 
 //
 @media (min-width: $tablet-width) {

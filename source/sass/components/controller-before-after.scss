@@ -67,7 +67,7 @@
 
   .controller-before-after__input-wraper {
     position: relative;
-    margin-top: 7px;
+    margin-top: 15px;
     width: 430px;
     height: 6px;
     border-radius: 3px;
@@ -96,6 +96,7 @@
   }
 
   .controller-before-after__text {
+    height: 34px;
     font-size: 20px;
     border-bottom: 1px dotted #bebebe;
 

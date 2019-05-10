@@ -80,12 +80,28 @@
 
 .fieldset-man__input {
   color: $second-text;
-  border: 1px solid #cdcdcd;
   line-height: 43px;
   padding-left: 15px;
   margin-left: 9px;
   flex-grow: 1;
-  text-transform: uppercase;
+  outline: none;
+  border: 1px solid $base-decorate;
+
+  &:hover {
+    border: 1px solid $hover-decorate;
+  }
+
+  &:focus {
+    border: 2px solid $input-decorate;
+  }
+
+  &--error {
+      border: 2px solid $error-decorate;
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
 }
 
 //
