@@ -8,6 +8,14 @@
   &:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .site-list__item a {
@@ -65,7 +73,7 @@
     }
 
     &--colored a {
-      color: third-text;
+      color: $third-text;
     }
   }
 

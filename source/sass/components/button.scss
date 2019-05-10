@@ -25,4 +25,13 @@
     line-height: 20px;
     padding-top: 0;
   }
+
+  &:hover {
+    background-color: $color-second-background;
+  }
+
+  &:active {
+    background-color: $color-second-background;
+    color: $fourth-text;
+  }
 }

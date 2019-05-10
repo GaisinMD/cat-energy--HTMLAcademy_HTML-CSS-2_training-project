@@ -104,6 +104,15 @@
     background-repeat: no-repeat;
     background-position: center top;
   }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    bottom: 4px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 //

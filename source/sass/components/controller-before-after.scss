@@ -96,6 +96,15 @@
 
   .controller-before-after__text {
     font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
 
     &:first-child {
       margin-left: 104px;
