@@ -36,10 +36,12 @@
 
   &:focus {
     border: 2px solid $input-decorate;
+    line-height: 48px;
   }
 
   &--error {
     border: 2px solid $error-decorate;
+    line-height: 48px;
   }
 
   &::placeholder {

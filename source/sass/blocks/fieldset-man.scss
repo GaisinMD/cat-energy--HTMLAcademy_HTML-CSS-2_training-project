@@ -92,6 +92,8 @@
 
   &:focus {
     border: 2px solid $input-decorate;
+    line-height: 41px;
+
 
     & + svg .fieldset-man__icon {
       color: $color-first-background;
@@ -100,6 +102,7 @@
 
   &--error {
     border: 2px solid $error-decorate;
+    line-height: 43px;
 
     & + svg .fieldset-man__icon {
       color: $error-decorate;
