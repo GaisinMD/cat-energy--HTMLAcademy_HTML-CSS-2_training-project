@@ -124,19 +124,22 @@
         <ul class="fieldset-filter__item filter-list">
           <li class="filter-list__item">
             <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-sugarfree"
-            value="sugarfree" checked>
+              value="sugarfree" checked>
             <label class="filter-list__label" for="id-sugarfree">Сахарозаменитель</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-water" value="water">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-water"
+              value="water">
             <label class="filter-list__label" for="id-water">Питьевая вода</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-milk" value="milk">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-milk"
+              value="milk">
             <label class="filter-list__label" for="id-milk">Молоко</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-vitamins" value="vitamins">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-vitamins"
+              value="vitamins">
             <label class="filter-list__label" for="id-vitamins">Витамины</label>
           </li>
         </ul>
@@ -162,19 +165,9 @@
         </div>
       </section>
 
-      <div class="global-wraper global-wraper--color-all">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта"
-            width="320" height="363">
-        </picture>
-      </div>
+      <section class="global-wraper global-wraper--map" id="yandex-map">
+        <h3 class="visually-hidden">Карта с указатедем адреса</h3>
+      </section>
     </div>
 
     <div class="global-wraper global-wraper--color-all">
@@ -234,6 +227,7 @@
 
   </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4f6469e9-8809-43f1-bfb4-8d85cf3a9e38&lang=ru_RU"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
 

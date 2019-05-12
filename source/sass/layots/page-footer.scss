@@ -26,8 +26,6 @@
 .page-footer__map {
   @include margin-auto;
   display: block;
-
-  //ЕСТЬ ВОПРОСЫ ПО ВЫСОТЕ И МАСШТАБИРОВАНИЮ КАРТЫ
   height: 363px;
 }
 
@@ -98,10 +96,6 @@
 
   .page-footer__map {
     width: 1440px;
-  }
-
-  .page-footer__footer-contacts {
-    @include margin-auto;
   }
 
   .page-footer__text-wraper {
