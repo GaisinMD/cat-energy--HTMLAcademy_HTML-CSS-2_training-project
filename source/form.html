@@ -53,7 +53,7 @@
   <main class="page-main page-main--form">
     <h1 class="main-header main-header--form page-main__main-header-form">Подбор программы</h1>
     <p class="page-main-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="main-form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="main-form__wrapper">
         <fieldset class="fieldset-cat main-form__item main-form__cat-fieldset">
           <p class="fieldset-cat__item">
@@ -73,17 +73,17 @@
         <fieldset class="fieldset-radio-button main-form__item main-form__fieldset-radio">
           <ul class="fieldset-radio-button__radio-list">
             <li class="fieldset-radio-button__radio-item">
-              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-thin-item"
-                value="thin" id="thin" checked="">
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="radio-item"
+                value="thin" id="thin" checked>
               <label for="thin">Похудение</label>
             </li>
             <li class="fieldset-radio-button__radio-item">
-              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-fat-item"
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="radio-item"
                 value="fat" id="fat">
               <label for="fat">Набор массы</label>
             </li>
             <li class="fieldset-radio-button__radio-item">
-              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="filter-unknown-item"
+              <input class="fieldset-radio-button__radio-input visually-hidden" type="radio" name="radio-item"
                 value="unknown" id="unknown">
               <label for="unknown">Не знаю (Нужен ваш совет)</label>
             </li>
@@ -98,16 +98,16 @@
             <label class="fieldset-man__label" for="man-mail">E-mail:*</label>
             <input class="fieldset-man__input" id="man-mail" type="email" name="man-mail"
               placeholder="kuklachev@gmail.com">
-            <svg class="fieldset-man__icon-mail" height="14" width="18">
-              <use xlink:href="#social-icon-mail"></use>
+            <svg class="fieldset-man__icon-mail-wrapper" height="14" width="18">
+              <use class="fieldset-man__icon" xlink:href="#social-icon-mail"></use>
             </svg>
           </li>
           <li class="fieldset-man__item fieldset-man__item--phone">
-            <label class="fieldset-man__label" for="man-mail">Телефон:*</label>
+            <label class="fieldset-man__label" for="man-phone">Телефон:*</label>
             <input class="fieldset-man__input" id="man-phone" type="tel" name="man-phone"
               placeholder="8 (960) 900-60-90">
-            <svg class="fieldset-man__icon-phone" height="21" width="21">
-              <use xlink:href="#social-icon-phone"></use>
+            <svg class="fieldset-man__icon-phone-wrapper" height="21" width="21">
+              <use class="fieldset-man__icon" xlink:href="#social-icon-phone"></use>
             </svg>
           </li>
         </ul>
@@ -124,19 +124,22 @@
         <ul class="fieldset-filter__item filter-list">
           <li class="filter-list__item">
             <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-sugarfree"
-              checked="">
+              value="sugarfree" checked>
             <label class="filter-list__label" for="id-sugarfree">Сахарозаменитель</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-water">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-water"
+              value="water">
             <label class="filter-list__label" for="id-water">Питьевая вода</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-milk">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-milk"
+              value="milk">
             <label class="filter-list__label" for="id-milk">Молоко</label>
           </li>
           <li class="filter-list__item">
-            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-vitamins">
+            <input class="filter-list__input visually-hidden" type="checkbox" name="additional-item" id="id-vitamins"
+              value="vitamins">
             <label class="filter-list__label" for="id-vitamins">Витамины</label>
           </li>
         </ul>
@@ -162,19 +165,9 @@
         </div>
       </section>
 
-      <div class="global-wraper global-wraper--color-all">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта"
-            width="320" height="363">
-        </picture>
-      </div>
+      <section class="global-wraper global-wraper--map" id="yandex-map">
+        <h3 class="visually-hidden">Карта с указатедем адреса</h3>
+      </section>
     </div>
 
     <div class="global-wraper global-wraper--color-all">
@@ -222,9 +215,9 @@
 
         <section class="footer-academy-promo page-footer__footer-academy-promo">
           <h2 class="visually-hidden">Промо HTML Academy</h2>
-          <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg height="45" width="40">
+          <a class="footer-academy-promo__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer-academy-promo__text-link">HTML Academy</span>
+            <svg class="footer-academy-promo__logo-link" height="45" width="40">
               <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
@@ -234,7 +227,9 @@
 
   </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4f6469e9-8809-43f1-bfb4-8d85cf3a9e38&lang=ru_RU"></script>
   <script src="js/picturefill.min.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

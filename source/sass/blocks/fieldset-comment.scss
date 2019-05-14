@@ -2,7 +2,6 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
 
   border: none;
   padding: 0;
@@ -17,7 +16,7 @@
     height: 3px;
     right: 0;
     top: 14px;
-    background-color: #68b738;
+    background-color: $color-first-background;
     z-index: -1;
   }
 }
@@ -26,8 +25,8 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  background-color: #ffffff;
-  color: #111111;
+  background-color: $base-background;
+  color: $first-text;
   text-transform: none;
   width: 320px;
 
@@ -44,7 +43,7 @@
     height: 3px;
     right: 0;
     top: 14px;
-    background-color: #68b738;
+    background-color: $color-first-background;
   }
 }
 
@@ -58,10 +57,24 @@
   padding-left: 13px;
   padding-top: 13px;
   margin-bottom: 16px;
+  color: $second-text;
+  outline: none;
+  border: 1px solid $base-decorate;
+
+  &:hover {
+    border: 1px solid $hover-decorate;
+  }
+
+  &:focus {
+    border: 2px solid $input-decorate;
+  }
+
+  &--error {
+    border: 2px solid $error-decorate;
+  }
 
   &::placeholder {
     text-transform: uppercase;
-    color: #444444;
   }
 }
 
@@ -78,7 +91,7 @@
       height: 3px;
       right: 0;
       top: 22px;
-      background-color: #68b738;
+      background-color: $color-first-background;
       z-index: -1;
     }
   }
@@ -99,7 +112,7 @@
       height: 3px;
       left: 0;
       top: 22px;
-      background-color: #68b738;
+      background-color: $color-first-background;
     }
 
     &::after {

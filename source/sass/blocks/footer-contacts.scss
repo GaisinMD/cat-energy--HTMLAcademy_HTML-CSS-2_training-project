@@ -58,6 +58,7 @@
   .footer-contacts {
     width: $desktop-width;
     position: relative;
+    z-index: 10;
   }
 
   .footer-contacts__text {

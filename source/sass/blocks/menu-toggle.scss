@@ -21,8 +21,8 @@
     width: 25px;
     height: 2px;
 
-    background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    background-color: $base-text;
+    box-shadow: 0 8px 0 0 $base-text, 0 16px 0 0 $base-text;
   }
 
   &--active {
@@ -37,7 +37,7 @@
       width: 26px;
       height: 2px;
 
-      background-color: #000000;
+      background-color: $base-text;
     }
 
     &::before {

@@ -12,8 +12,8 @@
     @include margin-auto;
     font-size: 24px;
     line-height: 24px;
-    color: #111111;
-    background-color: #ffffff;
+    color: $first-text;
+    background-color: $base-background;
 
     position: relative;
     margin-top: 0;
@@ -28,7 +28,7 @@
       height: 3px;
       right: 0;
       top: 13px;
-      background-color: #68b738;
+      background-color: $color-first-background;
     }
   }
 
@@ -39,7 +39,7 @@
     height: 3px;
     right: 0;
     top: 13px;
-    background-color: #68b738;
+    background-color: $color-first-background;
     z-index: -1;
   }
 }
@@ -51,7 +51,7 @@
   @include arial;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $third-text;
 
   @include margin-auto;
   width: 280px;
@@ -116,7 +116,7 @@
         height: 3px;
         left: 0;
         top: 21px;
-        background-color: #68b738;
+        background-color: $color-first-background;
       }
 
       &::after {
@@ -126,7 +126,7 @@
         height: 3px;
         right: 0;
         top: 21px;
-        background-color: #68b738;
+        background-color: $color-first-background;
       }
     }
 
@@ -137,7 +137,7 @@
       height: 3px;
       left: 0;
       top: 21px;
-      background-color: #68b738;
+      background-color: $color-first-background;
       z-index: -1;
     }
   }

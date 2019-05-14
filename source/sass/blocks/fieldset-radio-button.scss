@@ -2,7 +2,7 @@
   @include oswald(300);
   font-size: 16px;
   line-height: 30px;
-  color: #222222;
+  color: $base-text;
   text-transform: uppercase;
 
   border: none;
@@ -38,41 +38,26 @@
     left: 0;
     top: 0;
 
-    border: 1px solid #cdcdcd;
     border-radius: 50%;
+    border: 1px solid $base-radio;
+
+    background-color: $base-background;
+    box-shadow: none;
   }
 }
 
-/*Поведение на потом
-/*.fieldset-radio-button__radio-item input:checked+label::before {
-  border: 1px solid #000000;
+.fieldset-radio-button__radio-item .fieldset-radio-button__radio-input:checked + label::before {
+  background-color: $color-first-background;
+  box-shadow: inset 0 0 0 9px $base-background;
 }
 
 .fieldset-radio-button__radio-item:hover label::before {
-  border: 1px solid red;
+  border: 1px solid $hover-radio;
 }
 
-  /*
-.list-filter-bluetooth-item input:checked+label::before {
-  background-image: url("../img/radioon.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+.fieldset-radio-button__radio-item:active {
+  opacity: 0.5;
 }
-
-.list-filter-bluetooth-item:hover label::before,
-.list-filter-bluetooth-item-item:focus+label::before {
-  opacity: 0.6;
-}
-
-.list-filter-bluetooth-item:active label::before {
-  opacity: 1;
-}
-
-.list-filter-bluetooth-item input:disabled+label::before,
-.list-filter-bluetooth-item input:disabled+label {
-  opacity: 0.25;
-}
-*/
 
 //
 @media (min-width: $tablet-width) {
@@ -96,27 +81,25 @@
   }
 
   .fieldset-radio-button__radio-item {
-    margin-bottom: 23px;
+    padding-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   .fieldset-radio-button__radio-item label {
-    position: relative;
     padding-left: 59px;
     padding-top: 9px;
 
     &::before {
-      position: absolute;
-      content: "";
       width: 40px;
       height: 40px;
-      left: 0;
-      top: 0;
-
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
     }
   }
+
+  .fieldset-radio-button__radio-item .fieldset-radio-button__radio-input:checked + label::before {
+    box-shadow: inset 0 0 0 11px $base-background;
+  }
 }
+
 
 //
 @media (min-width: $desktop-width) {

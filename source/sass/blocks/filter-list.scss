@@ -25,8 +25,22 @@
     left: 0;
     top: 0;
 
-    border: 1px solid #cdcdcd;
+    border: 1px solid $base-checkbox;
+    background: none;
   }
+
+  &:hover::before {
+    border: 1px solid $hover-checkbox;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.filter-list__input:checked + .filter-list__label::before {
+  background: url("/img/icon-tick.svg") center center no-repeat;
+  background-size: 22px auto;
 }
 
 //
@@ -41,9 +55,9 @@
     font-size: 20px;
     line-height: 20px;
     width: 270px;
-    padding-bottom: 24px;
+    padding-bottom: 11px;
     margin-right: 74px;
-    margin-bottom: 18px;
+    margin-bottom: 31px;
 
     &:nth-child(even) {
       margin-right: 0;
@@ -72,8 +86,8 @@
   .filter-list__item {
     width: 220px;
     margin-right: 105px;
-    padding-bottom: 24px;
-    margin-bottom: 34px;
+    padding-bottom: 11px;
+    margin-bottom: 47px;
 
     &:nth-child(even) {
       margin-right: 105px;

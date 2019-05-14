@@ -1,25 +1,36 @@
 .footer-academy-promo {
   padding-left: 20px;
   padding-right: 15px;
+  padding-bottom: 22px;
+  width: 320px;
+}
+
+.footer-academy-promo__link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 22px;
-  width: 320px;
+  text-decoration: none;
+
+  &:hover .footer-academy-promo__logo-link {
+    color: $color-first-background;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer-academy-promo__text-link {
   @include arial;
   font-size: 16px;
   line-height: 34px;
-  color: #444444;
-  text-decoration: none;
+  color: $second-text;
   padding-top: 5px;
 }
 
 .footer-academy-promo__logo-link {
   display: block;
-  color: #666666;
+  color: $base-social;
 }
 
 //
@@ -29,6 +40,9 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+  }
+
+  .footer-academy-promo__link {
     justify-content: flex-start;
   }
 

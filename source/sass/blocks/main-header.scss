@@ -2,7 +2,7 @@
   @include oswald(300);
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: $third-text;
   text-align: center;
 
   width: 320px;
@@ -14,7 +14,7 @@
   }
 
   &--catalog {
-    color: #000000;
+    color: $base-text;
     padding-bottom: 40px;
     padding-left: 20px;
     width: 320px;
@@ -22,7 +22,7 @@
   }
 
   &--form {
-    color: #000000;
+    color: $base-text;
     padding-bottom: 39px;
     padding-left: 20px;
     width: 320px;
@@ -33,7 +33,7 @@
 //
 @media (min-width: $tablet-width) {
   .main-header {
-    color: #000000;
+    color: $base-text;
     font-size: 60px;
     line-height: 60px;
     text-align: left;

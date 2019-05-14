@@ -8,6 +8,14 @@
   &:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .site-list__item a {
@@ -18,7 +26,7 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: $first-text;
 
   text-align: center;
   padding-top: 22px;
@@ -49,7 +57,7 @@
     }
 
     &--active a {
-      border-bottom: 2px solid #68b738;
+      border-bottom: 2px solid $color-first-background;
     }
   }
 }
@@ -65,11 +73,11 @@
     }
 
     &--colored a {
-      color: #ffffff;
+      color: $third-text;
     }
   }
 
   .site-list__item--colored.site-list__item--active {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $base-background;
   }
 }

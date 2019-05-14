@@ -8,7 +8,7 @@
   @include arial;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $second-text;
   padding-left: 80px;
   padding-top: 2px;
   margin-bottom: 20px;
@@ -23,7 +23,7 @@
     height: 60px;
     left: 0;
     top: 0;
-    background-color: #68b738;
+    background-color: $color-first-background;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50px auto;
@@ -99,7 +99,7 @@
       @include oswald(300);
       font-size: 281px;
       line-height: 200px;
-      color: rgba($color: #000000, $alpha: 0.05);
+      color: rgba(0, 0, 0, 0.05);
       position: absolute;
       top: 0;
     }

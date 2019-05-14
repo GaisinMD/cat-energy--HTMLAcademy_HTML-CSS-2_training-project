@@ -5,17 +5,33 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: $third-text;
 
   display: block;
   position: relative;
-  background-color: #68b738;
+  background-color: $color-first-background;
   min-height: 40px;
   padding-top: 10px;
 
+  &:hover {
+    background-color: $color-second-background;
+  }
+
+  &:active {
+    color: $fourth-text;
+  }
+
   &--expand {
-    color: #444444;
-    background-color: #f2f2f2;
+    color: $second-text;
+    background-color: $first-background;
+
+    &:hover {
+      background-color: $third-background;
+    }
+
+    &:active {
+      color: $fifth-text;
+    }
   }
 
   &--button {

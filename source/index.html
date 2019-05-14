@@ -30,6 +30,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
+
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item  site-list__item--colored site-list__item--active">
@@ -154,8 +155,9 @@
 
           <div class="cat-transformer__controller controller-before-after">
             <button class="controller-before-after__text">Было</button>
-            <div class="controller-before-after__input-wraper">
-              <input class="controller-before-after__input" type="range" min="0" max="100" step="1" value="50">
+            <div role="presentation" id="slider" class="controller-before-after__input-wraper">
+              <div role="presentation" class="controller-before-after__input"></div>
+              <div role="presentation" class="controller-before-after__input-shadow"></div>
             </div>
             <button class="controller-before-after__text">Стало</button>
           </div>
@@ -176,20 +178,11 @@
         </div>
       </section>
 
-      <div class="global-wraper global-wraper--color-all">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта"
-            width="320" height="363">
-        </picture>
-      </div>
+      <section class="global-wraper global-wraper--map" id="yandex-map">
+        <h3 class="visually-hidden">Карта с указатедем адреса</h3>
+      </section>
     </div>
+
 
     <div class="global-wraper global-wraper--color-all">
       <div class="page-footer__bottom-wraper">
@@ -203,32 +196,32 @@
           <ul class="footer-social__list social-list">
             <li class="social-list__item social-list__item--vk">
               <a href="#">ВКонтакте
-                  <svg class="social-list__img social-list__img--mobile" height="19" width="22">
-                      <use xlink:href="#social-icon-vk-mobile"></use>
-                  </svg>
-                  <svg class="social-list__img social-list__img--desktop" height="28" width="30">
-                      <use xlink:href="#social-icon-vk"></use>
-                  </svg>
+                <svg class="social-list__img social-list__img--mobile" height="19" width="22">
+                  <use xlink:href="#social-icon-vk-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="30">
+                  <use xlink:href="#social-icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social-list__item social-list__item--instagramm">
               <a href="#">Instagramm
-                  <svg class="social-list__img social-list__img--mobile" height="19" width="17">
-                      <use xlink:href="#social-icon-insta-mobile"></use>
-                  </svg>
-                  <svg class="social-list__img social-list__img--desktop" height="28" width="23">
-                      <use xlink:href="#social-icon-insta"></use>
-                  </svg>
+                <svg class="social-list__img social-list__img--mobile" height="19" width="17">
+                  <use xlink:href="#social-icon-insta-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="23">
+                  <use xlink:href="#social-icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social-list__item social-list__item--facebook">
               <a href="#">Facebook
-                  <svg class="social-list__img social-list__img--mobile" height="19" width="10">
-                      <use xlink:href="#social-icon-fb-mobile"></use>
-                  </svg>
-                  <svg class="social-list__img social-list__img--desktop" height="28" width="14">
-                      <use xlink:href="#social-icon-fb"></use>
-                  </svg>
+                <svg class="social-list__img social-list__img--mobile" height="19" width="10">
+                  <use xlink:href="#social-icon-fb-mobile"></use>
+                </svg>
+                <svg class="social-list__img social-list__img--desktop" height="28" width="14">
+                  <use xlink:href="#social-icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -236,10 +229,10 @@
 
         <section class="footer-academy-promo page-footer__footer-academy-promo">
           <h2 class="visually-hidden">Промо HTML Academy</h2>
-          <a class="footer-academy-promo__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="footer-academy-promo__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg height="45" width="40">
-                <use xlink:href="#htmlacademy"></use>
+          <a class="footer-academy-promo__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer-academy-promo__text-link">HTML Academy</span>
+            <svg class="footer-academy-promo__logo-link" height="45" width="40">
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </section>
@@ -248,7 +241,10 @@
 
   </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4f6469e9-8809-43f1-bfb4-8d85cf3a9e38&lang=ru_RU"></script>
   <script src="js/picturefill.min.js"></script>
+  <script src="js/script.min.js"></script>
+
 
 </body>
 
