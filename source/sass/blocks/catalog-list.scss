@@ -19,3 +19,10 @@
     margin-bottom: 59px;
   }
 }
+
+//
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    padding-left: 11px;
+  }
+}
