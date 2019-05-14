@@ -182,6 +182,7 @@
     margin-right: 80px;
     padding-bottom: 0;
     width: 245px;
+    padding-left: 10px;
 
     &:nth-child(even) {
       margin-right: 80px;
@@ -207,7 +208,7 @@
     width: 245px;
     padding-bottom: 40px;
 
-    background-image: linear-gradient(to bottom, $base-background 140px, $first-background 140px);
+    background-image: linear-gradient(to bottom, $base-background 80px, $first-background 80px);
 
     &--expand {
       background-image: none;

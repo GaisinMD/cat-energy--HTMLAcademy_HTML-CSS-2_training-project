@@ -184,12 +184,12 @@
   .additional-catalog__header {
     h2 {
       width: $desktop-width;
-      padding-left: 40px;
+      padding-left: 47px;
       padding-right: 900px;
 
       &::before {
         top: 23px;
-        width: 1px;
+        width: 6px;
       }
 
       &::after {
@@ -208,7 +208,7 @@
     flex-wrap: wrap;
 
     @include margin-auto;
-    width: 1230px;
+    width: 1232px;
   }
 
   .additional-catalog__special-offer {

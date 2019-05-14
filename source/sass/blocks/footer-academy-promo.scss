@@ -60,6 +60,10 @@
 //
 @media (min-width: $desktop-width) {
   .footer-academy-promo {
-    padding-top: 5px;
+    padding-top: 0;
+  }
+
+  .footer-academy-promo__text-link {
+    padding-top: 14px;
   }
 }

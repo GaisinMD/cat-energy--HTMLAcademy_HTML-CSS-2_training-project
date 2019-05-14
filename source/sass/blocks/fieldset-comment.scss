@@ -5,7 +5,7 @@
 
   border: none;
   padding: 0;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 
   position: relative;
 
@@ -35,6 +35,8 @@
   padding-left: 17px;
 
   @include margin-auto;
+  margin-top: 0;
+  margin-bottom: 0;
 
   &::after {
     position: absolute;
@@ -136,21 +138,29 @@
   .fieldset-comment__legend {
     width: $desktop-width;
 
-    padding-left: 40px;
+    padding-left: 48px;
     padding-bottom: 68px;
 
     &::before {
-      width: 5px;
+      width: 13px;
     }
 
     &::after {
-      width: 1040px;
+      width: 1030px;
     }
+  }
+
+  .fieldset-comment-wrapper {
+    @include margin-auto;
+    padding-left: 16px;
+    padding-top: 3px;
   }
 
   .fieldset-comment__text {
     width: 1220px;
     height: 174px;
     margin-bottom: 16px;
+    padding-left: 18px;
+    padding-top: 14px;
   }
 }
