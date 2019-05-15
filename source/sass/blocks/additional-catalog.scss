@@ -46,7 +46,6 @@
 
 .additional-catalog__special-offer {
   display: flex;
-  justify-content: center;
 
   @include arial;
   font-size: 16px;
@@ -68,6 +67,8 @@
     margin: 0;
     padding-top: 186px;
     padding-bottom: 20px;
+
+    @include margin-auto;
 
     &::before {
       position: absolute;
@@ -143,8 +144,6 @@
   }
 
   .additional-catalog__special-offer {
-    justify-content: flex-end;
-
     width: 708px;
     min-height: 200px;
 
@@ -212,8 +211,6 @@
   }
 
   .additional-catalog__special-offer {
-    justify-content: flex-end;
-
     width: 245px;
     min-height: 289px;
     margin-left: 0;
