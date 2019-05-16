@@ -70,11 +70,11 @@
     @include margin-auto;
     display: flex;
     flex-direction: column;
-    padding-left: 130px;
+    padding-left: 120px;
     padding-right: 332px;
     width: $desktop-width;
     background-image: url("/img/index-can-desktop@1x.png");
-    background-position: calc(65% + 10px) 15px;
+    background-position: calc(65% + 6px) 15px;
     background-repeat: no-repeat;
     background-size: 552px auto;
 
@@ -98,19 +98,18 @@
 
   .page-main__promos-wrapper {
     @include margin-auto;
-    width: 1230px;
+    width: 1220px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $base-background;
     padding-top: 80px;
-    padding-left: 10px;
   }
 
   .page-main__section-promo {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .page-main__wraper-section-example {
@@ -119,8 +118,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 31px;
+    padding-left: 40px;
+    padding-right: 30px;
   }
 
   .page-main__section-example {
