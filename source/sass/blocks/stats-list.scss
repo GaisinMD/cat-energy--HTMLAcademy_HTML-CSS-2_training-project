@@ -5,7 +5,11 @@
   color: $second-text;
   width: 140px;
 
-  tr {
+  padding-top: 3px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,7 +24,7 @@
     line-height: 32px;
     width: 250px;
 
-    tr {
+    p {
       border-bottom: 1px solid #dcdcdc;
       height: 32px;
     }
