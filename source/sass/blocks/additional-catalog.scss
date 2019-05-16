@@ -176,24 +176,26 @@
 //
 @media (min-width: $desktop-width) {
   .additional-catalog {
-    padding-top: 17px;
-    padding-bottom: 22px;
+    padding-top: 10px;
+    padding-bottom: 19px;
   }
 
   .additional-catalog__header {
+    padding-bottom: 81px;
+
     h2 {
       width: $desktop-width;
-      padding-left: 47px;
+      padding-left: 40px;
       padding-right: 900px;
 
       &::before {
         top: 23px;
-        width: 6px;
+        width: 1px;
       }
 
       &::after {
         top: 23px;
-        width: 882px;
+        width: 885px;
       }
     }
 
@@ -224,13 +226,13 @@
       @include margin-auto;
       position: relative;
       width: 170px;
-      padding-top: 190px;
+      padding-top: 188px;
       padding-bottom: 20px;
       text-align: center;
 
       &::before {
-        top: 66px;
-        left: 59px;
+        top: 65px;
+        left: 58px;
       }
     }
   }
