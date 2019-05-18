@@ -138,21 +138,22 @@
   .fieldset-comment__legend {
     width: $desktop-width;
 
-    padding-left: 48px;
+    padding-left: 39px;
     padding-bottom: 68px;
 
     &::before {
-      width: 13px;
+      width: 3px;
     }
 
     &::after {
-      width: 1030px;
+      width: 1040px;
     }
   }
 
   .fieldset-comment-wrapper {
     @include margin-auto;
-    padding-left: 16px;
+    width: $desktop-width;
+    padding-left: 40px;
     padding-top: 3px;
   }
 
@@ -160,6 +161,8 @@
     width: 1220px;
     height: 174px;
     margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 18px;
     padding-top: 14px;
   }

@@ -105,11 +105,13 @@
 @media (min-width: $desktop-width) {
   .fieldset-radio-button {
     padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .fieldset-radio-button__radio-list {
     width: 570px;
-    padding-left: 28px;
+    padding-left: 27px;
     padding-top: 25px;
     padding-right: 67px;
     padding-bottom: 12px;

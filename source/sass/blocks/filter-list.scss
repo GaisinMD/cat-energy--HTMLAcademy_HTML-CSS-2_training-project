@@ -38,7 +38,7 @@
   }
 }
 
-.filter-list__input:checked + .filter-list__label::before {
+.filter-list__input:checked+.filter-list__label::before {
   background: url("/img/icon-tick.svg") center center no-repeat;
   background-size: 22px auto;
 }
@@ -80,7 +80,7 @@
   .filter-list {
     display: flex;
     flex-wrap: wrap;
-    width: 1220px;
+    width: 1240px;
   }
 
   .filter-list__item {
@@ -96,5 +96,10 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .filter-list__label {
+    padding-top: 9px;
+    padding-left: 60px;
   }
 }

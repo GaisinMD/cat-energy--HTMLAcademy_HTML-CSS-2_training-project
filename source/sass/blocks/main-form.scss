@@ -92,13 +92,13 @@
     flex-wrap: wrap;
 
     @include margin-auto;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     width: 1240px;
   }
 
   .main-form__cat-fieldset {
     margin-left: 0;
-    margin-right: 79px;
+    margin-right: 80px;
   }
 
   .main-form__fieldset-radio {
@@ -106,7 +106,7 @@
   }
 
   .main-form__man-fieldset {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 
   .main-form__comment-fieldset {
@@ -119,7 +119,7 @@
 
   .main-form__bottom-item-wrapper {
     width: 1220px;
-    padding-left: 10px;
+    padding-left: 1px;
   }
 
   .main-form__button {

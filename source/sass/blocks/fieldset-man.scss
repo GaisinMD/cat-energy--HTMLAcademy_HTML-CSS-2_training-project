@@ -98,7 +98,7 @@
     height: 41px;
 
 
-    & + svg .fieldset-man__icon {
+    &+svg .fieldset-man__icon {
       color: $color-first-background;
     }
   }
@@ -107,7 +107,7 @@
     border: 2px solid $error-decorate;
     height: 41px;
 
-    & + svg .fieldset-man__icon {
+    &+svg .fieldset-man__icon {
       color: $error-decorate;
     }
   }
@@ -206,15 +206,15 @@
   .fieldset-man__legend {
     width: $desktop-width;
 
-    padding-left: 47px;
+    padding-left: 39px;
     padding-bottom: 75px;
 
     &::before {
-      width: 10px;
+      width: 3px;
     }
 
     &::after {
-      width: 700px;
+      width: 705px;
     }
   }
 
@@ -228,12 +228,29 @@
 
   .fieldset-man__item {
     margin-left: 0;
-    margin-right: 58px;
-    width: 588px;
-    padding-left: 20px;
+    margin-right: 67px;
+    width: 580px;
+    padding-left: 11px;
 
     &:nth-child(even) {
       margin-right: 0;
+    }
+
+    &--phone input {
+      padding-left: 15px;
+    }
+  }
+
+  .fieldset-man__input {
+    height: 52px;
+    padding-left: 21px;
+
+    &:focus {
+      height: 50px;
+    }
+
+    &--error {
+      height: 50px;
     }
   }
 

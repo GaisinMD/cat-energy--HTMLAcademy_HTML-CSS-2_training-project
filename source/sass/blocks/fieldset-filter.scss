@@ -99,22 +99,22 @@
 //
 @media (min-width: $desktop-width) {
   .fieldset-filter {
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     padding-left: 17px;
   }
 
   .fieldset-filter__legend {
     width: $desktop-width;
 
-    padding-left: 39px;
+    padding-left: 30px;
     padding-bottom: 57px;
 
     &::before {
-      width: 5px;
+      width: 1px;
     }
 
     &::after {
-      width: 1005px;
+      width: 1010px;
     }
   }
 }
