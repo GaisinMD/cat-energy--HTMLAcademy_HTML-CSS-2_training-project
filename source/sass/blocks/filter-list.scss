@@ -38,7 +38,7 @@
   }
 }
 
-.filter-list__input:checked+.filter-list__label::before {
+.filter-list__input:checked + .filter-list__label::before {
   background: url("/img/icon-tick.svg") center center no-repeat;
   background-size: 22px auto;
 }

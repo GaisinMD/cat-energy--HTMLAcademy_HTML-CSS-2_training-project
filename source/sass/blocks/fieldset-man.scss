@@ -98,7 +98,7 @@
     height: 41px;
 
 
-    &+svg .fieldset-man__icon {
+    & + svg .fieldset-man__icon {
       color: $color-first-background;
     }
   }
@@ -107,7 +107,7 @@
     border: 2px solid $error-decorate;
     height: 41px;
 
-    &+svg .fieldset-man__icon {
+    & + svg .fieldset-man__icon {
       color: $error-decorate;
     }
   }
