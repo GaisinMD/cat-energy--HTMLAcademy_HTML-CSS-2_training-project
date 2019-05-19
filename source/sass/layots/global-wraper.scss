@@ -37,7 +37,7 @@
       &::after {
         content: "";
         position: absolute;
-        width: 50%;
+        width: 24%;
         height: calc(100% - 588px);
         left: 0;
         bottom: 0;
@@ -98,6 +98,7 @@
       background-image: linear-gradient(180deg, $base-background 191px, $second-background 191px);
 
       &::after {
+        width: 50%;
         height: calc(100% - 191px);
         background-color: $first-background;
       }
