@@ -37,23 +37,11 @@
   }
 
   .controller-before-after__input {
-    display: none;
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: $color-first-background;
-    left: 50%;
-    top: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-
-  .controller-before-after__input-shadow {
     position: absolute;
     width: 45%;
     height: 6px;
     top: 3px;
+    left: 0;
     border-radius: 3px;
     background-color: $color-first-background;
     margin-left: 3px;
@@ -67,6 +55,7 @@
   }
 
   .controller-before-after__input-wraper {
+    position: relative;
     margin-top: 15px;
     width: 430px;
     height: 6px;
@@ -82,8 +71,8 @@
     background-color: $color-first-background;
     border: 1px solid #dcdcdc;
     box-shadow: inset 0 0 0 11px $base-background, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    top: 3px;
-    left: 368px;
+    top: -13px;
+    left: 200px;
 
     &:hover {
       box-shadow: inset 0 0 0 11px $base-background, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
