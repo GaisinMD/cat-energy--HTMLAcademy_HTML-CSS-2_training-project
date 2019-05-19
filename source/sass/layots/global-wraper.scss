@@ -18,7 +18,7 @@
 }
 
 @media (min-resolution: 144dpi),
-(min-resolution: 1.5dppx) {
+  (min-resolution: 1.5dppx) {
   .global-wraper--map {
     background-image: url("/img/bg-map-mobile@2x.png");
     background-size: 320px auto;
@@ -53,8 +53,6 @@
       }
     }
 
-
-
     &--it-work {
       position: relative;
 
@@ -76,7 +74,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .global-wraper--map {
       background-image: url("/img/bg-map-tablet@2x.png");
       background-size: $tablet-width auto;
@@ -115,7 +113,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .global-wraper--map {
       background-image: url("/img/bg-map-desktop@2x.png");
       background-size: 1400px auto;
