@@ -23,7 +23,9 @@ body {
   }
 
   .body-index {
-    background: url("/img/index-background-desktop@1x.jpg") right top no-repeat, linear-gradient(180deg, transparent 696px, $base-background 696px), linear-gradient(90deg, transparent 50%, #64a83b 50%);
+    background: url("/img/index-background-desktop@1x.jpg") right top no-repeat,
+      linear-gradient(180deg, transparent 696px, $base-background 696px),
+      linear-gradient(90deg, transparent 50%, #64a83b 50%);
   }
 
   @media (min-resolution: 144dpi),

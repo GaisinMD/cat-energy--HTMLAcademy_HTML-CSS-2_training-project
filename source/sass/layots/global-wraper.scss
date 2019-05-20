@@ -32,24 +32,15 @@
 
     &--color {
       position: relative;
-      background-image: linear-gradient(180deg, $base-background 588px, $second-background 588px);
+      background: linear-gradient(180deg, $base-background 588px, transparent 588px),
+        linear-gradient(90deg, $first-background 24%, $second-background 24%);
 
-      &::after {
-        content: "";
-        position: absolute;
-        width: 24%;
-        height: calc(100% - 588px);
-        left: 0;
-        bottom: 0;
-        background-color: $first-background;
-      }
-
-      &-modified {
+      &-modified-lighter {
         background-image: linear-gradient(180deg, $base-background 588px, $first-background 588px);
       }
 
-      &-no-pseudo::after {
-        display: none;
+      &-modified-darker {
+        background-image: linear-gradient(180deg, $base-background 588px, $second-background 588px);
       }
     }
 
@@ -97,21 +88,20 @@
       min-width: $desktop-width;
       background-image: linear-gradient(180deg, $base-background 191px, $second-background 191px);
 
-      &::after {
-        width: 50%;
-        height: calc(100% - 191px);
-        background-color: $first-background;
-      }
-
-      &-modified {
+      &-modified-lighter {
         background-image: linear-gradient(180deg, $base-background 191px, $first-background 191px);
       }
 
-      &--map {
-        background: url("/img/bg-map-desktop@1x.png") center top no-repeat;
+      &-modified-darker {
+        background-image: linear-gradient(180deg, $base-background 191px, $second-background 191px);
       }
     }
+
+    &--map {
+      background: url("/img/bg-map-desktop@1x.png") center top no-repeat;
+    }
   }
+
 
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
