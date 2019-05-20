@@ -31,7 +31,7 @@
       </button>
 
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--show">
         <ul class="main-nav__list site-list">
           <li class="site-list__item  site-list__item--colored site-list__item--active">
             <a>Главная</a>
@@ -84,7 +84,7 @@
       </section>
     </div>
 
-    <div class="global-wraper global-wraper--it-work">
+    <div class="global-wrapper global-wrapper--it-work">
       <section class="section-it-work page-main__section-it-work">
         <h2 class="section-it-work__header">Как это работает</h2>
         <ul class="section-it-work__list advantages-list">
@@ -105,8 +105,8 @@
     </div>
 
 
-    <div class="global-wraper global-wraper--color">
-      <div class="page-main__wraper-section-example">
+    <div class="global-wrapper global-wrapper--color">
+      <div class="page-main__wrapper-section-example">
         <section class="section-example page-main__section-example">
           <h2 class="section-example__header">Живой пример</h2>
           <p class="section-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
@@ -154,12 +154,11 @@
           </picture>
 
           <div class="cat-transformer__controller controller-before-after">
-            <button class="controller-before-after__text">Было</button>
-            <div role="presentation" id="slider" class="controller-before-after__input-wraper">
+            <button class="controller-before-after__text" id="before">Было</button>
+            <div role="presentation" id="slider" class="controller-before-after__input-wrapper">
               <div role="presentation" class="controller-before-after__input"></div>
-              <div role="presentation" class="controller-before-after__input-shadow"></div>
             </div>
-            <button class="controller-before-after__text">Стало</button>
+            <button class="controller-before-after__text" id="after">Стало</button>
           </div>
         </section>
       </div>
@@ -169,23 +168,23 @@
 
 
   <footer class="page-footer">
-    <div class="page-footer__map-wraper">
+    <div class="page-footer__map-wrapper">
       <section class="footer-contacts page-footer__footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="page-footer__text-wraper">
+        <div class="page-footer__text-wrapper">
           <p class="footer-contacts__text">Приглашаем <br> к сотрудничеству дилеров!</p>
           <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </section>
 
-      <section class="global-wraper global-wraper--map" id="yandex-map">
+      <section class="global-wrapper global-wrapper--map" id="yandex-map">
         <h3 class="visually-hidden">Карта с указатедем адреса</h3>
       </section>
     </div>
 
 
-    <div class="global-wraper global-wraper--color-all">
-      <div class="page-footer__bottom-wraper">
+    <div class="global-wrapper global-wrapper--color-all">
+      <div class="page-footer__bottom-wrapper">
         <a class="logo page-footer__logo">
           <img class="logo__image logo__image--footer page-footer__logo-image" src="img/logo-footer.svg" width="130"
             height="24" alt="Магазин CAT Energy">
@@ -241,10 +240,11 @@
 
   </footer>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=4f6469e9-8809-43f1-bfb4-8d85cf3a9e38&lang=ru_RU"></script>
-  <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>
-
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4f6469e9-8809-43f1-bfb4-8d85cf3a9e38&lang=ru_RU"></script>
+  <script src="js/map.min.js"></script>
 
 </body>
 

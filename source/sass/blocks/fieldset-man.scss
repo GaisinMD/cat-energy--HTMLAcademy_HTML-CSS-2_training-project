@@ -38,7 +38,10 @@
   text-transform: none;
   width: 320px;
 
-  padding-bottom: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-bottom: 35px;
   padding-right: 110px;
   padding-left: 17px;
 
@@ -58,7 +61,7 @@
 .fieldset-man__item {
   position: relative;
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,7 +82,7 @@
 
 .fieldset-man__input {
   color: $second-text;
-  line-height: 43px;
+  height: 43px;
   padding-left: 15px;
   margin-left: 9px;
   flex-grow: 1;
@@ -91,8 +94,8 @@
   }
 
   &:focus {
-    border: 2px solid $input-decorate;
-    line-height: 41px;
+    border: 1px solid $input-decorate;
+    box-shadow: inset 0 0 0 1px $input-decorate;
 
 
     & + svg .fieldset-man__icon {
@@ -101,8 +104,8 @@
   }
 
   &--error {
-    border: 2px solid $error-decorate;
-    line-height: 43px;
+    border: 1px solid $error-decorate;
+    box-shadow: inset 0 0 0 1px $error-decorate;
 
     & + svg .fieldset-man__icon {
       color: $error-decorate;
@@ -139,7 +142,7 @@
 
     padding-bottom: 73px;
     padding-left: 67px;
-    padding-right: 177px;
+    padding-right: 0;
 
     &::before {
       position: absolute;
@@ -165,7 +168,7 @@
   .fieldset-man__item {
     margin-left: 70px;
     margin-right: 65px;
-    margin-bottom: 19px;
+    margin-bottom: 23px;
     align-items: flex-start;
   }
 
@@ -184,7 +187,7 @@
   }
 
   .fieldset-man__input {
-    line-height: 48px;
+    height: 48px;
     padding-left: 18px;
     margin-left: 19px;
   }
@@ -195,7 +198,7 @@
   .fieldset-man__legend {
     width: $desktop-width;
 
-    padding-left: 40px;
+    padding-left: 39px;
     padding-bottom: 75px;
 
     &::before {
@@ -209,28 +212,40 @@
 
   .fieldset-man__list {
     @include margin-auto;
-    width: 1220px;
+    width: 1240px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 1px;
   }
 
   .fieldset-man__item {
     margin-left: 0;
-    margin-right: 78px;
-    width: 570px;
+    margin-right: 67px;
+    width: 580px;
+    padding-left: 11px;
 
     &:nth-child(even) {
       margin-right: 0;
     }
+
+    &--phone input {
+      padding-left: 15px;
+    }
   }
+
+  .fieldset-man__input {
+    height: 52px;
+    padding-left: 21px;
+  }
+
 
   .fieldset-man__icon-mail-wrapper {
     right: 20px;
-    top: 18px;
+    top: 20px;
   }
 
   .fieldset-man__icon-phone-wrapper {
-    right: 16px;
-    top: 15px;
+    right: 15px;
+    top: 16px;
   }
 }

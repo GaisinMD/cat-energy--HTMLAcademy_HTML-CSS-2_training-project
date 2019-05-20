@@ -1,6 +1,6 @@
 .controller-before-after {
   display: flex;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   width: 320px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: $tablet-width - 1) {
-  .controller-before-after__input-wraper {
+  .controller-before-after__input-wrapper {
     position: relative;
     margin-top: 3px;
     width: 84px;
@@ -38,21 +38,10 @@
 
   .controller-before-after__input {
     position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: $color-first-background;
-    left: 50%;
-    top: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-
-  .controller-before-after__input-shadow {
-    position: absolute;
-    width: 55%;
+    width: 45%;
     height: 6px;
     top: 3px;
+    left: 0;
     border-radius: 3px;
     background-color: $color-first-background;
     margin-left: 3px;
@@ -62,10 +51,10 @@
 
 @media (min-width: $tablet-width) {
   .controller-before-after {
-    width: 768px;
+    width: 690px;
   }
 
-  .controller-before-after__input-wraper {
+  .controller-before-after__input-wrapper {
     position: relative;
     margin-top: 15px;
     width: 430px;
@@ -82,8 +71,8 @@
     background-color: $color-first-background;
     border: 1px solid #dcdcdc;
     box-shadow: inset 0 0 0 11px $base-background, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    top: -14px;
-    left: 50%;
+    top: -13px;
+    left: 200px;
 
     &:hover {
       box-shadow: inset 0 0 0 11px $base-background, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
@@ -109,7 +98,7 @@
     }
 
     &:first-child {
-      margin-left: 99px;
+      margin-left: 59px;
       margin-right: 24px;
     }
 

@@ -14,7 +14,7 @@
 
 .fieldset-cat__item {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 19px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,25 +23,26 @@
 
 .fieldset-cat__input {
   color: $second-text;
-  line-height: 41px;
   padding-left: 16px;
   margin-left: 13px;
+  width: 153px;
   flex-grow: 1;
   outline: none;
   border: 1px solid $base-decorate;
+  height: 41px;
 
   &:hover {
     border: 1px solid $hover-decorate;
   }
 
   &:focus {
-    border: 2px solid $input-decorate;
-    line-height: 48px;
+    border: 1px solid $input-decorate;
+    box-shadow: inset 0 0 0 1px $input-decorate;
   }
 
   &--error {
-    border: 2px solid $error-decorate;
-    line-height: 48px;
+    border: 1px solid $error-decorate;
+    box-shadow: inset 0 0 0 1px $error-decorate;
   }
 
   &::placeholder {
@@ -60,7 +61,7 @@
   }
 
   .fieldset-cat__item {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     align-items: flex-start;
   }
 
@@ -69,7 +70,7 @@
   }
 
   .fieldset-cat__input {
-    line-height: 50px;
+    height: 50px;
     padding-left: 18px;
     margin-left: 17px;
     flex-grow: 1;
@@ -79,14 +80,14 @@
 //
 @media (min-width: $desktop-width) {
   .fieldset-cat {
-    width: 566px;
-    padding-left: 0;
+    width: 580px;
+    padding-left: 11px;
     padding-right: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
   .fieldset-cat__item {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }

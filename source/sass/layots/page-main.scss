@@ -1,11 +1,10 @@
-.page-main--index {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px auto;
+.page-main__top-wrapper {
+  background: url("/img/index-background-mobile@1x.jpg") center top no-repeat;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("/img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
   }
 }
 
@@ -47,7 +46,7 @@
 
 //
 @media (min-width: $tablet-width) {
-  .page-main--index {
+  .page-main__top-wrapper {
     background-image: none;
   }
 
@@ -75,11 +74,12 @@
     padding-right: 332px;
     width: $desktop-width;
     background-image: url("/img/index-can-desktop@1x.png");
-    background-position: 65% 15px;
+    background-position: calc(65% + 6px) 15px;
     background-repeat: no-repeat;
     background-size: 552px auto;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
     }
   }
@@ -109,22 +109,21 @@
   .page-main__section-promo {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 61px;
+    margin-bottom: 60px;
   }
 
-  .page-main__wraper-section-example {
+  .page-main__wrapper-section-example {
     @include margin-auto;
     width: $desktop-width;
 
     display: flex;
     flex-wrap: wrap;
     padding-left: 40px;
-    padding-right: 41px;
   }
 
   .page-main__section-example {
     margin-left: 0;
-    margin-right: 85px;
+    margin-right: 135px;
     z-index: 10;
   }
 }

@@ -12,7 +12,6 @@
   .main-nav {
     display: block;
     width: 470px;
-    padding-right: 30px;
     padding-top: 24px;
   }
 }
@@ -21,7 +20,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 520px;
-    padding-right: 30px;
+    padding-right: 8px;
     padding-top: 48px;
   }
 }

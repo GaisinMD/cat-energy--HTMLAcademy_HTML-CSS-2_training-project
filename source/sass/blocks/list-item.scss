@@ -15,7 +15,6 @@
   @include margin-auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   width: 280px;
 }
 
@@ -52,10 +51,11 @@
 
 .list-item__image-link {
   order: -1;
-}
 
-.list-item__image-link--expand {
-  opacity: 0.2;
+  &--expand {
+    @include margin-auto;
+    opacity: 0.2;
+  }
 }
 
 .list-item__image {
@@ -98,7 +98,6 @@
 
   .list-item__wrapper {
     flex-direction: column;
-    align-items: center;
     margin-left: 0;
     margin-right: 0;
 
@@ -113,8 +112,9 @@
   }
 
   .list-item__text-wrapper {
+    @include margin-auto;
     width: 250px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 
   .list-item__header-link {
@@ -146,26 +146,30 @@
   .list-item__image-link picture {
     display: flex;
     height: 208px;
+    align-items: flex-end;
   }
 
   .list-item__image {
     width: 324px;
-    margin-top: auto;
+  }
+
+  .list-item__image-link--expand {
+    width: 100%;
   }
 
   .list-item__image-link--expand picture {
+    @include margin-auto;
     height: 61px;
-  }
-
-  .list-item__image--expand {
     width: 61px;
   }
 
   .list-item__button {
+    @include margin-auto;
     width: 250px;
   }
 
   .list-item__text {
+    @include margin-auto;
     font-size: 16px;
     line-height: 16px;
     color: $second-text;
@@ -179,12 +183,12 @@
 @media (min-width: $desktop-width) {
   .list-item {
     border-top: none;
-    margin-right: 80px;
+    margin-right: 75px;
     padding-bottom: 0;
     width: 245px;
 
     &:nth-child(even) {
-      margin-right: 80px;
+      margin-right: 75px;
     }
 
     &:nth-child(4n) {
@@ -192,7 +196,7 @@
     }
 
     &--expand {
-      margin-top: auto;
+      margin-top: 80px;
       border: 1px solid #dcdcdc;
       width: 245px;
     }
@@ -207,16 +211,21 @@
     width: 245px;
     padding-bottom: 40px;
 
-    background-image: linear-gradient(to bottom, $base-background 140px, $first-background 140px);
+    background-image: linear-gradient(to bottom, $base-background 80px, $first-background 80px);
 
     &--expand {
       background-image: none;
     }
   }
 
+  .list-item__image {
+    width: 245px;
+  }
+
   .list-item__text-wrapper {
     width: 169px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+    padding-top: 3px;
   }
 
   .list-item__button {

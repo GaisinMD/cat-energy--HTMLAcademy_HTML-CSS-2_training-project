@@ -17,8 +17,8 @@
   @include arial;
   font-size: 14px;
   line-height: 18px;
-  width: 290px;
-  margin-bottom: 25px;
+  width: 295px;
+  margin-bottom: 26px;
   padding-left: 20px;
   color: $second-text;
 }
@@ -127,7 +127,7 @@
 
   .section-example__characteristic-block {
     &:first-child {
-      margin-right: 42px;
+      margin-right: 44px;
     }
 
     &--block {
@@ -136,6 +136,7 @@
 
       font-size: 30px;
       line-height: 37px;
+      padding-top: 15px;
     }
 
     &--inline {
@@ -146,7 +147,7 @@
       margin-left: auto;
       margin-right: 30px;
       margin-bottom: 20px;
-      padding-top: 10px;
+      padding-top: 13px;
     }
   }
 
@@ -155,7 +156,7 @@
     line-height: 14px;
 
     left: 35px;
-    bottom: -5px;
+    bottom: -9px;
     padding-left: 5px;
     padding-right: 5px;
 
@@ -201,7 +202,7 @@
     width: 434px;
     margin-bottom: 70px;
     padding-left: 0;
-    padding-top: 31px;
+    padding-top: 29px;
   }
 
   .section-example__characteristics {
@@ -216,7 +217,7 @@
     &--inline {
       width: 400px;
       text-align: left;
-      padding-top: 20px;
+      padding-top: 22px;
       margin-left: 1px;
     }
   }

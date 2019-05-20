@@ -4,11 +4,11 @@
 
 .main-form__cat-fieldset {
   @include margin-auto;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .main-form__fieldset-radio {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .main-form__filter-fieldset {
@@ -43,7 +43,7 @@
   }
 
   .main-form__fieldset-radio {
-    margin-bottom: 66px;
+    margin-bottom: 64px;
   }
 
   .main-form__man-fieldset {
@@ -51,7 +51,7 @@
   }
 
   .main-form__comment-fieldset {
-    margin-bottom: 36px;
+    margin-bottom: 39px;
   }
 
   .main-form__filter-fieldset {
@@ -92,8 +92,8 @@
     flex-wrap: wrap;
 
     @include margin-auto;
-    margin-bottom: 25px;
-    width: 1220px;
+    margin-bottom: 28px;
+    width: 1240px;
   }
 
   .main-form__cat-fieldset {
@@ -103,6 +103,10 @@
 
   .main-form__fieldset-radio {
     margin-bottom: 30px;
+  }
+
+  .main-form__man-fieldset {
+    margin-bottom: 31px;
   }
 
   .main-form__comment-fieldset {
@@ -115,6 +119,7 @@
 
   .main-form__bottom-item-wrapper {
     width: 1220px;
+    padding-left: 1px;
   }
 
   .main-form__button {
