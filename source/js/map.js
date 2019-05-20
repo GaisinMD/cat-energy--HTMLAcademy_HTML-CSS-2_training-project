@@ -26,14 +26,14 @@ function init() {
   myMap = new ymaps.Map("yandex-map", {
       center: [coordXCenter, coordYCenter],
       zoom: 17,
-      controls: ['smallMapDefaultSet']
+      controls: ["smallMapDefaultSet"]
     }),
 
     myPlacemark = new ymaps.Placemark([coordXPin, coordYPin], {
-      hintContent: 'Магазин спортивного питания Cat Energy'
+      hintContent: "Магазин спортивного питания Cat Energy"
     }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
+      iconLayout: "default#image",
+      iconImageHref: "img/map-pin.png",
       iconImageSize: [sizeX, sizeY],
       iconImageOffset: [iconImageOffsetX, iconImageOffsetY]
     });

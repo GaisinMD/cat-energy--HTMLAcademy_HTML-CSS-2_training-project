@@ -1,6 +1,8 @@
 var button = document.querySelector(".menu-toggle");
 var menu = document.querySelector(".main-nav");
 
+menu.classList.remove("main-nav--show");
+
 //кнопка вызова меню в мобильной версии
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
