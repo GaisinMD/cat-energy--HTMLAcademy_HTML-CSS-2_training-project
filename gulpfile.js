@@ -89,7 +89,7 @@ gulp.task("sprite", function () {
 
 gulp.task("uglify", function() {
   return gulp.src("source/js/**/*.js")
-  //.pipe(uglify())
+  .pipe(uglify())
   .pipe(rename(function (path) {
     path.basename += ".min";
     path.extname = ".js";
