@@ -183,12 +183,12 @@
 @media (min-width: $desktop-width) {
   .list-item {
     border-top: none;
-    margin-right: 75px;
+    margin-right: 80px;
     padding-bottom: 0;
     width: 245px;
 
     &:nth-child(even) {
-      margin-right: 75px;
+      margin-right: 80px;
     }
 
     &:nth-child(4n) {
