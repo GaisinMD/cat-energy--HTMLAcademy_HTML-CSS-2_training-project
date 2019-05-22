@@ -5,9 +5,9 @@
     linear-gradient(180deg, #64a83b 305px, transparent 305px);
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("/img/index-background-mobile@2x.jpg"),
-    linear-gradient(180deg, #64a83b 305px, transparent 305px);
+      linear-gradient(180deg, #64a83b 305px, transparent 305px);
     background-size: 320px auto;
   }
 }
@@ -84,7 +84,7 @@
     background-size: 552px auto;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
     }
   }
