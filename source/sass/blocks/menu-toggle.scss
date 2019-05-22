@@ -26,6 +26,7 @@
   }
 
   &--active {
+
     &::before,
     &::after {
       content: "";
@@ -48,6 +49,10 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+
+  &--hidden {
+    visibility: hidden;
   }
 }
 
