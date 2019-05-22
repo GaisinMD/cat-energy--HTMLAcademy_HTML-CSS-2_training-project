@@ -43,6 +43,10 @@
   background-size: 22px auto;
 }
 
+.filter-list__input:focus + .filter-list__label::before {
+  border: 2px solid $hover-checkbox;
+}
+
 //
 @media (min-width: $tablet-width) {
   .filter-list {

@@ -56,6 +56,12 @@
   border: 1px solid $hover-radio;
 }
 
+.fieldset-radio-button__radio-input:focus + label::before {
+  border: 2px solid $hover-radio;
+  width: 31px;
+  height: 31px;
+}
+
 .fieldset-radio-button__radio-item:active {
   opacity: 0.5;
 }
@@ -98,6 +104,11 @@
 
   .fieldset-radio-button__radio-item .fieldset-radio-button__radio-input:checked + label::before {
     box-shadow: inset 0 0 0 11px $base-background;
+  }
+
+  .fieldset-radio-button__radio-input:focus + label::before {
+    width: 41px;
+    height: 41px;
   }
 }
 
