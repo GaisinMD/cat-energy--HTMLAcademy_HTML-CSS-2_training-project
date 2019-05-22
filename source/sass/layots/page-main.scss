@@ -1,9 +1,13 @@
 .page-main__top-wrapper {
-  background: url("/img/index-background-mobile@1x.jpg") center top no-repeat;
+  @include margin-auto;
+  width: 320px;
+  background: url("/img/index-background-mobile@1x.jpg") center top no-repeat,
+    linear-gradient(180deg, #64a83b 305px, transparent 305px);
 
   @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("/img/index-background-mobile@2x.jpg");
+  (min-resolution: $retina-dppx) {
+    background-image: url("/img/index-background-mobile@2x.jpg"),
+    linear-gradient(180deg, #64a83b 305px, transparent 305px);
     background-size: 320px auto;
   }
 }
@@ -79,7 +83,7 @@
     background-size: 552px auto;
 
     @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
     }
   }

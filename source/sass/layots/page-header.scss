@@ -1,10 +1,8 @@
 .page-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
 
-.page-header__wrapper {
   @include margin-auto;
-  width: 280px;
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,21 +13,20 @@
 .page-header__logo {
   margin-top: 12px;
   margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 .page-header__toggle {
   right: 0;
   top: 23px;
   margin-bottom: 23px;
+  margin-right: 20px;
 }
 
 //
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: none;
-  }
-
-  .page-header__wrapper {
     width: $tablet-width;
   }
 
@@ -42,7 +39,7 @@
 
 //
 @media (min-width: $desktop-width) {
-  .page-header__wrapper {
+  .page-header {
     width: $desktop-width;
   }
 
